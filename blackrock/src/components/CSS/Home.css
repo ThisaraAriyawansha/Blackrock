@@ -29,7 +29,7 @@
   }
   
   .main-content p {
-    font-size: 18px; /* Description text size */
+    font-size: 16px; /* Description text size */
     color: rgb(0, 0, 0); /* Description color */
     margin-bottom: 40px; /* Space below paragraph */
     max-width: 500px; /* Limit the width for readability */
@@ -46,27 +46,31 @@
     cursor: pointer; /* Pointer cursor on hover */
     display: inline-flex; /* Align text and arrow horizontally */
     align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    position: relative; /* For positioning the underline */
+    transition: color 0.3s; /* Smooth text color transition */
   }
 
   .custom-button .red-arrow {
     color: red; /* Red arrow color */
-    margin-left: 10px; /* Space between text and arrow */
+    margin-right: 10px; /* Add space between arrow and text */
   }
 
-  /* Hover effect to change the arrow and text color */
-  .custom-button:hover {
-    color: red; /* Change text color to red on hover */
+  /* Underline effect */
+  .custom-button::after {
+    content: ''; /* Empty content */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; /* Thickness of the underline */
+    width: 0%; /* Initially hidden */
+    background-color: red; /* Red underline */
+    transition: width 0.4s ease-in-out; /* Smooth running effect */
   }
 
-  .custom-button:hover .red-arrow {
-    color: red; /* Arrow remains red on hover */
+  .custom-button:hover::after {
+    width: 100%; /* Expand underline on hover */
   }
-  
-  .custom-button:hover {
-    background-color: #333333; /* Darker color on hover */
-  }
+
   
 /* Image section styles */
 .image-section {
@@ -92,5 +96,48 @@
     position: relative; /* Relative positioning */
     bottom: 0; /* Stick to the bottom */
     width: 100%; /* Full width */
+  }
+  
+
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    margin: auto;
+    max-width: 1200px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .card hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 20px;
   }
   
