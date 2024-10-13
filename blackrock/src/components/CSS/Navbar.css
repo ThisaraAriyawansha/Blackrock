@@ -1,0 +1,32 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Add some padding */
+    background-color: #f8f8f8; /* Light background for navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold; /* Make logo bold */
+  }
+  
+  .navbar ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal alignment of links */
+    gap: 30px; /* Space between links */
+  }
+  
+  .navbar ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Color of links */
+    font-weight: normal; /* Regular weight for links */
+    font-size: 16px; /* Font size */
+    transition: color 0.3s; /* Smooth color transition */
+  }
+  
+  .navbar ul li a:hover {
+    color: blue; /* Change color on hover */
+  }
