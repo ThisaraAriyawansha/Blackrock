@@ -1,36 +1,38 @@
 import React from 'react';
+import './CSS/Home.css'; // Importing the CSS file
+import Navbar from './Navbar';
+import blackrockLogo from '../image/blackrock-gip-logo-860x800.webp'; // Importing the image
 
-const BlackRockPage = () => {
+const HomePage = () => {
   return (
-    <div className="min-h-screen bg-white text-black">
-      {/* Navbar */}
-      <nav className="bg-gray-100 p-4 shadow-md">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold">BlackRock</div>
-          <ul className="flex space-x-8">
-            <li><a href="#" className="hover:text-blue-600">About Us</a></li>
-            <li><a href="#" className="hover:text-blue-600">Newsroom</a></li>
-            <li><a href="#" className="hover:text-blue-600">Insights</a></li>
-            <li><a href="#" className="hover:text-blue-600">Investor Relations</a></li>
-            <li><a href="#" className="hover:text-blue-600">Corporate Sustainability</a></li>
-            <li><a href="#" className="hover:text-blue-600">Careers</a></li>
-          </ul>
-        </div>
-      </nav>
-
+    <div>
+<Navbar/>
       {/* Main Content */}
-      <div className="container mx-auto my-12">
-        <h1 className="text-5xl font-bold mb-6">Global Infrastructure Partners, a part of BlackRock</h1>
-        <p className="text-lg text-gray-700 mb-6">
-          BlackRock and Global Infrastructure Partners announce the successful completion of BlackRock’s acquisition of GIP. 
-          The combination creates an industry leader in infrastructure across equity, debt, and solutions – providing a diverse range of infrastructure sector expertise and exposure across developed and emerging markets.
-        </p>
-        <button className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition duration-200">
-          Learn more
+      <div className="main-content">
+        <div>
+          <h1>Global<br/> Infrastructure<br/> Partners, a part of <br/>BlackRock</h1>
+          <p>
+            BlackRock and Global Infrastructure Partners announce the successful completion of BlackRock’s acquisition of GIP.
+            The combination creates an industry leader in infrastructure across equity, debt, and solutions – providing a diverse range 
+            of infrastructure sector expertise and exposure across developed and emerging markets.
+          </p>
+        <button className="custom-button">
+            <span class="red-arrow">{'>'}</span>Learn more
         </button>
+        </div>
+        
+        {/* Image Section */}
+        <div className="image-section">
+          <img src={blackrockLogo} alt="Global Infrastructure Partners" />
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="footer">
+        &copy; {new Date().getFullYear()} BlackRock. All rights reserved.
       </div>
     </div>
   );
 };
 
-export default BlackRockPage;
+export default HomePage;

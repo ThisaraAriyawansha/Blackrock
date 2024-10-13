@@ -1,0 +1,96 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif; /* Ensure consistency in font */
+    background-color: white; /* Background color of the body */
+    color: black; /* Default text color */
+    line-height: 1.6; /* Improve readability */
+  }
+  
+  
+  
+  /* Main content styles */
+  .main-content {
+    display: flex; /* Flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+    padding: 60px 40px; /* Add padding */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .main-content h1 {
+    font-size: 48px; /* Large title */
+    font-weight: bold; /* Bold title */
+    margin-bottom: 20px; /* Space below title */
+  }
+  
+  .main-content p {
+    font-size: 18px; /* Description text size */
+    color: rgb(0, 0, 0); /* Description color */
+    margin-bottom: 40px; /* Space below paragraph */
+    max-width: 500px; /* Limit the width for readability */
+  }
+  
+  /* Button styling */
+  .custom-button {
+    background-color: black; /* Button background color */
+    color: white; /* Button text color */
+    padding: 12px 24px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-flex; /* Align text and arrow horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+  }
+
+  .custom-button .red-arrow {
+    color: red; /* Red arrow color */
+    margin-left: 10px; /* Space between text and arrow */
+  }
+
+  /* Hover effect to change the arrow and text color */
+  .custom-button:hover {
+    color: red; /* Change text color to red on hover */
+  }
+
+  .custom-button:hover .red-arrow {
+    color: red; /* Arrow remains red on hover */
+  }
+  
+  .custom-button:hover {
+    background-color: #333333; /* Darker color on hover */
+  }
+  
+/* Image section styles */
+.image-section {
+    flex: 1; /* Allow image section to take remaining space */
+    text-align: center; /* Center the image */
+  }
+  
+  .image-section img {
+    max-width: 100%; /* Responsive image */
+    width: 600px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  
+  /* Footer styles */
+  .footer {
+    text-align: center; /* Center text in footer */
+    padding: 20px 0; /* Padding for footer */
+    background-color: #f8f8f8; /* Same color as navbar */
+    font-size: 14px; /* Font size for footer */
+    color: gray; /* Footer text color */
+    position: relative; /* Relative positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+  }
+  
