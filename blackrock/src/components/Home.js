@@ -4,29 +4,7 @@ import Navbar from './Navbar';
 import blackrockLogo from '../image/blackrock-gip-logo-860x800.webp'; // Importing the image
 
 const HomePage = () => {
-    const cardData = [
-        {
-          title: "Transforming BlackRock for our clients",
-          description: "Read more about the changes we’re making to help our clients meet their investment, portfolio, and business needs.",
-        },
-        {
-          title: "Investing in the transition to a low-carbon economy",
-          description: "Clients are asking for our perspectives on the long-term mega forces – including the transition to a low-carbon economy.",
-        },
-        {
-          title: "Advancing shareholder democracy",
-          description: "We are committed to a future where all investors can participate in proxy voting if they choose. Find out how we are delivering on this through BlackRock Voting Choice.",
-        },
-        {
-          title: "Implications of an aging population",
-          description: "We track the economic impact of aging – and the investment opportunities and risks it brings. Fewer people of working age limits how much countries can produce and grow – unless they can find ways to adapt.",
-        },
-        {
-          title: "Weekly market commentary",
-          description: "Stay tuned for insights on hot topics, the latest trends in the financial market and our broad asset class views via the Weekly commentary by the BlackRock Investment Institute. Read the latest market commentary.",
-        },
-      ];
-    
+   
   return (
     <div>
 <Navbar/>
@@ -54,14 +32,40 @@ const HomePage = () => {
       </div>
 
 
-      <div className="card-section">
-      {cardData.map((card, index) => (
-        <div className="card" key={index}>
-          <h2>{card.title}</h2>
-          <p>{card.description}</p>
-          <hr />
-        </div>
-      ))}
+      <div className="grid-container">
+      <div className="grid-item">
+        <h2>Transforming <br/> BlackRock for our<br/> clients</h2>
+        <p>Read more about the changes we’re making to help our clients meet their investment, portfolio, and business needs.</p>
+        <hr />
+      </div>
+
+      <div className="grid-item">
+        <h2>Investing in the<br/> transition to a low-<br/>carbon economy</h2>
+        <p>Clients are asking for our perspectives on the long-term mega forces – including the transition to a low-carbon economy.</p>
+        <hr />
+      </div>
+
+      <div className="grid-item">
+        <h2>Advancing shareholder<br/> democracy</h2>
+        <p>We are committed to a future where all investors can participate in proxy voting if they choose. Find out how we are delivering on this through BlackRock Voting Choice.</p>
+        <hr />
+      </div>
+
+      <div className="grid-item grid-item-wide">
+        <h2>Implications of an aging population</h2>
+        <p>We track the economic impact of aging – and the investment opportunities and<br/> 
+        risks it brings. Fewer people of working age limits how much countries can <br/>
+        produce and grow – unless they can find ways to adapt.</p>
+        <hr />
+      </div>
+
+      <div className="grid-item grid-item-wide">
+        <h2>Weekly market commentary</h2>
+        <p>Stay tuned for insights on hot topics, the latest trends in the financial market and<br/>
+         our broad asset class views via the Weekly commentary by the BlackRock<br/>
+          Investment Institute. Read the latest market commentary.</p>
+        <hr />
+      </div>
     </div>
 
     
