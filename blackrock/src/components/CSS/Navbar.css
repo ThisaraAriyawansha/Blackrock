@@ -1,52 +1,109 @@
 /* Navbar styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px; /* Add some padding */
-    background-color: #f8f8f8; /* Light background for navbar */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold; /* Make logo bold */
-  }
-  
-  .navbar ul {
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Horizontal alignment of links */
-    gap: 30px; /* Space between links */
-  }
-  
-  .navbar ul li a {
-    text-decoration: none; /* Remove underline */
-    color: black; /* Color of links */
-    font-weight: normal; /* Regular weight for links */
-    font-size: 16px; /* Font size */
-    transition: color 0.3s; /* Smooth color transition */
-  }
-  
-  .navbar ul li a:hover {
-    color: blue; /* Change color on hover */
-  }
-  
-  /* Search bar styles */
-  .search-bar {
-    position: relative;
-  }
-  
-  .search-bar input {
-    padding: 8px 12px; /* Padding for the input field */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 20px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    width: 200px; /* Adjust width */
-    outline: none; /* Remove outline on focus */
-    transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
-  }
-  
-  .search-bar input:focus {
-    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Add shadow on focus */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  position: relative; /* Position for the hover content */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: blue;
+}
+
+/* Hover content styles */
+.hover-content {
+  position: absolute;
+  top: 100%; /* Positions the content right below the menu item */
+  left: 0;
+  width: 400px; /* Increase width to accommodate links and image */
+  margin-top: 10px;
+  display: flex;
+  background-color: white; /* Background for the hover content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Links in hover content */
+.about-us-links {
+  list-style: none;
+  padding: 10px; /* Padding for links */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  gap: 8px; /* Space between links */
+}
+
+.about-us-links li a {
+  color: black; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 500; /* Font weight */
+  transition: color 0.3s ease;
+}
+
+.about-us-links li a:hover {
+  color: blue; /* Change color on hover */
+}
+
+/* Hover image */
+.hover-image {
+  width: 200px; /* Fixed width for the image */
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-left: 20px; /* Space between links and image */
+}
+
+/* Search bar styles */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  width: 200px;
+  outline: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+}
