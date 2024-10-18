@@ -5,60 +5,67 @@ import aboutUsImage from '../image/mega-forces-banner.jpg'; // Import the image
 const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
 
   return (
-    <div>
-      {/* Navbar */}
-      <nav className="navbar">
-        <div className="logo">BlackRock</div>
-        <ul className="nav-links">
-          {/* About Us with nested links */}
-          <li
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            className="about-us-item"
-          >
-            <a href="#">About Us</a>
-            {isHovered && (
-              <div className="hover-content">
-                <ul className="about-us-links">
-                  <li><a href="#">About BlackRock</a></li>
-                  <li><a href="#">Principles</a></li>
-                  <li><a href="#">Leadership</a></li>
-                  <li><a href="#">History</a></li>
-                  <li><a href="#">Global Impact</a></li>
-                  <li><a href="#">Contacts and Locations</a></li>
-                  <li><a href="#">Doing Business with BlackRock</a></li>
-                  <li><a href="#">Diversity, Equity, and Inclusion</a></li>
-                </ul>
-                {/* Image on the right side */}
-                <img
-                  src={aboutUsImage} 
-                  alt="About Us"
-                  className="hover-image"
-                />
+    <nav className="navbar">
+      {/* Logo */}
+      <div className="logo">BlackRock</div>
+
+      {/* Navigation Links */}
+      <ul className="nav-links">
+        {/* About Us Dropdown */}
+        <li
+          className="nav-item"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <a href="#">About Us</a>
+          {isHovered && (
+            <div className="dropdown-menu">
+              <ul className="dropdown-links">
+                <li><a href="#">About BlackRock</a></li>
+                <li><a href="#">Principles</a></li>
+                <li><a href="#">Leadership</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Global Impact</a></li>
+                <li><a href="#">Contacts and Locations</a></li>
+                <li><a href="#">Doing Business with BlackRock</a></li>
+                <li><a href="#">Diversity, Equity, and Inclusion</a></li>
+              </ul>
+              {/* Image and Additional Content */}
+              <div className="image-section">
+                <img src={aboutUsImage} alt="About Us" className="dropdown-image" />
+                {/* Content Below the Image */}
+                <div className="dropdown-content">
+                  <h3>BLACKROCK INVESTMENT INSTITUTE</h3>
+                  <p>Mega forces: An investment opportunity</p>
+                  <p>
+                    Explore the structural changes shaping investing now – and far in the future.
+                    Uncover the risks and seize the opportunities.
+                  </p>
+                  <a href="#" className="insights-link">Click to read our Insights</a>
+                </div>
               </div>
-            )}
-          </li>
-          <li><a href="#">Newsroom</a></li>
-          <li><a href="#">Insights</a></li>
-          <li><a href="#">Investor Relations</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-        {/* Search bar */}
-        <div className="search-bar">
-          <input type="text" placeholder="Search..." />
-          <i className="search-icon">&#128269;</i> {/* Unicode for magnifying glass */}
-        </div>
-      </nav>
-    </div>
+            </div>
+          )}
+        </li>
+
+        {/* Other Navbar Items */}
+        <li className="nav-item"><a href="#">Newsroom</a></li>
+        <li className="nav-item"><a href="#">Insights</a></li>
+        <li className="nav-item"><a href="#">Investor Relations</a></li>
+        <li className="nav-item"><a href="#">Corporate sustainability</a></li>
+        <li className="nav-item"><a href="#">Careers</a></li>
+      </ul>
+
+      {/* Search Bar */}
+      <div className="search-bar">
+        <input type="text" placeholder="Search..." />
+        <i className="search-icon">&#128269;</i> {/* Unicode for magnifying glass */}
+      </div>
+    </nav>
   );
 };
 

@@ -1,29 +1,34 @@
-/* Navbar styles */
+/* Navbar Container */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* Align items to the left */
   align-items: center;
-  padding: 20px 40px;
+  padding: 10px 20px; /* Reduced padding for tighter layout */
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo */
 .logo {
   font-size: 24px;
   font-weight: bold;
+  color: #000;
+  margin-right: 50px; /* Further reduced gap */
 }
 
+/* Navigation Links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 50px; /* Reduced gap between nav items */
+  margin-left: 0; /* Removed margin to bring links closer */
 }
 
-.nav-links li {
-  position: relative; /* Position for the hover content */
+.nav-item {
+  position: relative;
 }
 
-.nav-links li a {
+.nav-item a {
   text-decoration: none;
   color: black;
   font-weight: 500;
@@ -31,55 +36,91 @@
   transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
+.nav-item a:hover {
   color: blue;
 }
 
-/* Hover content styles */
-.hover-content {
+/* Rest of the CSS remains the same */
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
   position: absolute;
-  top: 100%; /* Positions the content right below the menu item */
+  top: 100%; /* Places dropdown just below the item */
   left: 0;
-  width: 400px; /* Increase width to accommodate links and image */
-  margin-top: 10px;
+  width: 700px; /* Adjusted container width */
   display: flex;
-  background-color: white; /* Background for the hover content */
+  background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  overflow: hidden; /* Prevent overflow */
+  padding: 20px; /* Adjusted padding for spacing */
+  z-index: 1000; /* Ensures it's on top of other elements */
 }
 
-/* Links in hover content */
-.about-us-links {
+.dropdown-links {
   list-style: none;
-  padding: 10px; /* Padding for links */
-  margin: 0; /* Remove default margin */
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column; /* Stack links vertically */
-  gap: 8px; /* Space between links */
+  flex-direction: column;
+  gap: 10px;
 }
 
-.about-us-links li a {
-  color: black; /* Link color */
-  text-decoration: none; /* Remove underline */
-  font-weight: 500; /* Font weight */
+.dropdown-links li a {
+  color: black;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.about-us-links li a:hover {
-  color: blue; /* Change color on hover */
+.dropdown-links li a:hover {
+  color: blue;
 }
 
-/* Hover image */
-.hover-image {
-  width: 200px; /* Fixed width for the image */
+/* Dropdown Image and Additional Content */
+.image-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px; /* Space between links and image section */
+}
+
+.dropdown-image {
+  width: 300px; /* Adjusted image width */
   height: auto; /* Maintain aspect ratio */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin-left: 20px; /* Space between links and image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; /* Space below the image */
 }
 
-/* Search bar styles */
+/* Dropdown Content Below the Image */
+.dropdown-content {
+  text-align: left;
+  max-width: 300px; /* Adjusted sub-container size */
+}
+
+.dropdown-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.dropdown-content p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.insights-link {
+  color: blue;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.insights-link:hover {
+  color: darkblue;
+}
+
+/* Search Bar */
 .search-bar {
   position: relative;
   display: flex;
