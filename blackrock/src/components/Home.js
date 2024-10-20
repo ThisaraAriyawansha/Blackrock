@@ -2,11 +2,13 @@ import React from 'react';
 import './CSS/Home.css'; // Importing the CSS file
 import Navbar from './Navbar';
 import blackrockLogo from '../image/blackrock-gip-logo-860x800.webp'; // Importing the image
+import SmallNavBar  from './SmallNavBar';
 
 const HomePage = () => {
    
   return (
     <div>
+      <SmallNavBar/>
 <Navbar/>
       {/* Main Content */}
       <div className="main-content">
