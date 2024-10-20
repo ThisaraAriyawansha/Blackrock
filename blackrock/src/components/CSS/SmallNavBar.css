@@ -1,0 +1,40 @@
+/* Container for horizontal navbar */
+.horizontal-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background */
+    padding: 15px 30px;
+    position: fixed; /* Keep navbar at the top */
+    width: 100%; /* Full width */
+    top: 0;
+    z-index: 1000; /* Stay on top */
+  }
+  
+  /* Styling for the links */
+  .horizontal-nav-container a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover effect */
+  .horizontal-nav-container a:hover {
+    color: #ffdd57; /* Highlight color on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .horizontal-nav-container a {
+      font-size: 14px;
+      margin: 0 10px;
+    }
+  
+    .horizontal-nav-container {
+      padding: 10px 20px;
+    }
+  }
+  
