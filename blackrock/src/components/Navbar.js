@@ -36,10 +36,15 @@ const Navbar = () => {
               </ul>
               {/* Image and Additional Content */}
               <div className="image-section">
-                <img src={aboutUsImage} alt="About Us" className="dropdown-image" />
+                <img
+                  src={aboutUsImage}
+                  alt="About Us"
+                  className="dropdown-image"
+                  style={{ width: '300px', height: '200px' }}
+                />
                 {/* Content Below the Image */}
                 <div className="dropdown-content">
-                  <h3>BLACKROCK INVESTMENT INSTITUTE</h3>
+                  <h5>BLACKROCK INVESTMENT INSTITUTE</h5>
                   <p>Mega forces: An investment opportunity</p>
                   <p>
                     Explore the structural changes shaping investing now – and far in the future.
@@ -60,10 +65,9 @@ const Navbar = () => {
         <li className="nav-item"><a href="#">Careers</a></li>
       </ul>
 
-      {/* Search Bar */}
-      <div className="search-bar">
-        <input type="text" placeholder="Search..." />
-        <i className="search-icon">&#128269;</i> {/* Unicode for magnifying glass */}
+      {/* Basic Search Icon */}
+      <div className="search-icon">
+        <i className="fas fa-search"></i> {/* Font Awesome search icon */}
       </div>
     </nav>
   );

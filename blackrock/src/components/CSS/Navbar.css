@@ -13,7 +13,8 @@
   font-size: 24px;
   font-weight: bold;
   color: #000;
-  margin-right: 50px; /* Further reduced gap */
+  margin-right: 100px; /* Further reduced gap */
+  margin-left: 25px;
 }
 
 /* Navigation Links */
@@ -25,7 +26,7 @@
 }
 
 .nav-item {
-  position: relative;
+  position: relative; /* Required for the pseudo-element */
 }
 
 .nav-item a {
@@ -33,14 +34,24 @@
   color: black;
   font-weight: 500;
   font-size: 16px;
-  transition: color 0.3s ease;
+  position: relative; /* Required for the pseudo-element */
 }
 
-.nav-item a:hover {
-  color: blue;
+.nav-item a::after {
+  content: '';
+  position: absolute;
+  width: 100%; /* Full width of the link */
+  height: 2px; /* Thickness of the underline */
+  left: 0;
+  bottom: -2px; /* Position it just below the text */
+  background-color: black; /* Black underline color */
+  transform: scaleX(0); /* Start scaled down */
+  transition: transform 0.3s ease; /* Smooth transition when expanding */
 }
 
-/* Rest of the CSS remains the same */
+.nav-item a:hover::after {
+  transform: scaleX(1); /* Expand to full width on hover */
+}
 
 /* Dropdown Menu Styling */
 .dropdown-menu {
@@ -65,86 +76,87 @@
   gap: 10px;
 }
 
+/* Dropdown Links Styling */
 .dropdown-links li a {
-  color: black;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  color: black; /* Text color */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
+/* No underline on hover */
 .dropdown-links li a:hover {
-  color: blue;
+  color: rgb(167, 167, 172); /* Change color on hover */
+  text-decoration: none; /* Ensure no underline on hover */
 }
 
-/* Dropdown Image and Additional Content */
+/* Optional: If there are any pseudo-elements that create an underline, remove them */
+.dropdown-links a::after {
+  display: none; /* Prevent the black line */
+}
+
+
+
+/* Updated Image Section Styling */
 .image-section {
   display: flex;
   flex-direction: column;
   margin-left: 20px; /* Space between links and image section */
+  align-items: center; /* Center content horizontally */
 }
 
 .dropdown-image {
   width: 300px; /* Adjusted image width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px; /* Space below the image */
+  height: 200px; /* Fixed height for a uniform look */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 12px; /* Softer rounded corners for a modern look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.dropdown-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
 /* Dropdown Content Below the Image */
 .dropdown-content {
-  text-align: left;
-  max-width: 300px; /* Adjusted sub-container size */
+  text-align: center;
+  max-width: 300px;
+  margin-top: 20px; /* Space between image and content */
 }
 
-.dropdown-content h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
+.dropdown-content h5 {
+  font-size: 12px; /* Slightly larger, modern font size */
+  font-weight: 1000;
+  color: #333; /* Darker shade for a professional feel */
+  margin-bottom: 10px;
 }
 
 .dropdown-content p {
   font-size: 14px;
-  margin: 5px 0;
+  color: #666; /* Light gray for secondary text */
+  margin-bottom: 10px;
+  line-height: 1.5; /* Better readability */
 }
 
 .insights-link {
-  color: blue;
+  color: #007bff; /* Professional blue for the link */
   text-decoration: none;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 15px;
   display: inline-block;
   transition: color 0.3s ease;
 }
 
 .insights-link:hover {
-  color: darkblue;
+  color: #0056b3; /* Darker blue on hover */
 }
 
-/* Search Bar */
-.search-bar {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.search-bar input {
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  font-size: 16px;
-  width: 200px;
-  outline: none;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.search-bar input:focus {
-  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
-}
-
+/* Basic Search Icon Styling */
 .search-icon {
-  position: absolute;
-  right: 10px;
-  font-size: 18px;
-  color: gray;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
   cursor: pointer;
+  margin-left: auto; /* Align search icon to the right */
+  margin-right: 140px; /* Adjust this value to increase right-side gap */
 }
