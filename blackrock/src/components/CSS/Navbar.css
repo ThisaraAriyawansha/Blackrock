@@ -69,13 +69,23 @@
 }
 
 .dropdown-links {
-  padding-top: 25px;
-  padding-left: 150px; /* Increased padding to create more left gap */
+  padding-top: 30px; /* Further reduced padding */
+  padding-left: 150px; /* Reduced padding to minimize the gap */
   list-style: none;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px; /* Space between links */
+  gap: 5px; /* Reduced space between links */
+  padding-right: 0px;
+}
+
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px; /* Significantly reduced margin to bring image closer */
+  align-items: center;
+  margin-top: -10px; /* Reduce the top margin if there's extra space */
 }
 
 
@@ -101,13 +111,7 @@
 
 
 
-/* Updated Image Section Styling */
-.image-section {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px; /* Space between links and image section */
-  align-items: center; /* Center content horizontally */
-}
+
 
 /* Image Styling */
 .dropdown-image {
