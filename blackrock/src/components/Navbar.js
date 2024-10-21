@@ -79,7 +79,7 @@ const Navbar = () => {
                   alt="Newsroom"
                   className="dropdown-image"
                   style={{ width: '400px', height: '150px' }}
-                />
+                /><table><tr><td>
                 <div className="dropdown-content">
                   <h5>BLACKROCK INVESTMENT INSTITUTE</h5>
                   <p className='dropdown-paragraph'>Mega forces: An investment opportunity</p>
@@ -90,7 +90,7 @@ const Navbar = () => {
                   <a href="#" className="insights-link">
                     <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
                   </a>
-                </div>
+                </div></td><td>
                 <div className="dropdown-content">
                   <h5>BLACKROCK INVESTMENT INSTITUTE</h5>
                   <p className='dropdown-paragraph'>Mega forces: An investment opportunity</p>
@@ -101,7 +101,9 @@ const Navbar = () => {
                   <a href="#" className="insights-link">
                     <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
                   </a>
-                </div>
+                </div></td>
+                </tr>
+                </table>
               </div>
             </div>
           )}
