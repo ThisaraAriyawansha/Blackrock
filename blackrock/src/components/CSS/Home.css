@@ -109,6 +109,7 @@ body {
   color: #000; /* Black heading */
 }
 
+
 .grid-item p {
   font-size: 1rem; /* Body text size */
   font-weight: 400; /* Normal weight */
@@ -165,3 +166,6 @@ body {
   margin-bottom: 33px; /* Adjust the spacing between the navbars here */
 }
 
+.small-content{
+  font-weight: bold;
+}

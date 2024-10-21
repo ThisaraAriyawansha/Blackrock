@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Logo */}
-      <div className="logo">BlackRock</div>
+      <div className="logo">BlackRock.</div>
 
       {/* Navigation Links */}
       <ul className="nav-links">
