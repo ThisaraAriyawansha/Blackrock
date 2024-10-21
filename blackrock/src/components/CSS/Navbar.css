@@ -83,9 +83,9 @@
 .image-section {
   display: flex;
   flex-direction: column;
-  margin-left: 0px; /* Significantly reduced margin to bring image closer */
-  align-items: center;
-  margin-top: -10px; /* Reduce the top margin if there's extra space */
+  align-items: flex-start; /* Align items to the left */
+  margin-left: 150px; /* Adjust left margin to your liking */
+  margin-top: 0px; /* Adjust top margin to fine-tune spacing */
 }
 
 
@@ -115,12 +115,11 @@
 
 /* Image Styling */
 .dropdown-image {
-  width: 800px; /* Adjusted width */
-  height: 150px; /* Adjusted height */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-  border-radius: 12px; /* Softer rounded corners for a modern look */
+  margin-left: 0px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+  margin-bottom: 20px; /* Add some space between the image and content */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  position: left; /* Allows for better placement control */
 }
 
 
