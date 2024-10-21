@@ -53,31 +53,36 @@
   transform: scaleX(1); /* Expand to full width on hover */
 }
 
-/* Dropdown Menu Styling */
 .dropdown-menu {
-  position: absolute;
-  top: 100%; /* Places dropdown just below the item */
-  left: 0;
-  width: 1000px; /* Adjusted container width */
+  min-height: 400px;
+  position: fixed; /* Positioned relative to the viewport */
+  top: 80x; /* Distance from the top */
+  left: 0px; /* Distance from the left of the screen */
+  width: 100%; /* Adjust width */
   display: flex;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  padding: 20px; /* Adjusted padding for spacing */
+  padding: 20px; /* Padding within the dropdown container */
+  padding-left: 50px; /* Add more padding to push contents to the right */
   z-index: 1000; /* Ensures it's on top of other elements */
 }
 
 .dropdown-links {
+  padding-top: 25px;
+  padding-left: 150px; /* Increased padding to create more left gap */
   list-style: none;
   margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px; /* Space between links */
 }
+
+
 
 /* Dropdown Links Styling */
 .dropdown-links li a {
+  font-size: 15px;
   color: black; /* Text color */
   text-decoration: none; /* No underline */
   transition: color 0.3s ease; /* Smooth color transition */
@@ -100,7 +105,7 @@
 .image-section {
   display: flex;
   flex-direction: column;
-  margin-left: 20px; /* Space between links and image section */
+  margin-left: 10px; /* Space between links and image section */
   align-items: center; /* Center content horizontally */
 }
 
