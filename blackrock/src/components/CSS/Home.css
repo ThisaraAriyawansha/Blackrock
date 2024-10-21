@@ -1,138 +1,167 @@
 /* Reset some default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif; /* Ensure consistency in font */
-    background-color: white; /* Background color of the body */
-    color: black; /* Default text color */
-    line-height: 1.6; /* Improve readability */
-  }
-  
-  
-  
-  /* Main content styles */
-  .main-content {
-    display: flex; /* Flexbox for layout */
-    flex-direction: row; /* Align items in a row */
-    padding: 60px 40px; /* Add padding */
-    align-items: center; /* Center items vertically */
-  }
-  
-  .main-content h1 {
-    font-size: 48px; /* Large title */
-    font-weight: bold; /* Bold title */
-    margin-bottom: 20px; /* Space below title */
-  }
-  
-  .main-content p {
-    font-size: 16px; /* Description text size */
-    color: rgb(0, 0, 0); /* Description color */
-    margin-bottom: 40px; /* Space below paragraph */
-    max-width: 500px; /* Limit the width for readability */
-  }
-  
-  /* Button styling */
-  .custom-button {
-    background-color: black; /* Button background color */
-    color: white; /* Button text color */
-    padding: 12px 24px; /* Button padding */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    display: inline-flex; /* Align text and arrow horizontally */
-    align-items: center; /* Center vertically */
-    position: relative; /* For positioning the underline */
-    transition: color 0.3s; /* Smooth text color transition */
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .custom-button .red-arrow {
-    color: red; /* Red arrow color */
-    margin-right: 10px; /* Add space between arrow and text */
-  }
+body {
+  font-family: 'Arial', sans-serif; /* Ensure consistency in font */
+  background-color: white; /* Background color of the body */
+  color: black; /* Default text color */
+  line-height: 1.6; /* Improve readability */
+}
 
-  /* Underline effect */
-  .custom-button::after {
-    content: ''; /* Empty content */
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px; /* Thickness of the underline */
-    width: 0%; /* Initially hidden */
-    background-color: red; /* Red underline */
-    transition: width 0.4s ease-in-out; /* Smooth running effect */
-  }
+/* Main content styles */
+.main-content {
+  display: flex; /* Flexbox for layout */
+  flex-direction: row; /* Align items in a row */
+  justify-content: space-between; /* Ensure space between content and image */
+  padding: 60px 40px; /* Add padding */
+  align-items: center; /* Center items vertically */
+}
 
-  .custom-button:hover::after {
-    width: 100%; /* Expand underline on hover */
-  }
+.main-content h1 {
+  font-size: 48px; /* Large title */
+  font-weight: bold; /* Bold title */
+  margin-bottom: 20px; /* Space below title */
+  line-height: 1.2; /* Adjust line height */
+}
 
-  
+.main-content p {
+  font-size: 16px; /* Description text size */
+  color: rgb(0, 0, 0); /* Description color */
+  margin-bottom: 40px; /* Space below paragraph */
+  max-width: 500px; /* Limit the width for readability */
+}
+
+/* Button styling */
+.custom-button {
+  background-color: black; /* Button background color */
+  color: white; /* Button text color */
+  padding: 12px 24px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: inline-flex; /* Align text and arrow horizontally */
+  align-items: center; /* Center vertically */
+  position: relative; /* For positioning the underline */
+  transition: color 0.3s; /* Smooth text color transition */
+}
+
+.custom-button .red-arrow {
+  color: red; /* Red arrow color */
+  margin-right: 10px; /* Add space between arrow and text */
+}
+
+/* Underline effect */
+.custom-button::after {
+  content: ''; /* Empty content */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px; /* Thickness of the underline */
+  width: 0%; /* Initially hidden */
+  background-color: red; /* Red underline */
+  transition: width 0.4s ease-in-out; /* Smooth running effect */
+}
+
+.custom-button:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
 /* Image section styles */
 .image-section {
-    flex: 1; /* Allow image section to take remaining space */
-    text-align: center; /* Center the image */
+  flex: 1; /* Allow image section to take remaining space */
+  text-align: center; /* Center the image */
+}
+
+.image-section img {
+  max-width: 100%; /* Responsive image */
+  width: 600px; /* Set a specific width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Grid layout styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 3rem; /* Space between grid items */
+  padding: 3rem; /* Padding around the grid */
+  background-color: #fff; /* White background */
+}
+
+.grid-item {
+  padding: 2rem 0; /* Padding for each grid item */
+}
+
+.grid-item-wide {
+  grid-column: span 2; /* Make wide items span two columns */
+}
+
+.grid-item h2 {
+  font-size: 1.75rem; /* Heading size */
+  font-weight: 700; /* Bold text */
+  line-height: 1.3; /* Line height */
+  margin-bottom: 1rem; /* Space below heading */
+  color: #000; /* Black heading */
+}
+
+.grid-item p {
+  font-size: 1rem; /* Body text size */
+  font-weight: 400; /* Normal weight */
+  line-height: 1.5; /* Line height */
+  color: #333; /* Dark gray text */
+  margin-bottom: 1rem; /* Space below paragraph */
+}
+
+.grid-item hr {
+  border: 0;
+  border-top: 1px solid #000; /* Black horizontal line */
+  margin-top: 1.5rem; /* Space above the line */
+}
+
+/* Footer styles */
+.footer {
+  text-align: center; /* Center text in footer */
+  padding: 20px 0; /* Padding for footer */
+  background-color: #f8f8f8; /* Light gray background */
+  font-size: 14px; /* Footer text size */
+  color: gray; /* Footer text color */
+  position: relative; /* Relative positioning */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%; /* Full width */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .main-content {
+      flex-direction: column; /* Stack content vertically on small screens */
+      padding: 20px; /* Reduce padding */
   }
-  
-  .image-section img {
-    max-width: 100%; /* Responsive image */
-    width: 600px; /* Set a specific width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto; /* Center the image horizontally */
-  }
-  
-  
-  /* Footer styles */
-  .footer {
-    text-align: center; /* Center text in footer */
-    padding: 20px 0; /* Padding for footer */
-    background-color: #f8f8f8; /* Same color as navbar */
-    font-size: 14px; /* Font size for footer */
-    color: gray; /* Footer text color */
-    position: relative; /* Relative positioning */
-    bottom: 0; /* Stick to the bottom */
-    width: 100%; /* Full width */
-  }
-  
+
   .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 3rem;
-    padding: 3rem;
-    background-color: #fff;
+      grid-template-columns: 1fr; /* Single column layout for small screens */
+      gap: 1.5rem; /* Reduced gap */
   }
-  
-  .grid-item {
-    padding: 2rem 0;
+
+  .main-content h1 {
+      font-size: 36px; /* Smaller heading size */
   }
-  
-  .grid-item-wide {
-    grid-column: span 2; /* Make these items take up two columns */
+
+  .image-section img {
+      width: 100%; /* Full width image */
   }
-  
-  .grid-item h2 {
-    font-size: 1.75rem; /* Heading size */
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 1rem;
-    color: #000;
+
+  .footer {
+      font-size: 12px; /* Smaller footer text */
   }
-  
-  .grid-item p {
-    font-size: 1rem; /* Body text size */
-    font-weight: 400;
-    line-height: 1.5;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .grid-item hr {
-    border: 0;
-    border-top: 1px solid #000; /* Black line */
-    margin-top: 1.5rem;
-  }
-  
+}
+
+
+.navbar-gap {
+  margin-bottom: 33px; /* Adjust the spacing between the navbars here */
+}
+
