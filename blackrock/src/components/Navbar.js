@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Logo */}
-      <div className="logo">BlackRock.</div>
+      <div className="logo">BlackRock</div>
 
       {/* Navigation Links */}
       <ul className="nav-links">
@@ -45,12 +45,12 @@ const Navbar = () => {
                 {/* Content Below the Image */}
                 <div className="dropdown-content">
                   <h5>BLACKROCK INVESTMENT INSTITUTE</h5>
-                  <p>Mega forces: An investment opportunity</p>
+                  <p className='dropdown-paragraph'>Mega forces: An investment opportunity</p>
                   <p>
                     Explore the structural changes shaping investing now – and far in the future.
                     Uncover the risks and seize the opportunities.
                   </p>
-                  <a href="#" className="insights-link">Click to read our Insights</a>
+                  <a href="#" className="insights-link"><p className='links'><span className="red-arrow">{'>'}</span>Click to read our Insights</p></a>
                 </div>
               </div>
             </div>

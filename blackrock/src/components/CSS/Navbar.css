@@ -128,13 +128,13 @@
 .dropdown-content h5 {
   font-size: 12px; /* Slightly larger, modern font size */
   font-weight: 1000;
-  color: #333; /* Darker shade for a professional feel */
+  color: #000000; /* Darker shade for a professional feel */
   margin-bottom: 10px;
 }
 
 .dropdown-content p {
   font-size: 14px;
-  color: #666; /* Light gray for secondary text */
+  color: #000000; /* Light gray for secondary text */
   margin-bottom: 10px;
   line-height: 1.5; /* Better readability */
 }
@@ -159,4 +159,30 @@
   cursor: pointer;
   margin-left: auto; /* Align search icon to the right */
   margin-right: 140px; /* Adjust this value to increase right-side gap */
+}
+
+.dropdown-paragraph{
+  font-weight: bold;
+}
+
+.red-arrow {
+  color: red; /* Red arrow color */
+  margin-right: 10px; /* Add space between arrow and text */
+}
+
+.insights-link {
+  font-weight: bold;
+  text-decoration: none; /* Remove underline from link */
+  color: black; /* Change this to your desired color */
+}
+
+.insights-link:hover {
+  color: rgb(0, 0, 0); /* Change text color on hover, optional */
+  border-bottom: 2px solid rgb(0, 0, 0); /* Adds a horizontal line on hover */
+  padding-bottom: 2px; /* Add some spacing between text and line */
+}
+
+
+.links{
+  font-weight: bold;
 }
