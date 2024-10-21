@@ -3,10 +3,10 @@ import './CSS/Navbar.css'; // Import the CSS file
 import aboutUsImage from '../image/mega-forces-banner.jpg'; // Import the image
 
 const Navbar = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState(null);
 
-  const handleMouseEnter = () => setIsHovered(true);
-  const handleMouseLeave = () => setIsHovered(false);
+  const handleMouseEnter = (item) => setHoveredItem(item);
+  const handleMouseLeave = () => setHoveredItem(null);
 
   return (
     <nav className="navbar">
@@ -18,11 +18,12 @@ const Navbar = () => {
         {/* About Us Dropdown */}
         <li
           className="nav-item"
-          onMouseEnter={handleMouseEnter}
+          onMouseEnter={() => handleMouseEnter('aboutUs')}
           onMouseLeave={handleMouseLeave}
         >
           <a href="#">About Us</a>
-          {isHovered && (
+
+          {hoveredItem === 'aboutUs' && (
             <div className="dropdown-menu">
               <ul className="dropdown-links">
                 <li><a href="#">About BlackRock</a></li>
@@ -40,9 +41,8 @@ const Navbar = () => {
                   src={aboutUsImage}
                   alt="About Us"
                   className="dropdown-image"
-                  style={{ width: '300px', height: '200px' }}
+                  style={{ width: '400px', height: '150px' }}
                 />
-                {/* Content Below the Image */}
                 <div className="dropdown-content">
                   <h5>BLACKROCK INVESTMENT INSTITUTE</h5>
                   <p className='dropdown-paragraph'>Mega forces: An investment opportunity</p>
@@ -50,7 +50,57 @@ const Navbar = () => {
                     Explore the structural changes shaping investing now – and far in the future.
                     Uncover the risks and seize the opportunities.
                   </p>
-                  <a href="#" className="insights-link"><p className='links'><span className="red-arrow">{'>'}</span>Click to read our Insights</p></a>
+                  <a href="#" className="insights-link">
+                    <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          )}
+        </li>
+
+        {/* Newsroom Dropdown */}
+        <li
+          className="nav-item"
+          onMouseEnter={() => handleMouseEnter('newsroom')}
+          onMouseLeave={handleMouseLeave}
+        >
+          <a href="#">Newsroom</a>
+
+          {hoveredItem === 'newsroom' && (
+            <div className="dropdown-menu">
+              <ul className="dropdown-links">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Media Contacts</a></li>
+              </ul>
+              <div className="image-section">
+                <img
+                  src={aboutUsImage}
+                  alt="Newsroom"
+                  className="dropdown-image"
+                  style={{ width: '400px', height: '150px' }}
+                />
+                <div className="dropdown-content">
+                  <h5>BLACKROCK INVESTMENT INSTITUTE</h5>
+                  <p className='dropdown-paragraph'>Mega forces: An investment opportunity</p>
+                  <p>
+                    Explore the structural changes shaping investing now – and far in the future.
+                    Uncover the risks and seize the opportunities.
+                  </p>
+                  <a href="#" className="insights-link">
+                    <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
+                  </a>
+                </div>
+                <div className="dropdown-content">
+                  <h5>BLACKROCK INVESTMENT INSTITUTE</h5>
+                  <p className='dropdown-paragraph'>Mega forces: An investment opportunity</p>
+                  <p>
+                    Explore the structural changes shaping investing now – and far in the future.
+                    Uncover the risks and seize the opportunities.
+                  </p>
+                  <a href="#" className="insights-link">
+                    <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -58,10 +108,9 @@ const Navbar = () => {
         </li>
 
         {/* Other Navbar Items */}
-        <li className="nav-item"><a href="#">Newsroom</a></li>
         <li className="nav-item"><a href="#">Insights</a></li>
         <li className="nav-item"><a href="#">Investor Relations</a></li>
-        <li className="nav-item"><a href="#">Corporate sustainability</a></li>
+        <li className="nav-item"><a href="#">Corporate Sustainability</a></li>
         <li className="nav-item"><a href="#">Careers</a></li>
       </ul>
 
