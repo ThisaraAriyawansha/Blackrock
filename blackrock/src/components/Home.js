@@ -14,7 +14,7 @@ const HomePage = () => {
       {/* Main Content */}
       <div className="main-content">
         <div>
-          <h4>Private Markets</h4>
+          <h4 className='small-content'>Private Markets</h4><br/>
           <h1>Global<br /> Infrastructure<br /> Partners, a part of <br />BlackRock</h1>
           <p>
             BlackRock and Global Infrastructure Partners announce the successful completion of BlackRock’s acquisition of GIP.
