@@ -36,38 +36,41 @@ const HomePage = () => {
         <div className="grid-item">
           <h2>Transforming <br /> BlackRock for our<br /> clients</h2>
           <p>Read more about the changes we’re making to help our clients meet their investment, portfolio, and business needs.</p>
-          <hr />
         </div>
 
         <div className="grid-item">
           <h2>Investing in the<br /> transition to a low-<br />carbon economy</h2>
           <p>Clients are asking for our perspectives on the long-term mega forces – including the transition to a low-carbon economy.</p>
-          <hr />
         </div>
 
         <div className="grid-item">
           <h2>Advancing shareholder<br /> democracy</h2>
-          <p>We are committed to a future where all investors can participate in proxy voting if they choose. Find out how we are delivering on this through BlackRock Voting Choice.</p>
-          <hr />
+          <p>We are committed to a future where all investors can participate in proxy voting if they choose. 
+            Find out how we are delivering on this through BlackRock Voting Choice.</p>
         </div>
-
-        <div className="grid-item grid-item-wide">
-          <h2>Implications of an aging population</h2>
-          <p>We track the economic impact of aging – and the investment opportunities and<br />
-            risks it brings. Fewer people of working age limits how much countries can <br />
-            produce and grow – unless they can find ways to adapt.</p>
-          <hr />
         </div>
-
-        <div className="grid-item grid-item-wide">
-          <h2>Weekly market commentary</h2>
-          <p>Stay tuned for insights on hot topics, the latest trends in the financial market and<br />
-            our broad asset class views via the Weekly commentary by the BlackRock<br />
-            Investment Institute. Read the latest market commentary.</p>
-          <hr />
-        </div>
+        <table>
+  <tr>
+    <td>
+      <div className="grid-item grid-item-wide">
+        <h2>Implications of an aging population</h2>
+        <p>We track the economic impact of aging – and the investment opportunities and<br />
+          risks it brings. Fewer people of working age limits how much countries can <br />
+          produce and grow – unless they can find ways to adapt.</p>
       </div>
+    </td>
+    <td>
+      <div className="grid-item grid-item-wide">
+        <h2>Weekly market commentary</h2>
+        <p>Stay tuned for insights on hot topics, the latest trends in the financial market and<br />
+          our broad asset class views via the Weekly commentary by the BlackRock<br />
+          Investment Institute. Read the latest market commentary.</p>
+      </div>
+    </td>
+  </tr>
+</table>
 
+      
       {/* Footer */}
       <div className="footer">
         &copy; {new Date().getFullYear()} BlackRock. All rights reserved.
