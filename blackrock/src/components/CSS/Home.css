@@ -308,54 +308,93 @@ iframe {
 
 
 /* Info Section */
-
 .info-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Space between the two main sections */
   background-color: #fff;
-  padding: 20px;
+  padding: 70px;
   border-top: 3px solid #ffcc00; /* Yellow border on top */
 }
 
 .info-box {
-  width: 45%; /* Two boxes side by side, leaving some space between them */
-  text-align: left;
+  width: 50%; /* Each box takes up 50% of the parent */
+  display: flex; /* Use flexbox for layout */
+}
+
+.info-content {
+  display: flex; /* Flex for content inside each box */
+  width: 100%; /* Full width of info-box */
 }
 
 .icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 15px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 120px; /* Set the desired width */
+  height: 120px; /* Set the desired height */
+  margin-right: 50px; /* Space between icon and text */
+  background-size: contain; /* Ensure the icon fits within the specified size */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
+
 .corporate-icon {
-  background-image: url('../../image/BLK_icn_ideas_bulb.svg'); /* Replace with the exact image path */
+  background-image: url('../../image/BLK_icn_people.svg'); /* Replace with the exact image path */
 }
 
 .stewardship-icon {
-  background-image: url('../../image/BLK_icn_people.svg'); /* Replace with the exact image path */
+  background-image: url('../../image/BLK_icn_ideas_bulb.svg'); /* Replace with the exact image path */
+
+}
+
+.text-content {
+  width: 70%; /* Text content takes up 70% of the info-content */
 }
 
 h3 {
   font-size: 1.25em;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin: 0 0 10px; /* Adjust margins for better alignment */
   color: #333;
 }
 
 p {
   font-size: 0.95em;
   color: #333;
+  margin: 0 0 10px; /* Adjust margins for better alignment */
 }
 
-.learn-more {
-  color: #e63946; /* Red color for the Learn more link */
+/* Button styling */
+.info-button {
   font-weight: bold;
-  text-decoration: none;
+  background-color: invisisble; /* Button background color */
+  color: rgb(0, 0, 0); /* Button text color */
+  padding: 12px 24px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: inline-flex; /* Align text and arrow horizontally */
+  align-items: center; /* Center vertically */
+  position: relative; /* For positioning the underline */
+  transition: color 0.3s; /* Smooth text color transition */
 }
 
-.learn-more:hover {
-  text-decoration: underline;
+.info-button .red-arrow {
+  color: red; /* Red arrow color */
+  margin-right: 10px; /* Add space between arrow and text */
+}
+
+/* Underline effect */
+.info-button::after {
+  content: ''; /* Empty content */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px; /* Thickness of the underline */
+  width: 0%; /* Initially hidden */
+  background-color: red; /* Red underline */
+  transition: width 0.4s ease-in-out; /* Smooth running effect */
+}
+
+.info-button:hover::after {
+  width: 100%; /* Expand underline on hover */
 }

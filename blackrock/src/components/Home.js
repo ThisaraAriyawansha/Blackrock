@@ -98,21 +98,38 @@ const HomePage = () => {
 
 
 
-<div class="info-section">
+    <div class="info-section">
   <div class="info-box">
-    <div class="icon corporate-icon"></div>
-    <h3>Corporate sustainability</h3>
-    <p>We focus on the long-term sustainability of BlackRock so we can continue to deliver value to our clients, shareholders, employees, and communities.</p>
-    <a href="#" class="learn-more">Learn more</a>
+    <div class="info-content">
+      <div class="icon corporate-icon"></div>
+      <div class="text-content">
+        <h3>Corporate sustainability</h3>
+        <p>We focus on the long-term sustainability of BlackRock so <br/>
+        we can continue to deliver value to our clients, <br/>
+        shareholders, employees, and communities.</p>
+        <button className="info-button">
+            <span className="red-arrow">{'>'}</span> Learn more
+          </button>
+                </div>
+    </div>
   </div>
   
   <div class="info-box">
-    <div class="icon stewardship-icon"></div>
-    <h3>Investment stewardship</h3>
-    <p>We engage with companies to inform our voting and promote sound corporate governance that is consistent with long-term financial value creation.</p>
-    <a href="#" class="learn-more">Learn more</a>
+    <div class="info-content">
+      <div class="icon stewardship-icon"></div>
+      <div class="text-content">
+        <h3>Investment stewardship</h3>
+        <p>We engage with companies to inform our voting and promote sound<br/>
+         corporate governance that is consistent<br/> with long-term financial value creation.</p>
+        <button className="info-button">
+            <span className="red-arrow">{'>'}</span> Learn more
+          </button>    
+            </div>
+    </div>
   </div>
 </div>
+
+
 
 
     
