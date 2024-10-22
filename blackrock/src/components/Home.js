@@ -50,7 +50,7 @@ const HomePage = () => {
           <p>We are committed to a future where all investors can participate in proxy voting if they choose. Find out how we are delivering on this through BlackRock Voting Choice.</p>
           <hr />
         </div>
-        <table><tr><td>
+
         <div className="grid-item grid-item-wide">
           <h2>Implications of an aging population</h2>
           <p>We track the economic impact of aging – and the investment opportunities and<br />
@@ -58,7 +58,7 @@ const HomePage = () => {
             produce and grow – unless they can find ways to adapt.</p>
           <hr />
         </div>
-        </td><td>
+
         <div className="grid-item grid-item-wide">
           <h2>Weekly market commentary</h2>
           <p>Stay tuned for insights on hot topics, the latest trends in the financial market and<br />
@@ -66,9 +66,6 @@ const HomePage = () => {
             Investment Institute. Read the latest market commentary.</p>
           <hr />
         </div>
-        </td>
-        </tr>
-        </table>
       </div>
 
       {/* Footer */}

@@ -98,10 +98,8 @@ body {
 }
 
 .grid-item-wide {
-  min-width: 100%;
+  grid-column: span 2; /* Make wide items span two columns */
 }
-
-
 
 .grid-item h2 {
   font-size: 1.75rem; /* Heading size */
