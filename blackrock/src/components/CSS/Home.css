@@ -169,3 +169,56 @@ body {
 .small-content{
   font-weight: bold;
 }
+
+
+table {
+  width: 100%; /* Make the table take full width */
+  border-collapse: separate; /* Allows for padding and gaps */
+  border-spacing: 20px; /* Add space between table cells */
+}
+
+td {
+  padding: 20px; /* Add padding inside each cell */
+}
+
+
+.grid-item {
+  position: relative; /* Enable positioning for the pseudo-elements */
+  padding: 2rem 0; /* Padding for each grid item */
+  overflow: hidden; /* Ensure pseudo-elements stay within bounds */
+}
+
+.grid-item::before {
+  content: ''; /* Empty content */
+  position: absolute; /* Position it relative to the grid item */
+  left: 0; /* Align it to the left */
+  bottom: 0; /* Position it at the bottom */
+  height: 2px; /* Thickness of the normal black line */
+  width: 100%; /* Full width */
+  background-color: black; /* Normal line color */
+}
+
+.grid-item::after {
+  content: ''; /* Empty content */
+  position: absolute; /* Position it relative to the grid item */
+  left: 0; /* Align it to the left */
+  bottom: 0; /* Position it at the bottom */
+  height: 4px; /* Thickness of the running red line */
+  width: 100%; /* Full width */
+  background-color: red; /* Red color */
+  transform: translateX(-100%); /* Start off-screen to the left */
+  animation: none; /* No animation initially */
+}
+
+.grid-item:hover::after {
+  animation: runLine 0.5s forwards; /* Trigger animation on hover */
+}
+
+@keyframes runLine {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+  }
+  100% {
+    transform: translateX(0); /* Move to the right */
+  }
+}
