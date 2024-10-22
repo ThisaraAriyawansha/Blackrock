@@ -71,10 +71,31 @@ const HomePage = () => {
 </table>
 
 
-<div className='yellow-content'>
-  
+<div class="yellow-container">
+        <div class="yellow-left">
+            <h2 className='yelloh2'>About BlackRock</h2>
+            <p className='yellowp'>
+                BlackRock is one of the world’s leading providers of investment, advisory, and risk<br/>management solutions. 
+                We are a fiduciary to our clients. We’re investing for the<br/> future on behalf of our clients, inspiring our 
+                employees, and supporting our local<br/> communities. Watch the video to learn more.
+            </p>
+            <button className="yellow-button">
+            <span className="black-arrow">{'>'}</span> Learn more
+          </button>
+        </div>
+  {/* Right Part: Video Section */}
+  <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <video
+        controls
+        style={{ maxWidth: '100%', height: 'auto',width: '500px', border: 'none' }}
+    >
+        <source src={`${process.env.PUBLIC_URL}/BLK_SOSC_Investor_Day-653.720p.wide.mp4`} type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
 </div>
-      
+
+    </div>
+    
       {/* Footer */}
       <div className="footer">
         &copy; {new Date().getFullYear()} BlackRock. All rights reserved.

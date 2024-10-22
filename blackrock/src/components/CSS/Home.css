@@ -224,6 +224,84 @@ td {
 }
 
 
-.yellow-content{
-  
+.yellow-container {
+  background-color: rgb(242, 181, 38); /* Yellow background */
+  display: flex; /* Flexbox for equal divisions */
+  width: 100%; /* Full width */
+  height: 400px; /* Full height of the viewport */
 }
+
+.yellow-left, .yellow-right {
+  flex: 1; /* Each part takes up 50% of the width */
+  padding: 20px; /* Padding for the content */
+}
+
+.yellow-left {
+  margin-left: 50px;
+  display: flex; /* Flexbox for centering */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center vertically */
+  align-items: left; /* Center horizontally */
+}
+
+.yellow-right {
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.yelloh2 {
+  font-weight: bold;
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 2rem; /* Size of the heading */
+}
+
+.yellowp {
+  margin-bottom: 20px; /* Space below the paragraph */
+  font-size: 15px; /* Size of the paragraph */
+  text-align: left; /* Center the text */
+}
+
+iframe {
+  max-width: 100%; /* Responsive video */
+  height: 100%; /* Full height */
+  border: none; /* No border */
+}
+
+/* Button styling */
+.yellow-button {
+  font-weight: bold;
+  background-color: transparent; /* Changed to transparent instead of invisible */
+  color: rgb(0, 0, 0); /* Button text color */
+  padding: 12px 24px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: inline-flex; /* Align text and arrow horizontally */
+  align-items: center; /* Center vertically */
+  position: relative; /* For positioning the underline */
+  transition: color 0.3s; /* Smooth text color transition */
+}
+
+.yellow-button .black-arrow {
+  color: rgb(0, 0, 0); /* Arrow color */
+  margin-right: 10px; /* Add space between arrow and text */
+}
+
+/* Underline effect */
+.yellow-button::after {
+  content: ''; /* Empty content */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px; /* Thickness of the underline */
+  width: 0%; /* Initially hidden */
+  background-color: rgb(0, 0, 0); /* Underline color */
+  transition: width 0.4s ease-in-out; /* Smooth running effect */
+}
+
+.yellow-button:hover::after {
+  width: 130px; /* Expand underline on hover */
+}
+
