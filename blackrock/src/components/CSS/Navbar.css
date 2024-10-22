@@ -54,19 +54,28 @@
 }
 
 .dropdown-menu {
-  min-height: 400px;
-  position: fixed; /* Positioned relative to the viewport */
-  top: 80x; /* Distance from the top */
-  left: 0px; /* Distance from the left of the screen */
-  width: 100%; /* Adjust width */
   display: flex;
+  align-items: flex-start; /* Align items vertically to the top */
+  justify-content: flex-start; /* Align items horizontally to the left */
+  
+  position: fixed; /* Positioned relative to the viewport */
+  top: 75px; /* Distance from the top */
+  left: 0px; /* Distance from the left of the screen */
+  
+  width: 100%; /* Adjust width */
+  min-height: 400px; /* Set a minimum height */
+  
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  
   padding: 20px; /* Padding within the dropdown container */
   padding-left: 50px; /* Add more padding to push contents to the right */
+  
   z-index: 1000; /* Ensures it's on top of other elements */
 }
+
+
 
 .dropdown-links {
   padding-top: 30px; /* Further reduced padding */
@@ -76,17 +85,62 @@
   display: flex;
   flex-direction: column;
   gap: 5px; /* Reduced space between links */
-  padding-right: 0px;
+  margin-right: 0px;
 }
 
 
+/* Image and Content Wrapper */
 .image-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack image and content vertically */
   align-items: flex-start; /* Align items to the left */
   margin-left: 150px; /* Adjust left margin to your liking */
   margin-top: 0px; /* Adjust top margin to fine-tune spacing */
 }
+
+/* Image Styling with Absolute Positioning */
+.dropdown-image {
+  position: absolute; /* Makes the image position relative to its parent */
+  top: 50px; /* Adjust the top position as needed */
+  left: 500px; /* Adjust the left position as needed */
+  width: 300px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space below the image */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+
+/* Content below the image */
+.dropdown-content {
+  position: absolute; /* Absolute positioning to move freely */
+  
+  /* Adjust the top, left, bottom, or right values as needed */
+  top: 200px; /* Adjust this value to move the dropdown-content vertically */
+  left: 490px; /* Adjust this value to move the dropdown-content horizontally */
+  
+  width: 600px; /* Set desired width */
+  padding: 10px;
+  z-index: 1001;
+
+  text-align: left; /* Align text to the left */
+}
+
+
+.dropdown-content h5 {
+  font-size: 12px;
+  font-weight: 1000;
+  color: #000000; /* Darker shade for a professional feel */
+  margin-bottom: 10px;
+}
+
+.dropdown-content p {
+  font-size: 14px;
+  color: #000000; /* Darker color for better readability */
+  margin-bottom: 10px;
+  line-height: 1.5; /* Improve text readability */
+}
+
 
 
 
@@ -110,42 +164,6 @@
 }
 
 
-
-
-
-/* Image Styling */
-.dropdown-image {
-  margin-left: 0px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
-  margin-bottom: 20px; /* Add some space between the image and content */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
-  position: left; /* Allows for better placement control */
-}
-
-
-/* Add any other styling here */
-
-
-/* Dropdown Content Below the Image */
-.dropdown-content {
-  text-align: left;
-  max-width: 400px;
-  margin-top: 20px; /* Space between image and content */
-}
-
-.dropdown-content h5 {
-  font-size: 12px; /* Slightly larger, modern font size */
-  font-weight: 1000;
-  color: #000000; /* Darker shade for a professional feel */
-  margin-bottom: 10px;
-}
-
-.dropdown-content p {
-  font-size: 14px;
-  color: #000000; /* Light gray for secondary text */
-  margin-bottom: 10px;
-  line-height: 1.5; /* Better readability */
-}
 
 .insights-link {
   color: #007bff; /* Professional blue for the link */
@@ -193,4 +211,42 @@
 
 .links{
   font-weight: bold;
+}
+
+.dropdown-content2 {
+  position: absolute; /* Allows positioning anywhere */
+  top: 50px; /* Adjust this value to set vertical position */
+  left: 1000px; /* Adjust this value to set horizontal position */
+  width: 400px; /* Set desired width */
+  padding: 10px;
+  z-index: 1002; /* Ensure it's above other elements */
+  text-align: left; /* Align text to the left */
+
+}
+
+
+.vertical-line {
+  position: absolute; /* Use absolute positioning */
+  left: 980px; /* Position from the left */
+  top: 50px; /* Position from the top */
+  width: 1px; /* Width of the vertical line */
+  height: 300px; /* Height of the vertical line */
+  background-color: rgb(198, 190, 190); /* Color of the line */
+}
+
+
+.content2{
+  font-size: 12px;
+}
+
+
+.content2-link{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.link-bold {
+  font-weight: bold; /* Makes the text bold */
+  text-decoration: none; /* Optional: Removes underline */
+  color: black; /* Optional: Sets the text color */
 }
