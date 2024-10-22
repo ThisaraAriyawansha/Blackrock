@@ -70,6 +70,10 @@ const HomePage = () => {
   </tr>
 </table>
 
+
+<div className='yellow-content'>
+  
+</div>
       
       {/* Footer */}
       <div className="footer">
