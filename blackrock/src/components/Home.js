@@ -3,6 +3,7 @@ import './CSS/Home.css'; // Importing the CSS file
 import Navbar from './Navbar';
 import blackrockLogo from '../image/blackrock-gip-logo-860x800.webp'; // Importing the image
 import SmallNavBar  from './SmallNavBar';
+import Footer from './Footer';
 
 const HomePage = () => {
   return (
@@ -129,14 +130,11 @@ const HomePage = () => {
   </div>
 </div>
 
-
+<Footer/>
 
 
     
-      {/* Footer */}
-      <div className="footer">
-        &copy; {new Date().getFullYear()} BlackRock. All rights reserved.
-      </div>
+    
     </div>
   );
 };
