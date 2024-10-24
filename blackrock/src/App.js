@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import SmallNavbar from './components/SmallNavBar'
 import Footer from './components/Footer';
+import Content from './components/FooterContents';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/footer" element={<Footer />} />
           <Route path="/smallNavbar" element={<SmallNavbar />} />
+          <Route path="/content" element={<Content />} />
+
 
         </Routes>
       </div>

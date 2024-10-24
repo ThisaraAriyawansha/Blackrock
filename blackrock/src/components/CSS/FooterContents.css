@@ -1,0 +1,28 @@
+.legal-disclaimer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff; /* Background can be adjusted */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  .legal-disclaimer-container p {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .legal-disclaimer-container strong {
+    font-weight: bold;
+  }
+  
+  .legal-disclaimer-container a {
+    color: #0056b3; /* Link color */
+    text-decoration: none;
+  }
+  
+  .legal-disclaimer-container a:hover {
+    text-decoration: underline;
+  }
