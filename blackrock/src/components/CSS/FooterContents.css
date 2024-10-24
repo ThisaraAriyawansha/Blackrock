@@ -1,8 +1,10 @@
 .legal-disclaimer-container {
-    max-width: 1000px;
+    max-width: auto;
     margin: 0 auto;
-    padding: 40px;
-    background-color: #fff; /* Background can be adjusted */
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    background-color: #fff;
     font-family: 'Arial', sans-serif;
     color: #333;
     font-size: 14px;
@@ -19,7 +21,7 @@
   }
   
   .legal-disclaimer-container a {
-    color: #0056b3; /* Link color */
+    color: #0056b3;
     text-decoration: none;
   }
   
