@@ -124,17 +124,7 @@ body {
   margin-top: 1.5rem; /* Space above the line */
 }
 
-/* Footer styles */
-.footer {
-  text-align: center; /* Center text in footer */
-  padding: 20px 0; /* Padding for footer */
-  background-color: #f8f8f8; /* Light gray background */
-  font-size: 14px; /* Footer text size */
-  color: gray; /* Footer text color */
-  position: relative; /* Relative positioning */
-  bottom: 0; /* Stick to the bottom */
-  width: 100%; /* Full width */
-}
+
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
