@@ -134,10 +134,7 @@ const HomePage = () => {
 <Footer/>
 
 <Content/>
-    
-      <div className="footer">
-        &copy; {new Date().getFullYear()} BlackRock. All rights reserved.
-      </div>
+
     </div>
   );
 };
