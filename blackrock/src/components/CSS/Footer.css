@@ -1,18 +1,21 @@
 .footer {
-    background-color: #111;
     color: #fff;
-    padding: 50px 20px;
+  }
+  
+  /* Top section of footer (with columns) */
+  .footer-top {
+    background-color: #111; /* Color for the top row */
+    padding: 90px 20px;
   }
   
   .footer-sections {
     margin-left: 60px;
     margin-right: 60px;
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 30px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #4a4949;
   }
   
   .footer-column {
@@ -33,38 +36,64 @@
   }
   
   .footer-column ul li {
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 8px;
-    color: #999;
+    color: #ffffff;
   }
   
   .footer-column ul li:hover {
     color: #fff;
   }
   
+  /* Bottom section of footer */
   .footer-bottom {
-    padding: 20px 0;
+    width: 100%;
+    background-color: #000000; /* Color for the bottom row */
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 90px 20px;
+    position: relative; /* Enable positioning for the vertical line */
   }
   
-  .footer-bottom p {
+  /* Left 40% and right 60% layout for footer-bottom */
+  .footer-bottom-left {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-right: 20px;
+    margin-top: 60px;
+  }
+  
+  .footer-bottom-right {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding-left: 100px;
+  }
+  
+  .footer-bottom-left p {
+    margin-left: 60px;
+    font-size: 16px;
+    color: #ffffff;
     max-width: 800px;
-    text-align: center;
-    font-size: 14px;
-    color: #aaa;
   }
   
-  .footer-links {
+  .vertical-line-Footer {
+    width: 1px; /* Width of the vertical line */
+    background-color: #7e7a7a; /* Color of the vertical line */
+    height: 80%; /* Full height of the footer */
+    position: absolute; /* Absolute positioning */
+    left: 45%; /* Position it exactly at the 40% mark */
+    top: 50PX; /* Start from the top */
+
+  }
+  
+  .legal-links {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
   }
   
   .legal-links h3 {
-    color: #f2f2f2;
+    color: #ff0000;
     margin-bottom: 10px;
+    font-size: 14px;
   }
   
   .legal-links ul {
@@ -73,25 +102,34 @@
   }
   
   .legal-links ul li {
-    color: #999;
-    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
     margin-bottom: 8px;
   }
   
   .legal-links ul li:hover {
     color: #fff;
   }
-
-  .Footer-h1{
+  
+  /* Title for the footer */
+  .Footer-h1 {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
     margin-left: 70px;
   }
-
+  
+  /* Horizontal rule style */
   .Footer-hr {
-    height: 0.5px; /* Adjust line height */
-    background-color: #7e7a7a; /* Adjust color */
-    border: none; /* Remove the default border */
+    height: 0.5px;
+    background-color: #7e7a7a;
+    border: none;
+  }
+  
+  .Footer-Link {
+    margin-left: 60px;
+    font-size: 45px;
+    font-weight: bold;
   }
   

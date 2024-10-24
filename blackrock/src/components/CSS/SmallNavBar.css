@@ -4,7 +4,6 @@
   align-items: center;
   background-color: #dadada; /* Dark background */
   padding: 5px 15px; /* Further reduced padding */
-  position: fixed; /* Keep navbar at the top */
   width: 100%; /* Full width */
   top: 0;
   z-index: 1000; /* Stay on top */
