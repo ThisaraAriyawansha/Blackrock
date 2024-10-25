@@ -40,6 +40,7 @@ function AboutUs() {
 
 
     </div>
+
     </div>
   );
 }

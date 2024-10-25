@@ -3,7 +3,7 @@
     justify-content: space-between;
     background-color: black;
     color: white;
-    height: 100vh;
+    height: 800px;
     padding: 0 5%;
   }
   
@@ -19,22 +19,23 @@
   }
   
   .about-para {
-    margin-top: 27px;
+    margin-top: 270px;
     font-size: 16px;
     line-height: 1.6;
     color: #fff;
   }
   
   .about-video {
-    width: 40%;
+    width: 55%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 290px;
+
   }
   
   .about-video video {
     width: 100%;
-    max-width: 600px;
+    max-width: 550px;
     border: none;
   }
   
@@ -47,13 +48,29 @@
   
   .footer-links {
     display: flex;
-    justify-content: center;
     gap: 2rem;
-    margin-top: 50px;
+    margin-top: 230px;
   }
   
   .footer-links a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
+    position: relative;
   }
+  
+  .footer-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: red;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .footer-links a:hover::after {
+    width: 100%;
+  }
+  
