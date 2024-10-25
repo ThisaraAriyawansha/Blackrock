@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import SmallNavbar from './components/SmallNavBar'
 import Footer from './components/Footer';
 import Content from './components/FooterContents';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
           <Route path="/footer" element={<Footer />} />
           <Route path="/smallNavbar" element={<SmallNavbar />} />
           <Route path="/content" element={<Content />} />
+          <Route path="/about-us" element={<AboutUs />} />
+
 
 
         </Routes>
