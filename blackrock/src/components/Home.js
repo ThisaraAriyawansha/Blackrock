@@ -91,8 +91,8 @@ const HomePage = () => {
         controls
         style={{ maxWidth: '100%', height: 'auto',width: '500px', border: 'none' }}
     >
-        <source src={`${process.env.PUBLIC_URL}/BLK_SOSC_Investor_Day-653.720p.wide.mp4`} type="video/mp4" />
-        Your browser does not support the video tag.
+          <source src="https://dwu7l6as21h3p.cloudfront.net/BLK_SOSC_Investor_Day-653.720p.wide.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
     </video>
 </div>
 
