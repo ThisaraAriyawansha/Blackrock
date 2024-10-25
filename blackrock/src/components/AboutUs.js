@@ -62,10 +62,10 @@ function AboutUs() {
         <th></th>
     </tr>
     <tr>
-        <td>
-        <img src={financialWellbeing} alt="Financial well-being" />
-        </td>
-        <td>
+    <td className='image-container-left'>
+            <img src={financialWellbeing} alt="Financial well-being" className="resized-image-left" />
+     </td>
+        <td className='text-section'>
         <h3>Financial well-being</h3>
             <p>
               We help millions of people invest to build savings that serve them<br/>
@@ -75,24 +75,26 @@ function AboutUs() {
         </td>
     </tr>
     <tr>
-        <td>
+        <td className='text-section'>
         <h3>Investment access</h3>
             <p>
               We make investing easier and more affordable. How can we use our <br/>
               expertise to help more and more people invest?
             </p>
-            <a href="#">Investing with iShares</a>
-        </td>
-        <td>
-        <img src={investmentAccess} alt="Investment access" />
+            <button className="info-button">
+            <span className="red-arrow">{'>'}</span> Investing with iShares
+          </button>
+         </td>
+        <td className='image-container-right'>
+        <img src={investmentAccess} alt="Investment access" className="resized-image-right"/>
 
         </td>
     </tr>
     <tr>
-        <td>
-        <img src={fiduciary} alt="Acting as a fiduciary" />
+        <td className='image-container-left'>
+        <img src={fiduciary} alt="Acting as a fiduciary" className='resized-image-left'/>
         </td>
-        <td>
+        <td className='text-section'>
         <h3>Acting as a fiduciary</h3>
             <p>
             Our investment approach is informed by three principles: we start by<br/>
@@ -101,11 +103,13 @@ function AboutUs() {
               underpin our work with research, data, and analytics. We apply those<br/>
                same principles to sustainability and the low-carbon transition.
             </p>
-            <a href="#">Explore sustainability at BlackRock</a>
-        </td>
+            <button className="info-button">
+            <span className="red-arrow">{'>'}</span> Explore sustainability at BlackRock
+          </button>
+                  </td>
     </tr>
     <tr>
-        <td>
+        <td className='text-section'>
         <h3>Resilient economies</h3>
             <p>
             Our purpose is to help more and more people experience financial well-<br/>
@@ -114,8 +118,8 @@ function AboutUs() {
               through the BlackRock Foundation and our employee engagement programs.
             </p>
         </td>
-        <td>
-        <img src={economies} alt="Resilient economies" />
+        <td className='image-container-right'>
+        <img src={economies} alt="Resilient economies" className="resized-image-right"/>
 
         </td>
     </tr>
