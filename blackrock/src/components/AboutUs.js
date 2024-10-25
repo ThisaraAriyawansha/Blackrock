@@ -17,11 +17,12 @@ function AboutUs() {
       <Navbar/>
       <div className="about-container">
       <div className="about-text">
-        <h1>About BlackRock</h1>
-        <p>
-          BlackRock is one of the world's leading providers of investment, advisory and risk management
-          solutions. We are a fiduciary to our clients. We’re investing for the future on behalf of our clients,
-          inspiring our employees, and supporting our local communities. Watch the video to learn more.
+        <h1 className='about-h1'>About BlackRock</h1>
+        <p className='about-para'>
+          BlackRock is one of the world's leading providers of investment, advisory<br/>
+           and risk management solutions. We are a fiduciary to our clients. We’re<br/>
+            investing for the future on behalf of our clients, inspiring our employees,<br/> 
+             and supporting our local communities. Watch the video to learn more.
         </p>
         <footer className="footer-links">
         <a href="#whatwedo">What we do</a>
