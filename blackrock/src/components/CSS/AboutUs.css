@@ -1,0 +1,42 @@
+.about-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  
+  .hero, .section, .footer {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #004a9f;
+  }
+  
+  .section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .values ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .values li {
+    font-size: 1.1rem;
+    color: #004a9f;
+  }
+  
+  .footer {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
