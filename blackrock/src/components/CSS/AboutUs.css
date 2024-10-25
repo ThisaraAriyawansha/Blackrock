@@ -1,42 +1,57 @@
 .about-container {
-    font-family: Arial, sans-serif;
-    color: #333;
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    padding: 0 5%;
+  }
+  
+  .about-text {
+    width: 50%;
+  }
+  
+  .about-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
     line-height: 1.6;
   }
   
-  .hero, .section, .footer {
-    margin-bottom: 30px;
-    text-align: center;
+  .about-video {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  .hero h1 {
-    font-size: 3rem;
-    color: #004a9f;
+  .about-video video {
+    width: 100%;
+    max-width: 600px;
+    border: none;
   }
   
-  .section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+  .video-transcript {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: grey;
+    cursor: pointer;
   }
   
-  .values ul {
-    list-style: none;
-    padding: 0;
+  .footer-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2rem;
+    margin-top: 50px;
   }
   
-  .values li {
-    font-size: 1.1rem;
-    color: #004a9f;
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
   }
-  
-  .footer {
-    font-size: 0.9rem;
-    color: #666;
-  }
-  

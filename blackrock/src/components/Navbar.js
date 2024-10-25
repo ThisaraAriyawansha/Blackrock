@@ -27,8 +27,8 @@ const Navbar = () => {
             
             <div className="dropdown-menu">
               <ul className="dropdown-links">
-                <li><a href="#">About BlackRock</a></li>
-                <li><a href="#">Principles</a></li>
+              <li><a href="/about-us" target="_blank" rel="noopener noreferrer">About BlackRock</a></li>
+              <li><a href="#">Principles</a></li>
                 <li><a href="#">Leadership</a></li>
                 <li><a href="#">History</a></li>
                 <li><a href="#">Global Impact</a></li>

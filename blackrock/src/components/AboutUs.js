@@ -1,28 +1,44 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import SmallNavBar  from './SmallNavBar';
+import Footer from './Footer';
+import Navbar from './Navbar';
+import Content from './FooterContents'
 import './CSS/AboutUs.css';
 
 function AboutUs() {
+  useEffect(() => {
+    document.title = "About BlackRock - What We Do";
+  }, []);
+
   return (
-    <div className="about-container">
-      <header className="hero">
-        <h1>About Us</h1>
-        <p>At [Company Name], we empower people with financial solutions for a better future.</p>
-      </header>
-      <section className="section mission">
-        <h2>Our Mission</h2>
-        <p>To deliver sustainable and innovative financial solutions that enhance lives worldwide.</p>
-      </section>
-      <section className="section values">
-        <h2>Our Values</h2>
-        <ul>
-          <li>Integrity</li>
-          <li>Innovation</li>
-          <li>Client Commitment</li>
-        </ul>
-      </section>
-      <footer className="footer">
-        <p>© 2024 [Company Name]. All Rights Reserved.</p>
+    <div>
+              <SmallNavBar/>
+      <div className="navbar-gap"></div> {/* Add a gap between navbars */}
+      <Navbar/>
+      <div className="about-container">
+      <div className="about-text">
+        <h1>About BlackRock</h1>
+        <p>
+          BlackRock is one of the world's leading providers of investment, advisory and risk management
+          solutions. We are a fiduciary to our clients. We’re investing for the future on behalf of our clients,
+          inspiring our employees, and supporting our local communities. Watch the video to learn more.
+        </p>
+        <footer className="footer-links">
+        <a href="#whatwedo">What we do</a>
+        <a href="#whoweare">Who we are</a>
+        <a href="#whoweserve">Who we serve</a>
       </footer>
+      </div>
+      <div className="about-video">
+        <video controls>
+          <source src="https://dwu7l6as21h3p.cloudfront.net/BLK-Investor-day-649.720p.wide.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+      </div>
+
+
+    </div>
     </div>
   );
 }
