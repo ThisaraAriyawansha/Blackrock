@@ -198,13 +198,22 @@ padding-right: 0px;}
   }
   
   .text-section h3 {
+    margin-left: 70px;
+
     font-size: 35px;
     color: #000000;
     margin-bottom: 15px;
   }
   
   .text-section p {
+    margin-left: 70px;
+
     font-size: 1.1rem;
     color: #000000;
     line-height: 1.6;
+  }
+
+  .text-section-btn{
+    margin-left: 50px;
+
   }

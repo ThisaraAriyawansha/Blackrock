@@ -81,9 +81,12 @@ function AboutUs() {
               We make investing easier and more affordable. How can we use our <br/>
               expertise to help more and more people invest?
             </p>
+            <div className='text-section-btn'>
+
             <button className="info-button">
             <span className="red-arrow">{'>'}</span> Investing with iShares
           </button>
+          </div>
          </td>
         <td className='image-container-right'>
         <img src={investmentAccess} alt="Investment access" className="resized-image-right"/>
@@ -103,9 +106,11 @@ function AboutUs() {
               underpin our work with research, data, and analytics. We apply those<br/>
                same principles to sustainability and the low-carbon transition.
             </p>
+            <div className='text-section-btn'>
             <button className="info-button">
             <span className="red-arrow">{'>'}</span> Explore sustainability at BlackRock
           </button>
+          </div>
                   </td>
     </tr>
     <tr>
