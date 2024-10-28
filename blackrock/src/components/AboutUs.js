@@ -8,6 +8,10 @@ import financialWellbeing from '../image/financial-security-au.webp';
 import investmentAccess from '../image/investment-access-au.webp';
 import fiduciary from '../image/sustainable-outcomes-au.webp';
 import economies from '../image/inclusive-economies-au.webp';
+import peopleIcon from '../image/BLK_icn_people_rgb.webp'; 
+import languagesIcon from '../image/BLK_icn_convo_bubbles_rgb.webp';
+import countriesIcon from '../image/BLK_icn_global_globe_rgb.svg';
+
 
 function AboutUs() {
   useEffect(() => {
@@ -129,6 +133,102 @@ function AboutUs() {
         </td>
     </tr>
 </table>
+</div>
+
+
+<div className="who-we-are">
+      <h2>Who we are</h2>
+      <table className="info-table">
+        <tbody>
+          <tr>
+            <td className="info-card">
+              <img src={peopleIcon} alt="People Icon" className="icon" />
+              <h3>19,000+ people</h3>
+              <p>of different backgrounds, races, and nationalities</p>
+            </td>
+            <td className="info-card">
+              <img src={languagesIcon} alt="Languages Icon" className="icon" />
+              <h3>135 languages</h3>
+              <p>addressing the needs of a multilingual client base</p>
+            </td>
+            <td className="info-card">
+              <img src={countriesIcon} alt="Countries Icon" className="icon" />
+              <h3>42 countries</h3>
+              <p>enabling us to help more and more people</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+
+<table>
+  <tr>
+  <td>       
+  <video controls class="responsive-video">
+  <source src="https://dwu7l6as21h3p.cloudfront.net/whats-your-why-life-at-Blk-326.720p.wide.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+        </td>
+  <td>
+  At BlackRock, we believe we’re at our best when our employees connect<br/>
+   their personal purpose to their work and our firm’s purpose. In our “What’s<br/>
+    Your Why” series, employees share how they bring their passions to what<br/>
+     they do.
+  </td>
+  </tr>
+</table>
+
+
+<div className="who-we-are">
+      <h2>Who we serve</h2>
+      <table className="info-table">
+        <tbody>
+          <tr>
+            <td className="info-card">
+              <h3>Individuals and families</h3>
+              <p>Providing choice for those investing for retirement,<br/>
+               a new home or a child’s education.</p>
+            </td>
+            <td className="info-card">
+              <h3>Financial advisors</h3>
+              <p>Helping people at all income levels invest for their<br/> futures.</p>
+            </td>
+            <td className="info-card">
+              <h3>Educational and nonprofit<br/> organizations</h3>
+              <p>Working to educate more students and solve social<br/> challenges.</p>
+            </td>
+          </tr>
+          <tr>
+            <td className="info-card">
+              <h3>Pension plans</h3>
+              <p>Managing the retirement savings of teachers,<br/>
+               doctors, workers, and small business owners.</p>
+            </td>
+            <td className="info-card">
+              <h3>Insurance companies</h3>
+              <p>Supporting people during life’s most difficult<br/>
+               moments.</p>
+            </td>
+            <td className="info-card">
+              <h3>Governments</h3>
+              <p>Financing new hospitals, schools, roads and other<br/>
+               projects helping to drive economic growth.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div className="explore-more">
+  <h2>Explore more</h2>
+  <button className="explore-button">
+    <span className="red-arrow">{'>'}</span> Leadership
+  </button>
+  <button className="explore-button">
+    <span className="red-arrow">{'>'}</span> Careers
+  </button>
 </div>
 
 
