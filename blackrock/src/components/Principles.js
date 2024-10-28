@@ -116,28 +116,53 @@ const PrincipalUI = () => {
         <img src={numberFiveImage} alt="Number 5" className="number-image" />
         <div className="content">
           <h2>We are committed to a better future.</h2>
-          <p>We work collaboratively, <strong>without silos and without turf</strong>, to<br/>
-           create the best outcomes for our clients, our firm, and the<br/>
-            communities where we operate.</p>
+          <p>We are <strong>long-term</strong> thinkers, focused on helping people build a <br/>
+          better tomorrow. We are deeply invested in the success of <strong>all<br/>
+           of our stakeholders</strong> – our clients, our employees, our<br/>
+            shareholders, and the communities where we operate – and<br/>
+             we run our business <strong>sustainably and responsibly.</strong></p>
           <ul class="custom-list">
-                    <li><strong>A diverse workforce</strong> is indispensable to our creativity and <br/>
-                    success. It’s how we answer the biggest questions and solve <br/>
-                    the toughest problems.</li>
-                    <li><strong>An inclusive, equitable environment</strong> makes us thrive. It <br/>
-                    enables us to draw on expertise and unique experiences <br/>
-                    from across the firm and bring out the best in each other.</li>
-                    <li><strong>Aladdin unifies us</strong>, creating a <strong>common language</strong> for us to<br/>
-                     interpret the world, the markets, and our clients' needs.</li>
+                    <li>At the companies we invest in for our clients, we advocate<br/>
+                     for <strong>sustainable and responsible business practices</strong> that <br/>
+                     drive <strong>long-term value.</strong></li>
+                    <li>We always strive to serve more people, and to find new and<br/>
+                     innovative ways to help them achieve <strong>financial well-being.</strong>
+                    </li>
+
                 </ul>
 
         </div>
       </div>
-    </div>      
+      <hr className='principle-hr'></hr>
 
+    </div>  
+      
 
+    <div className="explore-more">
+  <h2>Learn more about BlackRock</h2>
+  <div className="button-container">
+  <button className="explore-button">
+      <span className="red-arrow">{'>'}</span> About us
+    </button>
+    <button className="explore-button">
+      <span className="red-arrow">{'>'}</span> Leadership
+    </button>
+    <button className="explore-button">
+      <span className="red-arrow">{'>'}</span> Responsibility
+    </button>
+  </div>
+</div>
 
+<Footer/>
 
+<div className="legal-disclaimer-container">
+      <p>© 2024 BlackRock, Inc. All rights reserved.</p>
 
+<p>©2024 BlackRock, Inc. All Rights Reserved. <strong>BLACKROCK</strong> and <strong>iShares</strong> are a trademark of BlackRock, Inc., or its subsidiaries in the United States and elsewhere. All other trademarks are those of their<br/>
+ respective owners.</p>
+
+<p>MKTGH0924E/M-3891343</p>
+</div>
       
     </div>
   );
