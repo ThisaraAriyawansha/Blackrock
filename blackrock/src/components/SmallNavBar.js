@@ -5,7 +5,7 @@ const HorizontalNavBar = () => {
   return (
     <nav className="horizontal-nav-container">
       <div className="left-links">
-        <a href="#blackrock">BlackRock</a>
+        <a href="/">BlackRock</a>
         <a href="#ishares">iShares</a>
         <a href="#aladdin">Aladdin</a>
         <a href="#our-company">Our company</a>

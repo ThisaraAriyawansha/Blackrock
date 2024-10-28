@@ -329,3 +329,7 @@ padding-right: 0px;}
     transform: translateX(0); /* Slide the underline in from the left */
   }
   
+
+  html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+  }
