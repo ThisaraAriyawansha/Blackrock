@@ -45,6 +45,7 @@
     max-width: 800px;
     margin-top: 70px;
     margin-left: 85px;
+    margin-bottom: 70px;
 }
 
 .principle {
@@ -88,4 +89,10 @@
 .custom-list {
     list-style-type: disc; /* Use disc for default dots */
     padding-left: 20px;   /* Add padding to align list items */
+}
+
+.principle-hr{
+    height: 1.5px;
+    background-color: #000000;
+    width: 76%;
 }

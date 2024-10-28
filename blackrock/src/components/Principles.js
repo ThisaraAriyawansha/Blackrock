@@ -133,12 +133,36 @@ const PrincipalUI = () => {
 
         </div>
       </div>
-    </div>      
+      <hr className='principle-hr'></hr>
 
+    </div>  
+      
 
+    <div className="explore-more">
+  <h2>Learn more about BlackRock</h2>
+  <div className="button-container">
+  <button className="explore-button">
+      <span className="red-arrow">{'>'}</span> About us
+    </button>
+    <button className="explore-button">
+      <span className="red-arrow">{'>'}</span> Leadership
+    </button>
+    <button className="explore-button">
+      <span className="red-arrow">{'>'}</span> Responsibility
+    </button>
+  </div>
+</div>
 
+<Footer/>
 
+<div className="legal-disclaimer-container">
+      <p>© 2024 BlackRock, Inc. All rights reserved.</p>
 
+<p>©2024 BlackRock, Inc. All Rights Reserved. <strong>BLACKROCK</strong> and <strong>iShares</strong> are a trademark of BlackRock, Inc., or its subsidiaries in the United States and elsewhere. All other trademarks are those of their<br/>
+ respective owners.</p>
+
+<p>MKTGH0924E/M-3891343</p>
+</div>
       
     </div>
   );
