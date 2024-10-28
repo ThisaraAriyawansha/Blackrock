@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className="dropdown-menu">
               <ul className="dropdown-links">
               <li><a href="/about-us" >About BlackRock</a></li>
-              <li><a href="#">Principles</a></li>
+              <li><a href="/principles">Principles</a></li>
                 <li><a href="#">Leadership</a></li>
                 <li><a href="#">History</a></li>
                 <li><a href="#">Global Impact</a></li>

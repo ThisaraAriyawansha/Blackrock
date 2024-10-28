@@ -6,6 +6,7 @@ import SmallNavbar from './components/SmallNavBar'
 import Footer from './components/Footer';
 import Content from './components/FooterContents';
 import AboutUs from './components/AboutUs';
+import Principles  from './components/Principles';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path="/smallNavbar" element={<SmallNavbar />} />
           <Route path="/content" element={<Content />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/principles" element={<Principles />} />
+
 
 
 

@@ -1,0 +1,14 @@
+.orange {
+    background-color: rgb(255, 94, 0); /* Set background color to orange */
+    width: 100%;              /* Set width to 100% */
+    padding: 90px;           /* Add padding for spacing */
+    box-sizing: border-box;   /* Include padding in total width */
+}
+
+.orange h1 {
+    font-size: 50px; 
+    font-weight: bolder;         
+    text-align: left;           
+    margin: 0;                 
+    font-family: 'Arial Black', sans-serif; 
+}
