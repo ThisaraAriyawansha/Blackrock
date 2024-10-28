@@ -30,6 +30,7 @@ import Raffaele  from '../image/raffaele-savi-200-2023.webp';
 import Martin  from '../image/small-martin-2022-200x200.webp';
 import Derek  from '../image/portrait-stein-derek-2022-200x200.webp';
 import Mark  from '../image/mark-wiedman-2022.webp';
+import Hallac  from '../image/hallac-charlie-200x200.webp';
 
 
 
@@ -316,7 +317,57 @@ const Leadership = () => {
 </div>
 
 
+<div className="explore-more-leadership">
+  <div className="button-container">
+  <button className="leadership-button-2">
+            <span className="black-arrow">{'>'}</span>See our Board of Directors
 
+ </button>
+ <button className="leadership-button-2">
+            <span className="black-arrow">{'>'}</span>See our Office of the Chairman
+          </button>
+  </div>
+</div>
+
+
+<div className="team-section-sub">
+    <table className="team-table">
+        <tbody>
+            <tr>
+                <td className="sub-member">
+                    <img src={Hallac} alt="Hallac" className="sub-member-icon" />
+                    <h3>Charlie Hallac</h3>
+                    <p>IN MEMORIAM</p>
+                    <button className="leadership-button"> {/* Changed class name */}
+                        <span className="red-arrow">{'>'}</span>Read Charlie Hallac's bio
+                    </button>
+                </td>
+
+            </tr>
+            </tbody>
+            </table>
+            </div>
+
+            <div className="explore-more">
+  <h2>Learn more about BlackRock</h2>
+  <div className="button-container">
+  <Link to="/about-us" className="explore-button">
+        <span className="red-arrow">{'>'}</span> About us
+      </Link>
+      <Link to="#" className="explore-button">
+        <span className="red-arrow">{'>'}</span>Our history
+      </Link>
+      <Link to="#" className="explore-button">
+        <span className="red-arrow">{'>'}</span>Social Impact
+      </Link>
+  </div>
+</div>
+
+<Footer/>
+
+<div className="legal-disclaimer-container">
+      <p>© 2024 BlackRock, Inc. All rights reserved.</p>
+</div>
 
      
     </div>
