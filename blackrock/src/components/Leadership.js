@@ -104,7 +104,7 @@ const Leadership = () => {
                     </button>
                 </td>
             </tr>
-
+            <br/><br/><br/><br/>
 
             <tr>
                 <td className="sub-member">
@@ -131,7 +131,7 @@ const Leadership = () => {
                         <span className="red-arrow">{'>'}</span>Read Ed Fishwick's bio
                     </button>
                 </td>
-            </tr>
+            </tr><br/><br/><br/><br/>
 
 
 
@@ -162,7 +162,7 @@ const Leadership = () => {
                         <span className="red-arrow">{'>'}</span>Read Caroline Heller's bio
                     </button>
                 </td>
-            </tr>
+            </tr><br/><br/><br/><br/>
 
 
 
@@ -192,7 +192,7 @@ const Leadership = () => {
                         <span className="red-arrow">{'>'}</span>Read J. Richard Kushel's bio
                     </button>
                 </td>
-            </tr>
+            </tr><br/><br/><br/><br/>
 
 
 
@@ -222,7 +222,7 @@ const Leadership = () => {
                         <span className="red-arrow">{'>'}</span>Read Manish Mehta's bio
                     </button>
                 </td>
-            </tr>
+            </tr><br/><br/><br/><br/>
 
 
 
@@ -253,7 +253,7 @@ const Leadership = () => {
                         <span className="red-arrow">{'>'}</span> Read Raj Rao's bio
                     </button>
                 </td>
-            </tr>
+            </tr><br/><br/><br/><br/>
 
 
 
@@ -283,7 +283,7 @@ const Leadership = () => {
                         <span className="red-arrow">{'>'}</span>Read Martin Small's bio
                     </button>
                 </td>
-            </tr>
+            </tr><br/><br/><br/><br/>
 
 
 
