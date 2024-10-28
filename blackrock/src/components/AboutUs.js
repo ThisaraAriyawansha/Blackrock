@@ -168,8 +168,8 @@ function AboutUs() {
   <video controls class="responsive-video">
   <source src="https://dwu7l6as21h3p.cloudfront.net/whats-your-why-life-at-Blk-326.720p.wide.mp4" type="video/mp4" />
   Your browser does not support the video tag.
-</video>
-
+</video><br/><br/>
+<hr className='responsive-video-hr'></hr>
         </td>
   <td>
   At BlackRock, we believe we’re at our best when our employees connect<br/>
@@ -223,14 +223,19 @@ function AboutUs() {
 
     <div className="explore-more">
   <h2>Explore more</h2>
-  <button className="explore-button">
-    <span className="red-arrow">{'>'}</span> Leadership
-  </button>
-  <button className="explore-button">
-    <span className="red-arrow">{'>'}</span> Careers
-  </button>
+  <div className="button-container">
+    <button className="explore-button">
+      <span className="red-arrow">{'>'}</span> Leadership
+    </button>
+    <button className="explore-button">
+      <span className="red-arrow">{'>'}</span> Careers
+    </button>
+  </div>
 </div>
 
+<Footer/>
+
+<Content/>
 
 
     </div>
