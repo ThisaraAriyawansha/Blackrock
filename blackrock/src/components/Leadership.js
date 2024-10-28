@@ -316,7 +316,17 @@ const Leadership = () => {
 </div>
 
 
+<div className="explore-more-leadership">
+  <div className="button-container">
+  <button className="leadership-button-2">
+            <span className="black-arrow">{'>'}</span>See our Board of Directors
 
+ </button>
+ <button className="leadership-button-2">
+            <span className="black-arrow">{'>'}</span>See our Office of the Chairman
+          </button>
+  </div>
+</div>
 
      
     </div>
