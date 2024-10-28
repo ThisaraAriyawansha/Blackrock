@@ -32,7 +32,7 @@ const Navbar = () => {
               <li><a href="/about-us" >About BlackRock</a></li>
               <li><a href="/principles">Principles</a></li>
                 <li><a href="/leadership">Leadership</a></li>
-                <li><a href="#">History</a></li>
+                <li><a href="/history">History</a></li>
                 <li><a href="#">Global Impact</a></li>
                 <li><a href="#">Contacts and Locations</a></li>
                 <li><a href="#">Doing Business with BlackRock</a></li>
