@@ -354,7 +354,7 @@ const Leadership = () => {
   <Link to="/about-us" className="explore-button">
         <span className="red-arrow">{'>'}</span> About us
       </Link>
-      <Link to="#" className="explore-button">
+      <Link to="/history" className="explore-button">
         <span className="red-arrow">{'>'}</span>Our history
       </Link>
       <Link to="#" className="explore-button">
