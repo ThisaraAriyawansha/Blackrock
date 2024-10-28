@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './CSS/Navbar.css'; // Import the CSS file
 import aboutUsImage from '../image/mega-forces-banner.jpg'; // Import the image
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -11,8 +12,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Logo */}
-      <div className="logo">BlackRock</div>
-
+      <Link to="/" className="logo" style={{ textDecoration: 'none' }}>
+      BlackRock
+    </Link>
       {/* Navigation Links */}
       <ul className="nav-links">
         {/* About Us Dropdown */}
@@ -27,7 +29,7 @@ const Navbar = () => {
             
             <div className="dropdown-menu">
               <ul className="dropdown-links">
-              <li><a href="/about-us" target="_blank" rel="noopener noreferrer">About BlackRock</a></li>
+              <li><a href="/about-us" >About BlackRock</a></li>
               <li><a href="#">Principles</a></li>
                 <li><a href="#">Leadership</a></li>
                 <li><a href="#">History</a></li>

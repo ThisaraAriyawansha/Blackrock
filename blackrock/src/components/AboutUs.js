@@ -50,7 +50,7 @@ function AboutUs() {
     </div>
 
 
-<div className='What-we-do'> 
+<div className='What-we-do' id="whatwedo"> 
 <table >
     <tr>
         <td class="intro-section">
@@ -136,7 +136,7 @@ function AboutUs() {
 </div>
 
 
-<div className="who-we-are">
+<div className="who-we-are" id='whoweare'>
       <h2>Who we are</h2>
       <table className="info-table">
         <tbody>
@@ -181,7 +181,7 @@ function AboutUs() {
 </table>
 
 
-<div className="who-we-are">
+<div className="who-we-are" id='whoweserve'>
       <h2>Who we serve</h2>
       <table className="info-table">
         <tbody>
