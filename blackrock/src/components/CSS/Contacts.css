@@ -13,3 +13,95 @@
     margin: 0;
     font-family: 'Arial Black', sans-serif;
 }
+
+.Worldwide {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.Worldwide h1 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
+}
+.Worldwide p{
+    font-size: 17px;
+    font-family: 'Arial Black', sans-serif;
+    text-align: center;
+    padding: 40px;
+    color: black;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 16px;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  .tab.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+  }
+  
+  .tab:not(.active) {
+    color: #666;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+
+
+  .locations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .locations div {
+    text-align: left;
+    width: 150px;
+  }
+
+  .locationn{
+    text-align: center;
+  }
+
+
+
+  .location-table {
+    align-items: center;
+    font-size: 14px;
+    border-collapse: collapse;
+  }
+  
+
+.location-table td {
+    text-align: left; 
+    padding: 10px;
+}
+
+
+.location-table strong {
+    display: block;
+    font-weight: bold; 
+}
+
+
