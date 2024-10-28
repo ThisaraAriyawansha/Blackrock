@@ -10,6 +10,7 @@ import Principles  from './components/Principles';
 import Leadership from './components/Leadership';
 import History from './components/History';
 import Impact from './components/Impact';
+import Contacts from './components/Contacts';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/history" element={<History />} />
           <Route path="/impact" element={<Impact />} />
+          <Route path="/contacts" element={<Contacts />} />
 
 
 
