@@ -1,0 +1,28 @@
+.impact{
+    margin-top: 40px;
+    margin-left: 100px;
+  }
+
+  .impact h1{
+    font-family: 'Arial Black', sans-serif; 
+    font-size: 37px;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
+
+  .impact p{
+    font-family: 'Arial Black', sans-serif; 
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: black;
+    align-content: center;
+  }
+
+  .impact hr{
+    height: 3px;
+    background-color: black;
+    width: 50%;
+    margin-bottom: 35px;
+
+  }

@@ -14,8 +14,19 @@ const Impact = () => {
       <div>
         <SmallNavBar />
         <Navbar />
+        <div className='leadership-title'>
 
-  
+        <h1>
+        Global impact
+        </h1>
+      </div>
+        <div className='impact '>
+        <h1>Worldwide reach. Local service and <br/>relationships.</h1>
+        <p>With 70 offices in 30 countries, BlackRock is a truly global firm that can<br/>
+         combine the benefits of worldwide reach with local service and <br/>
+         relationships. We manage assets for clients in North and South America, <br/>
+         Europe, Asia, Australia, the Middle East and Africa.</p>
+        </div>
   
 
 
