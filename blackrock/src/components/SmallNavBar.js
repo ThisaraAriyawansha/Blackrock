@@ -8,7 +8,7 @@ const HorizontalNavBar = () => {
         <a href="/">BlackRock</a>
         <a href="#ishares">iShares</a>
         <a href="#aladdin">Aladdin</a>
-        <a href="#our-company">Our company</a>
+        <a href="/">Our company</a>
       </div>
       <div className="right-link">
         <a href="#local-websites">Local websites</a>

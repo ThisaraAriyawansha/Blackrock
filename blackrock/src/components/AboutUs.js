@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import SmallNavBar  from './SmallNavBar';
 import Footer from './Footer';
 import Navbar from './Navbar';
@@ -224,12 +225,14 @@ function AboutUs() {
     <div className="explore-more">
   <h2>Explore more</h2>
   <div className="button-container">
-    <button className="explore-button">
-      <span className="red-arrow">{'>'}</span> Leadership
-    </button>
-    <button className="explore-button">
-      <span className="red-arrow">{'>'}</span> Careers
-    </button>
+
+      <Link to="/leadership" className="explore-button">
+        <span className="red-arrow">{'>'}</span> Leadership
+      </Link>
+      <Link to="/about-us" className="explore-button">
+        <span className="red-arrow">{'>'}</span> Careers
+      </Link>
+
   </div>
 </div>
 
