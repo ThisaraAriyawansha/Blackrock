@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import SmallNavBar from './SmallNavBar';
-import './CSS/History.css'; // Import your CSS file
+import './CSS/History.css'; 
 import Banner from '../image/blackrock-history-full-bleed-hero-banner.jpg';
 
 const History = () => {

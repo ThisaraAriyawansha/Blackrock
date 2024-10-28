@@ -9,6 +9,7 @@ import AboutUs from './components/AboutUs';
 import Principles  from './components/Principles';
 import Leadership from './components/Leadership';
 import History from './components/History';
+import Impact from './components/Impact';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/principles" element={<Principles />} />
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/history" element={<History />} />
+          <Route path="/impact" element={<Impact />} />
 
 
 
