@@ -257,3 +257,105 @@ margin-bottom: 30px;
   .insights-button:hover::after {
     width: 22%;
   }
+
+
+
+  .subscription-form {
+    margin-left:70px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-header {
+    margin-left:50px;
+    margin-right: 100px;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 30px; 
+   font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  form {
+    margin-left:50px;
+
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+  }
+  
+  .checkbox-row {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .checkbox-row input {
+    margin-right: 10px;
+  }
+  
+  .checkbox-row label {
+    font-size: 0.9rem;
+  }
+  
+  .form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .form-footer span {
+    font-size: 0.8rem;
+    color: #555;
+  }
+  
+  .form-footer a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .subscribe-button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #bbb;
+  }
+
+  .policy{
+    margin-left: 1030px; 
+ }

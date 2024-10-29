@@ -5,6 +5,10 @@ import Navbar from './Navbar';
 import SmallNavBar from './SmallNavBar';
 import './CSS/Investment.css';
 import mountainImage from '../image/corporate-nav-banner.jpg';
+import peopleIcon from '../image/icon-trand-arrow.png'; 
+import languagesIcon from '../image/icon-tech-break-though.png';
+import countriesIcon from '../image/icon-bid-podcast.png';
+import Content from './FooterContents'
 
 const Investment = () => {
   useEffect(() => {
@@ -143,15 +147,123 @@ const Investment = () => {
           <source src="https://dwu7l6as21h3p.cloudfront.net/BBL_2024Outlook-94.720p.wide.mp4" type="video/mp4" />
           Your browser does not support the video tag.
     </video>
-                </div>
+  </div>
 
+    </div><br/><br/>
+
+
+    <div className="who-we-are" id='whoweare'>
+      <table className="info-table">
+        <tbody>
+          <tr>
+            <td className="info-card">
+              <img src={peopleIcon} alt="People Icon" className="icon" />
+              <p>
+              <button className="info-button">
+            <span className="red-arrow">{'>'}</span>Explore our interactive charts
+          </button>
+              </p>
+            </td>
+            <td className="info-card">
+              <img src={languagesIcon} alt="Languages Icon" className="icon" />
+              <p>
+              <button className="info-button">
+            <span className="red-arrow">{'>'}</span>Explore the BLK insights app
+          </button>
+              </p>
+            </td>
+            <td className="info-card">
+              <img src={countriesIcon} alt="Countries Icon" className="icon" />
+              <p>
+              <button className="info-button">
+            <span className="red-arrow">{'>'}</span>Tune in to the Bid podcast
+          </button>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+    <br/><br/>
+
+    <div className="explore-more">
+  <h2>Explore BII</h2>
+  <div className="button-container">
+
+      <Link to="#" className="explore-button">
+        <span className="red-arrow">{'>'}</span>Meet the team
+      </Link>
+      <Link to="#" className="explore-button">
+        <span className="red-arrow">{'>'}</span>Mega forces
+      </Link>
+      <Link to="#" className="explore-button">
+        <span className="red-arrow">{'>'}</span>Publications
+      </Link>
+  </div>
+</div><br/><br/>
+    
+
+<div className="subscription-form">
+      <h2 className="form-header">
+        Stay ahead of markets with the latest insights<br/> from the BlackRock Investment Institute
+      </h2><br/><br/>
+      <form>
+        <div className="form-row">
+          <div className="form-group">
+            <label>First Name *</label>
+            <input type="text" placeholder="First Name" required />
+          </div>
+          <div className="form-group">
+            <label>Last Name *</label>
+            <input type="text" placeholder="Last Name" required />
+          </div>
+          <div className="form-group">
+            <label>Email *</label>
+            <input type="email" placeholder="Email" required />
+          </div>
+        </div>
+        <div className="form-row">
+          <div className="form-group">
+            <label>Investor type *</label>
+            <select required>
+              <option value="">Select Investor Type</option>
+              <option value="individual">Individual</option>
+              <option value="institution">Institution</option>
+              {/* Add more options as needed */}
+            </select>
+          </div>
+          <div className="form-group">
+            <label>Location *</label>
+            <select required>
+              <option value="">Select Location</option>
+              <option value="us">United States</option>
+              <option value="uk">United Kingdom</option>
+              {/* Add more options as needed */}
+            </select>
+          </div>
+          <div className="form-group">
+            <label>Company *</label>
+            <input type="text" placeholder="Company" required />
+          </div>
+        </div>
+        <div className="checkbox-row">
+          <input type="checkbox" id="opt-in" />
+          <label htmlFor="opt-in">
+            Please click here to opt-in to receiving future marketing communications from BlackRock
+          </label>
+        </div>
+        <div className="form-footer">
+          <span className='policy'>*Required information | Read our <a href="#privacy-policy">Privacy policy</a></span>
+          <button type="submit" className="subscribe-button">Subscribe</button>
+        </div>
+      </form>
+    </div><br/><br/>
 
 
-
- 
     
       <Footer />
+      <Content/>
+
       </div>
   );
 };
