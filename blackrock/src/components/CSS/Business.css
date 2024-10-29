@@ -6,7 +6,7 @@
     background-color: black;
 }
 
-.text-section {
+.text-section-business {
     flex: 1; 
     padding: 20px; 
 }
@@ -15,15 +15,15 @@
     font-size: 50px;
     margin-bottom: 20px;
     color: #ffffff;
-    margin-left: -40px;
+    margin-left: 40px;
     font-weight: bold;
     margin-top: 150px;
 }
 
 
-.text-section p{
+.text-section-business p{
     color: #ffffff;
-    margin-left: -40px;
+    margin-left: 40px;
     margin-bottom: 140px;
 
 }
@@ -73,3 +73,126 @@
 }
 
 
+
+
+.Black-container {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .Black-left, .Black-right {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .Black-left {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+  
+  .Black-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Blackh2 {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .Blackp {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  iframe {
+    max-width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .Black-button {
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s;
+    margin-left: -24px;
+
+  }
+  
+
+  
+  .Black-button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 0%;
+    background-color: rgb(255, 0, 0);
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .Black-button:hover::after {
+    width: 65%;
+  }
+
+
+
+
+  /* Button styling */
+.business-button { 
+    font-weight: bold;
+    background-color: transparent; 
+    color: rgb(0, 0, 0); 
+    padding: 12px 24px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    display: inline-flex; 
+    align-items: center;
+    position: relative; 
+    transition: color 0.3s; 
+    margin-left: -24px;
+  }
+  
+  .business-button .red-arrow {
+    color: red; 
+    margin-right: 10px; 
+  }
+  
+  /* Underline effect */
+  .business-button::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px; 
+    width: 0%; 
+    background-color: rgb(0, 0, 0); 
+    transition: width 0.4s ease-in-out; 
+  }
+  
+  .business-button:hover::after {
+    width: 30%; 
+  }
+  

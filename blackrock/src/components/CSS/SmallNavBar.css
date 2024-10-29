@@ -1,12 +1,12 @@
 .horizontal-nav-container {
   display: flex;
-  justify-content: space-between; /* Space between left and right sections */
+  justify-content: space-between; 
   align-items: center;
-  background-color: #dadada; /* Dark background */
-  padding: 5px 15px; /* Further reduced padding */
-  width: 100%; /* Full width */
+  background-color: #dadada; 
+  padding: 5px 15px; 
+  width: 100%; 
   top: 0;
-  z-index: 1000; /* Stay on top */
+  z-index: 1000; 
 }
 
 .left-links {
@@ -17,28 +17,26 @@
 }
 
 .right-link {
-  margin-right: 100px; /* Pushes the right link to the far right */
+  margin-right: 100px; 
 }
 
-/* Styling for the links */
 .horizontal-nav-container a {
-  color: #000000; /* Black text */
+  color: #000000; 
   text-decoration: none;
   margin: 0 10px;
-  font-size: 12px; /* Smaller font size */
-  transition: color 0.3s ease; /* Smooth transition */
+  font-size: 12px; 
+  transition: color 0.3s ease; 
 }
 
 
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .horizontal-nav-container a {
-    font-size: 10px; /* Further decreased font size for smaller screens */
+    font-size: 10px; 
     margin: 0 5px;
   }
 
   .horizontal-nav-container {
-    padding: 3px 10px; /* Decreased padding for a smaller height */
+    padding: 3px 10px; 
   }
 }

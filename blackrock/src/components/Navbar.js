@@ -72,7 +72,7 @@ const Navbar = () => {
           {hoveredItem === 'newsroom' && (
             <div className="dropdown-menu">
               <ul className="dropdown-links">
-                <li><a href="#">Overview</a></li>
+                <li><a href="/newsOverview">Overview</a></li>
                 <li><a href="#">Media Contacts</a></li>
               </ul>
               <div className="image-section">

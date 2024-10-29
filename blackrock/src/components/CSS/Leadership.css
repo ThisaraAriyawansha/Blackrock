@@ -136,7 +136,7 @@
 
 
 .team-table tr {
-    margin-bottom: 100px; /* Increase the space between rows */
+    margin-bottom: 100px; 
   }
   
   .explore-more-leadership {
@@ -153,38 +153,38 @@
   /* Button styling */
 .leadership-button-2 {
     font-weight: bold;
-    background-color: transparent; /* Changed to transparent instead of invisible */
-    color: rgb(0, 0, 0); /* Button text color */
-    padding: 12px 24px; /* Button padding */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    display: inline-flex; /* Align text and arrow horizontally */
-    align-items: center; /* Center vertically */
-    position: relative; /* For positioning the underline */
-    transition: color 0.3s; /* Smooth text color transition */
+    background-color: transparent; 
+    color: rgb(0, 0, 0); 
+    padding: 12px 24px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    display: inline-flex; 
+    align-items: center; 
+    position: relative; 
+    transition: color 0.3s; 
     margin-left: 20px;
   }
   
   .leadership-button-2 .black-arrow {
-    color: rgb(0, 0, 0); /* Arrow color */
-    margin-right: 10px; /* Add space between arrow and text */
+    color: rgb(0, 0, 0); 
+    margin-right: 10px; 
   }
   
   /* Underline effect */
   .leadership-button-2::after {
-    content: ''; /* Empty content */
+    content: ''; 
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 2px; /* Thickness of the underline */
-    width: 0%; /* Initially hidden */
-    background-color: rgb(0, 0, 0); /* Underline color */
-    transition: width 0.4s ease-in-out; /* Smooth running effect */
+    height: 2px; 
+    width: 0%; 
+    background-color: rgb(0, 0, 0); 
+    transition: width 0.4s ease-in-out; 
   }
   
   .leadership-button-2:hover::after {
-    width: 100%; /* Expand underline on hover */
+    width: 100%; 
   }
   
