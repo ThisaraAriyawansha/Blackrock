@@ -8,16 +8,21 @@
     background-image: url('../../image/blackrock-global-newsroom-banner.jpg');
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
   .news-title {
-    font-size: 3rem;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
     color: white;
+    font-size: 70px; 
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
   .news-content {
@@ -28,10 +33,12 @@
   
   .news-main {
     flex: 2;
-    margin-right: 20px;
+    margin-left: 250px;
   }
   
   .news-subtitle {
+    font-size: 30px;
+    font-family: 'Arial Black', sans-serif; 
     font-weight: bold;
   }
   
@@ -39,28 +46,37 @@
     color: #333;
     font-size: 1rem;
     margin-bottom: 20px;
+    margin-top: 10px;
   }
   
   .news-load-more {
-    padding: 10px 20px;
+    padding: 10px 40px;
     background-color: black;
     color: white;
     border: none;
     cursor: pointer;
     font-weight: bold;
-  }
+    margin-left: 33%;  
+    margin-top: 10%;
+}
   
   .news-explore {
-    flex: 1;
+    position: absolute; 
+    top: 400px; 
+    left: 950px; 
+    width: 350px; 
+    height: auto; 
     background-color: #000;
-    padding: 20px;
+    padding: 15px;
     color: white;
+    z-index: 1000; 
   }
   
   .explore-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 15px; 
+    color: #fff;
   }
   
   .explore-list {
@@ -69,8 +85,8 @@
   }
   
   .explore-item {
-    font-size: 1rem;
-    padding: 10px 0;
+    font-size: 0.9rem; 
+    padding: 8px 0; 
     border-bottom: 1px solid #333;
     cursor: pointer;
   }
@@ -79,3 +95,64 @@
     color: #ccc;
   }
   
+  
+
+
+
+  .Overview-more {
+    font-family: 'Arial Black', sans-serif; 
+
+    background-color: rgb(245, 69, 10);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Overview-more h2 {
+    font-size: 24px;
+    margin-bottom: 10px; 
+    font-weight: bold; 
+  }
+  
+  .button-container {
+    display: flex; 
+    justify-content: center; 
+  }
+  
+  .Overview-button {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px; 
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  
+  .Overview-button .Overview-arrow {
+    color: rgb(0, 0, 0);
+    margin-right: 5px;
+  }
+  
+
+
+  .white-arrow {
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+  }
+
+  .white1-arrow {
+    color: rgb(255, 255, 255);
+    margin-left: 63%;
+  }
+
+  .white2-arrow {
+    color: rgb(255, 255, 255);
+    margin-left: 72%;
+  }

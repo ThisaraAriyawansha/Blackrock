@@ -1,0 +1,43 @@
+.media-title {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 90px;
+    box-sizing: border-box;
+}
+
+.media-title h1 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: left;
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
+    margin-left: -20px;
+}
+
+.media-title h6 {
+    color: rgb(255, 0, 0);
+    font-family: 'Arial Black', sans-serif;
+    font-size: 12px;
+    position: relative; 
+    margin-left: -20px;
+
+}
+
+.sub-topic{
+    font-family: 'Arial Black', sans-serif;
+    font-size: 20px;
+}
+
+.Media-center-topic {
+    align-items: center;    
+    text-align: center;  
+    margin-top: 55px;
+    margin-bottom: 30PX;    
+}
+
+.Media-center-topic h1{
+    font-family: 'Arial Black', sans-serif;
+    font-size: 22px;
+    margin-bottom: 20PX;
+}

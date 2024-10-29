@@ -13,6 +13,7 @@ import Impact from './components/Impact';
 import Contacts from './components/Contacts';
 import Business from './components/Business';
 import NewsOverview from './components/Overview';
+import Media from './components/Media';
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/business" element={<Business />} />
           <Route path="/newsOverview" element={<NewsOverview />} />
+          <Route path="/media" element={<Media />} />
+
 
 
 
