@@ -70,7 +70,7 @@ function AboutUs() {
     <td className='image-container-left'>
             <img src={financialWellbeing} alt="Financial well-being" className="resized-image-left" />
      </td>
-        <td className='text-section'>
+        <td className='text-section-about'>
         <h3>Financial well-being</h3>
             <p>
               We help millions of people invest to build savings that serve them<br/>
@@ -80,7 +80,7 @@ function AboutUs() {
         </td>
     </tr>
     <tr>
-        <td className='text-section'>
+        <td className='text-section-about'>
         <h3>Investment access</h3>
             <p>
               We make investing easier and more affordable. How can we use our <br/>
@@ -88,7 +88,7 @@ function AboutUs() {
             </p>
             <div className='text-section-btn'>
 
-            <button className="info-button">
+            <button className="about-button">
             <span className="red-arrow">{'>'}</span> Investing with iShares
           </button>
           </div>
@@ -102,7 +102,7 @@ function AboutUs() {
         <td className='image-container-left'>
         <img src={fiduciary} alt="Acting as a fiduciary" className='resized-image-left'/>
         </td>
-        <td className='text-section'>
+        <td className='text-section-about'>
         <h3>Acting as a fiduciary</h3>
             <p>
             Our investment approach is informed by three principles: we start by<br/>
@@ -112,14 +112,14 @@ function AboutUs() {
                same principles to sustainability and the low-carbon transition.
             </p>
             <div className='text-section-btn'>
-            <button className="info-button">
+            <button className="about-button">
             <span className="red-arrow">{'>'}</span> Explore sustainability at BlackRock
           </button>
           </div>
                   </td>
     </tr>
     <tr>
-        <td className='text-section'>
+        <td className='text-section-about'>
         <h3>Resilient economies</h3>
             <p>
             Our purpose is to help more and more people experience financial well-<br/>

@@ -25,7 +25,7 @@
     font-family: 'Arial Black', sans-serif; 
     font-weight: bolder;         
     font-size: 37px; 
-    margin-bottom: 20px;        /* Space below the heading */
+    margin-bottom: 20px;        
 }
 
 .blackRock-principles p {
@@ -87,8 +87,8 @@
 }
 
 .custom-list {
-    list-style-type: disc; /* Use disc for default dots */
-    padding-left: 20px;   /* Add padding to align list items */
+    list-style-type: disc; 
+    padding-left: 20px;   
 }
 
 .principle-hr{

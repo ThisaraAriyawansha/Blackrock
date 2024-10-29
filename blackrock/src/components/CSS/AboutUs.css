@@ -189,15 +189,15 @@ padding-right: 0px;}
   
   
 
-  .text-section {
+  .text-section-about{
     margin-left: 100px;
     flex-direction: column;
     padding: 20px;
-    justify-content: center;      /* Center items vertically */
+    justify-content: center;      
     align-items: center; 
   }
   
-  .text-section h3 {
+  .text-section-about h3 {
     margin-left: 70px;
 
     font-size: 35px;
@@ -205,7 +205,7 @@ padding-right: 0px;}
     margin-bottom: 15px;
   }
   
-  .text-section p {
+  .text-section-about p {
     margin-left: 70px;
 
     font-size: 1.1rem;
@@ -236,7 +236,7 @@ padding-right: 0px;}
   
   .info-table {
     margin-left: 70px;
-    width: 100%; /* Make the table take up the full width */
+    width: 100%; 
     border-collapse: collapse;
   }
   
@@ -257,8 +257,8 @@ padding-right: 0px;}
   }
   
   .icon {
-    width: 100px; /* Adjust width of the icon */
-    height:auto; /* Adjust height of the icon */
+    width: 100px; 
+    height:auto; 
   }
   
 
@@ -286,13 +286,13 @@ padding-right: 0px;}
   
   .explore-more h2 {
     font-size: 24px;
-    margin-bottom: 10px; /* Decrease the margin to reduce the gap */
-    font-weight: bold; /* Make heading bold */
+    margin-bottom: 10px; 
+    font-weight: bold; 
   }
   
   .button-container {
-    display: flex; /* Align buttons side by side */
-    justify-content: center; /* Center align buttons */
+    display: flex; 
+    justify-content: center; 
   }
   
   .explore-button {
@@ -300,7 +300,7 @@ padding-right: 0px;}
     color: white;
     border: none;
     padding: 10px 20px;
-    margin: 10px; /* Adjust margin to prevent spacing issues */
+    margin: 10px; 
     font-size: 16px;
     cursor: pointer;
     position: relative;
@@ -326,10 +326,48 @@ padding-right: 0px;}
   }
   
   .explore-button:hover::after {
-    transform: translateX(0); /* Slide the underline in from the left */
+    transform: translateX(0); 
   }
   
 
   html {
-    scroll-behavior: smooth; /* Enable smooth scrolling */
+    scroll-behavior: smooth; 
   }
+
+
+  .about-button {
+    font-weight: bold;
+    background-color: invisisble;
+    color: rgb(0, 0, 0);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s;
+  
+  }
+  
+  .about-button .red-arrow {
+    color: red;
+    margin-right: 10px;
+  }
+  
+  .about-button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: red;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .about-button:hover::after {
+    width: 95%;
+  }
+  

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './CSS/Home.css'; // Importing the CSS file
 import Navbar from './Navbar';
 import blackrockLogo from '../image/blackrock-gip-logo-860x800.webp'; // Importing the image
@@ -7,6 +7,11 @@ import Footer from './Footer';
 import Content from './FooterContents'
 
 const HomePage = () => {
+  
+  useEffect(() => {
+    document.title = "BlackRock Coparate Website"; // Set the page title
+  }, []);
+  
   return (
     <div>
       <SmallNavBar/>

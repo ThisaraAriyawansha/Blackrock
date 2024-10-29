@@ -1,32 +1,29 @@
-/* Navbar Container */
 .navbar {
   display: flex;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start;
   align-items: center;
-  padding: 10px 20px; /* Reduced padding for tighter layout */
+  padding: 10px 20px;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo */
 .logo {
   font-size: 24px;
   font-weight: bold;
   color: #000;
-  margin-right: 100px; /* Further reduced gap */
+  margin-right: 100px;
   margin-left: 25px;
 }
 
-/* Navigation Links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 50px; /* Reduced gap between nav items */
-  margin-left: 0; /* Removed margin to bring links closer */
+  gap: 50px;
+  margin-left: 0;
 }
 
 .nav-item {
-  position: relative; /* Required for the pseudo-element */
+  position: relative;
 }
 
 .nav-item a {
@@ -34,139 +31,114 @@
   color: black;
   font-weight: 500;
   font-size: 16px;
-  position: relative; /* Required for the pseudo-element */
+  position: relative;
 }
 
 .nav-item a::after {
   content: '';
   position: absolute;
-  width: 100%; /* Full width of the link */
-  height: 2px; /* Thickness of the underline */
+  width: 100%;
+  height: 2px;
   left: 0;
-  bottom: -2px; /* Position it just below the text */
-  background-color: black; /* Black underline color */
-  transform: scaleX(0); /* Start scaled down */
-  transition: transform 0.3s ease; /* Smooth transition when expanding */
+  bottom: -2px;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .nav-item a:hover::after {
-  transform: scaleX(1); /* Expand to full width on hover */
+  transform: scaleX(1);
 }
 
 .dropdown-menu {
   display: flex;
-  align-items: flex-start; /* Align items vertically to the top */
-  justify-content: flex-start; /* Align items horizontally to the left */
-  
-  position: fixed; /* Positioned relative to the viewport */
-  top: 75px; /* Distance from the top */
-  left: 0px; /* Distance from the left of the screen */
-  
-  width: 100%; /* Adjust width */
-  min-height: 400px; /* Set a minimum height */
-  
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  top: 75px;
+  left: 0px;
+  width: 100%;
+  min-height: 400px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  
-  padding: 20px; /* Padding within the dropdown container */
-  padding-left: 50px; /* Add more padding to push contents to the right */
-  
-  z-index: 1000; /* Ensures it's on top of other elements */
+  padding: 20px;
+  padding-left: 50px;
+  z-index: 1000;
 }
 
-
-
 .dropdown-links {
-  padding-top: 30px; /* Further reduced padding */
-  padding-left: 150px; /* Reduced padding to minimize the gap */
+  padding-top: 30px;
+  padding-left: 150px;
   list-style: none;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 5px; /* Reduced space between links */
+  gap: 5px;
   margin-right: 0px;
 }
 
-
-/* Image and Content Wrapper */
 .image-section {
   display: flex;
-  flex-direction: column; /* Stack image and content vertically */
-  align-items: flex-start; /* Align items to the left */
-  margin-left: 150px; /* Adjust left margin to your liking */
-  margin-top: 0px; /* Adjust top margin to fine-tune spacing */
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 150px;
+  margin-top: 0px;
 }
 
-/* Image Styling with Absolute Positioning */
 .dropdown-image {
-  position: absolute; /* Makes the image position relative to its parent */
-  top: 50px; /* Adjust the top position as needed */
-  left: 500px; /* Adjust the left position as needed */
-  width: 300px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Space below the image */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  position: absolute;
+  top: 50px;
+  left: 500px;
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-/* Content below the image */
 .dropdown-content {
-  position: absolute; /* Absolute positioning to move freely */
-  
-  /* Adjust the top, left, bottom, or right values as needed */
-  top: 200px; /* Adjust this value to move the dropdown-content vertically */
-  left: 490px; /* Adjust this value to move the dropdown-content horizontally */
-  
-  width: 600px; /* Set desired width */
+  position: absolute;
+  top: 200px;
+  left: 490px;
+  width: 600px;
   padding: 10px;
   z-index: 1001;
-
-  text-align: left; /* Align text to the left */
+  text-align: left;
 }
-
 
 .dropdown-content h5 {
   font-size: 12px;
   font-weight: 1000;
-  color: #000000; /* Darker shade for a professional feel */
+  color: #000000;
   margin-bottom: 10px;
 }
 
 .dropdown-content p {
   font-size: 14px;
-  color: #000000; /* Darker color for better readability */
+  color: #000000;
   margin-bottom: 10px;
-  line-height: 1.5; /* Improve text readability */
+  line-height: 1.5;
 }
 
-
-
-
-/* Dropdown Links Styling */
 .dropdown-links li a {
   font-size: 15px;
-  color: black; /* Text color */
-  text-decoration: none; /* No underline */
-  transition: color 0.3s ease; /* Smooth color transition */
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-/* No underline on hover */
 .dropdown-links li a:hover {
-  color: rgb(167, 167, 172); /* Change color on hover */
-  text-decoration: none; /* Ensure no underline on hover */
+  color: rgb(167, 167, 172);
+  text-decoration: none;
 }
 
-/* Optional: If there are any pseudo-elements that create an underline, remove them */
 .dropdown-links a::after {
-  display: none; /* Prevent the black line */
+  display: none;
 }
-
-
 
 .insights-link {
-  color: #007bff; /* Professional blue for the link */
+  color: #007bff;
   text-decoration: none;
   font-weight: 500;
   margin-top: 15px;
@@ -175,78 +147,72 @@
 }
 
 .insights-link:hover {
-  color: #0056b3; /* Darker blue on hover */
+  color: #0056b3;
 }
 
-/* Basic Search Icon Styling */
 .search-icon {
   font-size: 20px;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  margin-left: auto; /* Align search icon to the right */
-  margin-right: 140px; /* Adjust this value to increase right-side gap */
+  margin-left: auto;
+  margin-right: 140px;
 }
 
-.dropdown-paragraph{
+.dropdown-paragraph {
   font-weight: bold;
 }
 
 .red-arrow {
-  color: red; /* Red arrow color */
-  margin-right: 10px; /* Add space between arrow and text */
+  color: red;
+  margin-right: 10px;
 }
 
 .insights-link {
   font-weight: bold;
-  text-decoration: none; /* Remove underline from link */
-  color: black; /* Change this to your desired color */
+  text-decoration: none;
+  color: black;
 }
 
 .insights-link:hover {
-  color: rgb(0, 0, 0); /* Change text color on hover, optional */
-  border-bottom: 2px solid rgb(0, 0, 0); /* Adds a horizontal line on hover */
-  padding-bottom: 2px; /* Add some spacing between text and line */
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  padding-bottom: 2px;
 }
 
-
-.links{
+.links {
   font-weight: bold;
 }
 
 .dropdown-content2 {
-  position: absolute; /* Allows positioning anywhere */
-  top: 50px; /* Adjust this value to set vertical position */
-  left: 1000px; /* Adjust this value to set horizontal position */
-  width: 400px; /* Set desired width */
+  position: absolute;
+  top: 50px;
+  left: 1000px;
+  width: 400px;
   padding: 10px;
-  z-index: 1002; /* Ensure it's above other elements */
-  text-align: left; /* Align text to the left */
-
+  z-index: 1002;
+  text-align: left;
 }
-
 
 .vertical-line {
-  position: absolute; /* Use absolute positioning */
-  left: 980px; /* Position from the left */
-  top: 50px; /* Position from the top */
-  width: 1px; /* Width of the vertical line */
-  height: 300px; /* Height of the vertical line */
-  background-color: rgb(198, 190, 190); /* Color of the line */
+  position: absolute;
+  left: 980px;
+  top: 50px;
+  width: 1px;
+  height: 300px;
+  background-color: rgb(198, 190, 190);
 }
 
-
-.content2{
+.content2 {
   font-size: 12px;
 }
 
-
-.content2-link{
+.content2-link {
   font-weight: bold;
   font-size: 15px;
 }
 
 .link-bold {
-  font-weight: bold; /* Makes the text bold */
-  text-decoration: none; /* Optional: Removes underline */
-  color: black; /* Optional: Sets the text color */
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
 }

@@ -20,7 +20,7 @@ const Business = () => {
             <Navbar />
             
             <div className="business-content">
-                <div className="text-section">
+                <div className="text-section-business">
                     <h1 className="business-title">Doing Business <br/>with BlackRock</h1>
                     <p>
                         BlackRock’s purpose is to help more and more people experience<br/> 
@@ -58,7 +58,7 @@ const Business = () => {
               human rights, inclusion and diversity, environmental sustainability,<br/>
                integrity and ethics in management practices.
             </p>
-            <button className="yellow-button">
+            <button className="business-button">
             <span className="black-arrow">{'>'}</span> Download the SCoCE
           </button>
         </div>
@@ -75,7 +75,7 @@ const Business = () => {
 
 
 
-    <div class="yellow-container">
+    <div class="Black-container">
 
   {/* Right Part: Video Section */}
   <div className="image-section" style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -86,16 +86,16 @@ const Business = () => {
                     />
                 </div>
 
-                <div class="yellow-left">
-            <h2 className='yelloh2'><strong>Diversity & Sustainability</strong></h2>
-            <p className='yellowp'>
+                <div class="Black-left">
+            <h2 className='Blackh2'><strong>Diversity & Sustainability</strong></h2>
+            <p className='Blackp'>
             BlackRock places a high priority in fostering relationships with Diverse<br/>
              and Sustainable third-parties as well as those with a similar viewpoint.<br/>
               When evaluating such companies, these factors will be considered along <br/>
               with quality, service, and pricing competitiveness.
             </p>
-            <button className="yellow-button">
-            <span className="black-arrow">{'>'}</span>Review our DE&I and Sustainability Commitments
+            <button className="Black-button">
+            <span className="red-arrow">{'>'}</span>Review our DE&I and Sustainability Commitments
           </button>
         </div>
 
@@ -113,7 +113,7 @@ const Business = () => {
              standard purchase terms and the terms of the applicable Purchase Order, <br/>
              and is conditional upon Supplier’s agreement to such terms.
             </p>
-            <button className="yellow-button">
+            <button className="business-button">
             <span className="black-arrow">{'>'}</span>Review our PO T&Cs
           </button>
         </div>
@@ -131,7 +131,7 @@ const Business = () => {
 
 
 
-    <div class="yellow-container">
+    <div class="Black-container">
 
   {/* Right Part: Video Section */}
   <div className="image-section" style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -142,15 +142,15 @@ const Business = () => {
                     />
                 </div>
 
-                <div class="yellow-left">
-            <h2 className='yelloh2'><strong>Our procurement and diligence<br/> process</strong></h2>
-            <p className='yellowp'>
+                <div class="Black-left">
+            <h2 className='Blackh2'><strong>Our procurement and diligence<br/> process</strong></h2>
+            <p className='Blackp'>
             BlackRock values its business partners and views its suppliers as an<br/>
              extension of ourselves. As a result, BlackRock requires its suppliers to <br/>
              undergo thorough financial, operational, risk and contract diligence <br/>
              process on a consistent basis.
             </p>
-            <p>BlackRock is focused on growing long-term relationships that are<br/> sustainable and create joint value.</p>
+            <p className='Blackp'>BlackRock is focused on growing long-term relationships that are<br/> sustainable and create joint value.</p>
 
         </div>
 

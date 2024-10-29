@@ -12,6 +12,7 @@ import History from './components/History';
 import Impact from './components/Impact';
 import Contacts from './components/Contacts';
 import Business from './components/Business';
+import NewsOverview from './components/Overview';
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
           <Route path="/impact" element={<Impact />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/business" element={<Business />} />
+          <Route path="/newsOverview" element={<NewsOverview />} />
+
 
 
 
