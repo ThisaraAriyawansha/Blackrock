@@ -124,7 +124,7 @@ const Navbar = () => {
                   INSIGHTS & VIEWS
                 </a>
               </li>
-                <li><a href="#">BlackRock Investment<br/> Institute</a></li>
+                <li><a href="/investment">BlackRock Investment<br/> Institute</a></li>
                 <li><a href="#">Investment Stewardship</a></li>
                 <li><a href="#">Our approach to<br/> sustainability</a></li>
                 <li><a href="#">Public Policy</a></li>

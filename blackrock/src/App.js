@@ -14,6 +14,7 @@ import Contacts from './components/Contacts';
 import Business from './components/Business';
 import NewsOverview from './components/Overview';
 import Media from './components/Media';
+import Investment from './components/Investment';
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
           <Route path="/business" element={<Business />} />
           <Route path="/newsOverview" element={<NewsOverview />} />
           <Route path="/media" element={<Media />} />
-
+          <Route path="/investment" element={<Investment />} />
 
 
 
