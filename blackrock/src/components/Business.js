@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import SmallNavBar from './SmallNavBar';
@@ -8,7 +7,6 @@ import blackRockImage from '../image/banner-suppliers.jpg'; // Import your image
 
 
 const Business = () => {
-    const [data, setData] = useState([]);
 
     useEffect(() => {
         document.title = "Doing Business with BlackRock"; // Set the page title
