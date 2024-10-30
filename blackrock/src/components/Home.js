@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import './CSS/Home.css'; // Importing the CSS file
 import Navbar from './Navbar';
 import blackrockLogo from '../image/blackrock-gip-logo-860x800.webp'; // Importing the image
