@@ -1,6 +1,6 @@
 {
   "name": "blackrock",
-  "homepage": "blackrock-roan.vercel.app",
+  "homepage": "/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
