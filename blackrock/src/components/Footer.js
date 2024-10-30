@@ -86,7 +86,7 @@ const Footer = () => {
       {/* Bottom section with different background color */}
       <div className="footer-bottom">
         <div className="footer-bottom-left">
-          <a href='/' className='Footer-Link'>BlackRock.</a><br/><br/>
+          <a href='/' className='Footer-Linkk'>BlackRock.</a><br/><br/>
           <p>
             As a global investment manager and fiduciary to our<br/>
              clients, our purpose at BlackRock is to help everyone <br/>

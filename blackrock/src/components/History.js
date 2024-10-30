@@ -46,7 +46,7 @@ const History = () => {
     <div className='history-normal'>
     <p>
     Recognizing the opportunity to bring transparency, scale and innovation to risk management<br/>
-     for the broader industry, BlackRock begins to sell its proprietary technology,<strong> <a href='#'>Aladdin.</a></strong> This <br/>
+     for the broader industry, BlackRock begins to sell its proprietary technology,<strong> Aladdin.</strong> This <br/>
      technology, integral to who we are as a firm, is embedded in everything we do, thus<br/>
       differentiating us as an investment and risk manager.
     </p>
@@ -68,7 +68,7 @@ const History = () => {
        
     <div className='history-normal'>
     <p>
-    BlackRock founds <a href='#'><strong>BlackRock Solutions,</strong> </a>with Aladdin as the basis for the business. This marked<br/>
+    BlackRock founds <strong>BlackRock Solutions,</strong> with Aladdin as the basis for the business. This marked<br/>
      the beginning of BlackRock’s role as a technology provider.
     </p>
     </div>
@@ -135,7 +135,7 @@ const History = () => {
        
     <div className='history-normal'>
     <p>
-    BlackRock further increases our commitment to <a href='#'><strong>Investment Stewardship,</strong></a> emphasizing the<br/> 
+    BlackRock further increases our commitment to <strong>Investment Stewardship,</strong>emphasizing the<br/> 
     importance of purpose to long-term profitability. Through this work and the overall dedication to<br/>
      Investment Stewardship over the past seven years, we go beyond proxy voting to engage with<br/>
       companies to drive long-term, sustainable financial performance and ultimately the value of our<br/> clients’ assets.
@@ -163,7 +163,7 @@ const History = () => {
       initiative was formed to explore innovative solutions to the most pressing retirement challenges.
     </p>
     <p>
-    BlackRock acquires <a href='#'><strong>eFront,</strong></a> the world’s leading provider of end-to-end alternative investment<br/>
+    BlackRock acquires <strong>eFront,</strong> the world’s leading provider of end-to-end alternative investment<br/>
      management software and solutions, to accelerate our ambition to make alternatives less<br/>
       alternative and enable a whole portfolio approach. The acquisition establishes a new standard<br/>
        for investment and risk management technology, enabling investors to seamlessly manage <br/>

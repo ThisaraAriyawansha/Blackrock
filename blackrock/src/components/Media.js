@@ -32,7 +32,7 @@ const Media = () => {
         <strong className='sub-topic'>Ed Sweeney</strong><br/>
             Head of Corporate Affairs, Americas<br/>
     <strong>Office</strong>: +1 646 231 0268<br/>
-    To email the Americas media team, click <strong> <a href='#'><u>here.</u></a></strong>
+    To email the Americas media team, click <strong> <u>here.</u></strong>
     </div><br/>
 
     <h1>Asia Pacific</h1>
@@ -40,7 +40,7 @@ const Media = () => {
         <strong className='sub-topic'>Rowena Kwok</strong><br/>
         Head of Asia Pacific<br/>
     <strong>Office</strong>:+852 3903 2913    <br/>
-    To email the APAC media team, click <strong> <a href='#'><u>here.</u></a></strong>
+    To email the APAC media team, click <strong> <u>here.</u></strong>
     </div><br/>
 
     <h1>EMEA</h1>
@@ -48,7 +48,7 @@ const Media = () => {
         <strong className='sub-topic'>Ryan O’Keeffe</strong><br/>
         Head of EMEA<br/>
     <strong>Office</strong>:  +44 (0)207 743 1310<br/>
-    To email the EMEA media team, click <strong> <a href='#'><u>here.</u></a></strong>
+    To email the EMEA media team, click <strong> <u>here.</u></strong>
     </div>
     
 </div>
