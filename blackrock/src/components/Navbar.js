@@ -23,7 +23,7 @@ const Navbar = () => {
           onMouseEnter={() => handleMouseEnter('aboutUs')}
           onMouseLeave={handleMouseLeave}
         >
-          <a href="#">About Us</a>
+          <a href="#top">About Us</a>
 
           {hoveredItem === 'aboutUs' && (
             
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <li><a href="/impact">Global Impact</a></li>
                 <li><a href="/contacts">Contacts and Locations</a></li>
                 <li><a href="/business">Doing Business with BlackRock</a></li>
-                <li><a href="#">Diversity, Equity, and Inclusion</a></li>
+                <li>Diversity, Equity, and Inclusion</li>
               </ul>
               {/* Image and Additional Content */}
               <div className="image-section">
@@ -52,7 +52,7 @@ const Navbar = () => {
                   <p>
                   Explore the structural changes shaping investing now – and<br/> far in the future. Uncover the risks and seize the opportunities.
                   </p>
-                  <a href="#" className="insights-link">
+                  <a href="#top" className="insights-link">
                     <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
                   </a>
                 </div>
@@ -67,7 +67,7 @@ const Navbar = () => {
           onMouseEnter={() => handleMouseEnter('newsroom')}
           onMouseLeave={handleMouseLeave}
         >
-          <a href="#">Newsroom</a>
+          <a href="#top">Newsroom</a>
 
           {hoveredItem === 'newsroom' && (
             <div className="dropdown-menu">
@@ -89,14 +89,14 @@ const Navbar = () => {
                     Explore the structural changes shaping investing now –<br/> and far in the future.
                     Uncover the risks and seize the opportunities.
                   </p>
-                  <a href="#" className="insights-link">
+                  <a href="#top" className="insights-link">
                     <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
                   </a>
                 </div>
                 <div class="vertical-line"></div> 
                 <div className="dropdown-content2">
                 <h6 className='content2'>PRESS RELEASE</h6><br/>
-                  <a href="#" >
+                  <a href="#top" >
                      <p className='content2-link'>Read more about Global Infrastructure Partners, a <br/>part of BlackRock</p>
                   </a>
                 </div>
@@ -113,23 +113,23 @@ const Navbar = () => {
           onMouseEnter={() => handleMouseEnter('Insights')}
           onMouseLeave={handleMouseLeave}
         >
-          <a href="#">Insights</a>
+          <a href="#top">Insights</a>
 
           {hoveredItem === 'Insights' && (
             
             <div className="dropdown-menu">
               <ul className="dropdown-links">
               <li>
-                <a href="#" className='link-bold' style={{ fontWeight: 'bold' }}>
+                <a href="#top" className='link-bold' style={{ fontWeight: 'bold' }}>
                   INSIGHTS & VIEWS
                 </a>
               </li>
                 <li><a href="/investment">BlackRock Investment<br/> Institute</a></li>
-                <li><a href="#">Investment Stewardship</a></li>
-                <li><a href="#">Our approach to<br/> sustainability</a></li>
-                <li><a href="#">Public Policy</a></li>
-                <li><a href="#">Long-term capitalism</a></li>
-                <li><a href="#">Investor Perspectives</a></li>
+                <li><a href="#top">Investment Stewardship</a></li>
+                <li><a href="#top">Our approach to<br/> sustainability</a></li>
+                <li><a href="#top">Public Policy</a></li>
+                <li><a href="#top">Long-term capitalism</a></li>
+                <li><a href="#top">Investor Perspectives</a></li>
               </ul>
               {/* Image and Additional Content */}
               <div className="image-section">
@@ -145,7 +145,7 @@ const Navbar = () => {
                   <p>
                   Explore the structural changes shaping investing now – and<br/> far in the future. Uncover the risks and seize the opportunities.
                   </p>
-                  <a href="#" className="insights-link">
+                  <a href="#top" className="insights-link">
                     <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
                   </a>
                 </div>
@@ -159,20 +159,20 @@ const Navbar = () => {
           onMouseEnter={() => handleMouseEnter('Investor')}
           onMouseLeave={handleMouseLeave}
         >
-          <a href="#">Investor Relations</a>
+          <a href="#top">Investor Relations</a>
 
           {hoveredItem === 'Investor' && (
             
             <div className="dropdown-menu">
               <ul className="dropdown-links">
-                <li><a href="#">Overview</a></li>
-                <li><a href="#">Annual Reports & Proxy Information</a></li>
-                <li><a href="#">SEC Filings</a></li>
-                <li><a href="#">Stock Information</a></li>
-                <li><a href="#">Dividend History</a></li>
-                <li><a href="#">Events & Presentations</a></li>
-                <li><a href="#">Corporate Governance</a></li>
-                <li><a href="#">2022 Annual report</a></li>
+                <li><a href="#top">Overview</a></li>
+                <li><a href="#top">Annual Reports & Proxy Information</a></li>
+                <li><a href="#top">SEC Filings</a></li>
+                <li><a href="#top">Stock Information</a></li>
+                <li><a href="#top">Dividend History</a></li>
+                <li><a href="#top">Events & Presentations</a></li>
+                <li><a href="#top">Corporate Governance</a></li>
+                <li><a href="#top">2022 Annual report</a></li>
               </ul>
               {/* Image and Additional Content */}
               <div className="image-section">
@@ -188,7 +188,7 @@ const Navbar = () => {
                   <p>
                   Explore the structural changes shaping investing now – and<br/> far in the future. Uncover the risks and seize the opportunities.
                   </p>
-                  <a href="#" className="insights-link">
+                  <a href="#top" className="insights-link">
                     <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
                   </a>
                 </div>
@@ -203,22 +203,22 @@ const Navbar = () => {
           onMouseEnter={() => handleMouseEnter('Corporate')}
           onMouseLeave={handleMouseLeave}
         >
-          <a href="#">Corporate sustainability</a>
+          <a href="#top">Corporate sustainability</a>
 
           {hoveredItem === 'Corporate' && (
             <div className="dropdown-menu">
               <ul className="dropdown-links">
               <li>
-                <a href="#" className='link-bold' style={{ fontWeight: 'bold' }}>
+                <a href="#top" className='link-bold' style={{ fontWeight: 'bold' }}>
                 BLACKROCK<br/> SUSTAINABILITY
                 </a>
               </li>
-                <li><a href="#">Corporate Sustainability  </a></li>
-                <li><a href="#">Human capital </a></li>
-                <li><a href="#">Environmental Sustainability</a></li>
-                <li><a href="#">Ethics & Integrity</a></li>
-                <li><a href="#">Health & Safety</a></li>
-                <li><a href="#">Social Impact</a></li>
+                <li><a href="#top">Corporate Sustainability  </a></li>
+                <li><a href="#top">Human capital </a></li>
+                <li><a href="#top">Environmental Sustainability</a></li>
+                <li><a href="#top">Ethics & Integrity</a></li>
+                <li><a href="#top">Health & Safety</a></li>
+                <li><a href="#top">Social Impact</a></li>
               </ul>
               {/* Image and Additional Content */}
               <div className="image-section">
@@ -235,7 +235,7 @@ const Navbar = () => {
                   Explore the structural changes shaping investing now – and<br/> far in the future. Uncover the risks and seize the opportunities.
                   </p>
 
-                  <a href="#" className="insights-link">
+                  <a href="#top" className="insights-link">
                     <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
                   </a>
 
@@ -251,24 +251,24 @@ const Navbar = () => {
           onMouseEnter={() => handleMouseEnter('Careers')}
           onMouseLeave={handleMouseLeave}
         >
-          <a href="#">Careers</a>
+          <a href="#top">Careers</a>
           {hoveredItem === 'Careers' && (
             
             <div className="dropdown-menu">
               <ul className="dropdown-links">
               <li>
-                <a href="#" className='link-bold' style={{ fontWeight: 'bold' }}>
+                <a href="#top" className='link-bold' style={{ fontWeight: 'bold' }}>
                 Careers at BlackRock
                 </a>
               </li>
-                <li><a href="#">Search Jobs</a></li>
-                <li><a href="#">Life at BlackRock </a></li>
-                <li><a href="#">Benefits</a></li>
-                <li><a href="#">Diversity, Equity and Inclusion</a></li>
-                <li><a href="#">Career Development</a></li>
-                <li><a href="#">Students & Graduates</a></li>
-                <li><a href="#">Supporting Veterans</a></li>
-                <li><a href="#">BlackRock Alumni Network</a></li>
+                <li><a href="#top">Search Jobs</a></li>
+                <li><a href="#top">Life at BlackRock </a></li>
+                <li><a href="#top">Benefits</a></li>
+                <li><a href="#top">Diversity, Equity and Inclusion</a></li>
+                <li><a href="#top">Career Development</a></li>
+                <li><a href="#top">Students & Graduates</a></li>
+                <li><a href="#top">Supporting Veterans</a></li>
+                <li><a href="#top">BlackRock Alumni Network</a></li>
 
               </ul>
               {/* Image and Additional Content */}
@@ -285,7 +285,7 @@ const Navbar = () => {
                   <p>
                   Explore the structural changes shaping investing now – and<br/> far in the future. Uncover the risks and seize the opportunities.
                   </p>
-                  <a href="#" className="insights-link">
+                  <a href="#top" className="insights-link">
                     <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
                   </a>
                 </div>

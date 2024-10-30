@@ -33,10 +33,10 @@ const NewsOverview = () => {
           <div className="news-explore">
             <h3 className="explore-title">Explore Newsroom</h3>
             <ul className="explore-list">
-              <li className="explore-item">Media contacts<span className="white1-arrow">{'>'}</span></li>
-              <li className="explore-item">Leadership<span className="white2-arrow">{'>'}</span></li>
-              <li className="explore-item">Investor relations<span className="white1-arrow">{'>'}</span></li>
-              <li className="explore-item">Public policy<span className="white2-arrow">{'>'}</span></li>
+              <li className="/explore-item">Media contacts<span className="white1-arrow">{'>'}</span></li>
+              <li className="/explore-item">Leadership<span className="white2-arrow">{'>'}</span></li>
+              <li className="/explore-item">Investor relations<span className="white1-arrow">{'>'}</span></li>
+              <li className="/explore-item">Public policy<span className="white2-arrow">{'>'}</span></li>
             </ul>
           </div>
         </div>
@@ -47,10 +47,10 @@ const NewsOverview = () => {
       <div className="Overview-more">
   <h2>Find country product press releases for</h2>
   <div className="button-container">
-  <Link to="#" className="Overview-button">
+  <Link to="/explore-item" className="Overview-button">
         <span className="Overview-arrow">{'>'}</span>US iShares
       </Link>
-      <Link to="#" className="Overview-button">
+      <Link to="/explore-item" className="Overview-button">
         <span className="Overview-arrow">{'>'}</span>Canada
       </Link>
 
