@@ -39,7 +39,7 @@ const Business = () => {
     BlackRock is committed to seeking out third-party partnerships who can provide high quality,<br/>
      innovative and competitively priced goods and services to meet our business requirements.<br/>
       BlackRock believes leading institutions achieve optimal performance by incorporating diversity<br/>
-       and <a href='#'><strong>sustainability</strong></a> within its business practices – including developing relationships with<br/>
+       and <strong>sustainability</strong> within its business practices – including developing relationships with<br/>
         diverse-owned businesses within its supply base. As such, BlackRock is committed to fostering<br/>
          the growth and development of veteran, minority and women-owned businesses in the<br/>
           communities in which it operates. Explore these resources designed to help you do business <br/>with BlackRock.

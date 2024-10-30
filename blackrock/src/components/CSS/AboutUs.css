@@ -296,6 +296,7 @@ padding-right: 0px;}
   }
   
   .explore-button {
+    text-decoration: none;
     background-color: transparent;
     color: white;
     border: none;
