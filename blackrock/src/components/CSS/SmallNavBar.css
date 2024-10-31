@@ -3,7 +3,7 @@
   justify-content: space-between; 
   align-items: center;
   background-color: #dadada; 
-  padding: 0.3125rem 0.9375rem;
+  padding: 0.6em 1.5rem;
   width: 100%; 
   top: 0;
   z-index: 1000; 
@@ -21,35 +21,67 @@
 }
 
 .horizontal-nav-container a {
-  color: #000000; 
-  text-decoration: none;
+  color: #000; 
+  text-decoration: none; 
   margin: 0 0.625rem; 
   font-size: 0.75rem; 
   transition: color 0.3s ease; 
 }
 
+/* Menu Icon (Three small dots) */
+.menu-icon {
+  display: none; /* Hide by default */
+  flex-direction: column; /* Align dots vertically */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+}
 
+.dot {
+  font-size: 1rem; /* Size of the dots (adjust as needed) */
+  margin: 0; /* No margin for dots */
+}
 
-@media (max-width: 48rem) { 
-  .horizontal-nav-container {
-    flex-direction: column; 
-    padding: 0.5rem; 
-  }
+/* Mobile Menu */
+.mobile-menu {
+  display: flex; /* Show the menu when toggled */
+  flex-direction: column; 
+  gap: 0.5rem; /* Spacing between links */
+  background-color: #dadada; /* Background color for dropdown */
+  margin-top: 0.5rem; /* Space above dropdown */
+  padding: 0.5rem; /* Padding for dropdown */
+  border-radius: 0.5rem; /* Rounded corners for dropdown */
+}
 
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
   .left-links {
-    margin-left: 0; 
-    justify-content: center; 
-    gap: 1.5rem; 
+    display: none; /* Hide links on mobile */
   }
 
   .right-link {
     margin-right: 0; 
     text-align: center; 
-    margin-top: 0.5rem; 
+    margin-top: 0; 
+  }
+
+  .menu-icon {
+    display: flex; /* Show the three dots on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .horizontal-nav-container {
+    padding: 0.5rem; 
+    align-items: center; /* Center align for very small screens */
   }
 
   .horizontal-nav-container a {
-    font-size: 0.875rem; 
-    margin: 0 0.3125rem; 
+    font-size: 0.875rem; /* Maintain larger font size for better readability */
+  }
+
+  .horizontal-nav-container a:hover {
+    color: #007BFF; /* Change color on hover for better interaction feedback */
   }
 }
+
+
+
