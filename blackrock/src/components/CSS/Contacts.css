@@ -120,7 +120,7 @@
   }
 
   .tab {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .locations div {
@@ -134,9 +134,8 @@
 
 
   .tabs {
-    padding: 0 15px; 
-  }
-  
+    margin-left: 40px;
+    margin-right: 40px;  }
 }
 
 @media (max-width: 992px) {
@@ -154,7 +153,7 @@
   }
 
   .tab {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .locations div {
@@ -171,10 +170,8 @@
 }
 
 .tabs {
-  padding: 0 15px; 
-}
-
-
+  margin-left: 40px;
+  margin-right: 40px;}
 }
 
 @media (max-width: 768px) {
@@ -192,7 +189,7 @@
   }
 
   .tab {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .locations {
@@ -221,10 +218,8 @@
 
 
 .tabs {
-  padding: 0 15px; 
-}
-
-
+  margin-left: 40px;
+  margin-right: 40px;}
 }
 
 @media (max-width: 576px) {
@@ -243,7 +238,7 @@
   }
 
   .tab {
-    font-size: 11px;
+    font-size: 9px;
   }
 
   .locations div {
@@ -266,7 +261,8 @@
 }
 
 .tabs {
-  padding: 0 15px; 
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 
