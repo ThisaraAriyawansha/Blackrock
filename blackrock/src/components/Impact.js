@@ -38,7 +38,7 @@ const Impact = () => {
          <p>Over 70 offices in more than 30 countries</p>
          <img src={imageone} alt="imageone" className="impact-image" /><br/>
          <p>100+ countries where we have clients</p>
-         <img src={imagetwo} alt="imageone" className="impact-image" /><br/>
+         <img src={imagetwo} alt="imagetwo" className="impact-image" /><br/>
         </div><br/><br/>
   
 
@@ -93,7 +93,7 @@ const Impact = () => {
     </div>
 <div className='impact'>
     <p>Assets managed for clients in 100 countries</p>
-    <img src={imagethree} alt="imageone" className="impact-image" /><br/><br/>
+    <img src={imagethree} alt="imagethree" className="impact-image" /><br/><br/>
     </div>
 
     <h6 className='small'>All figures as of March 31, 2015</h6>
