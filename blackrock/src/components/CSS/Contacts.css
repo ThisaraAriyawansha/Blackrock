@@ -120,7 +120,7 @@
   }
 
   .tab {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .locations div {
@@ -128,8 +128,8 @@
   }
 
   .locationn {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
 
@@ -153,7 +153,7 @@
   }
 
   .tab {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .locations div {
@@ -165,8 +165,8 @@
 }
 
 .locationn {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .tabs {
@@ -189,7 +189,7 @@
   }
 
   .tab {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .locations {
@@ -212,8 +212,8 @@
 
 
 .locationn {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
@@ -238,7 +238,7 @@
   }
 
   .tab {
-    font-size: 9px;
+    font-size: 8px;
   }
 
   .locations div {
@@ -256,8 +256,8 @@
 
 
 .locationn {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .tabs {
