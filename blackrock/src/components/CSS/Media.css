@@ -21,10 +21,9 @@
     font-size: 12px;
     position: relative; 
     margin-left: -20px;
-
 }
 
-.sub-topic{
+.sub-topic {
     font-family: 'Arial Black', sans-serif;
     font-size: 20px;
 }
@@ -36,8 +35,61 @@
     margin-bottom: 30PX;    
 }
 
-.Media-center-topic h1{
+.Media-center-topic h1 {
     font-family: 'Arial Black', sans-serif;
     font-size: 22px;
     margin-bottom: 20PX;
+}
+
+@media (max-width: 768px) {
+    .media-title {
+        padding: 50px; 
+    }
+
+    .media-title h1 {
+        font-size: 36px; 
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .media-title h6 {
+        font-size: 10px; 
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .sub-topic {
+        font-size: 18px; 
+    }
+
+    .Media-center-topic {
+        margin-top: 30px; 
+        margin-bottom: 20px; 
+    }
+
+    .Media-center-topic h1 {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .media-title {
+        padding: 30px; 
+    }
+
+    .media-title h1 {
+        font-size: 28px; 
+    }
+
+    .media-title h6 {
+        font-size: 8px; 
+    }
+
+    .sub-topic {
+        font-size: 16px; 
+    }
+
+    .Media-center-topic h1 {
+        font-size: 18px; 
+    }
 }
