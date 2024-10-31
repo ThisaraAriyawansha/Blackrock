@@ -13,11 +13,11 @@
   margin-left: 1.25rem; 
   display: flex;
   align-items: center;
-  gap: 2.5rem; /* Consistent gap for PC */
+  gap: 2.5rem; 
 }
 
 .right-link {
-  margin-right: 2rem; /* Consistent margin for PC */
+  margin-right: 2rem; 
 }
 
 .horizontal-nav-container a {
@@ -30,26 +30,26 @@
 
 
 
-@media (max-width: 48rem) { /* For mobile devices */
+@media (max-width: 48rem) { 
   .horizontal-nav-container {
-    flex-direction: column; /* Stack items vertically */
-    padding: 0.5rem; /* Reduced padding for mobile */
+    flex-direction: column; 
+    padding: 0.5rem; 
   }
 
   .left-links {
-    margin-left: 0; /* Remove left margin */
-    justify-content: center; /* Center items */
-    gap: 1.5rem; /* Adjusted gap for smaller screens */
+    margin-left: 0; 
+    justify-content: center; 
+    gap: 1.5rem; 
   }
 
   .right-link {
-    margin-right: 0; /* Remove right margin */
-    text-align: center; /* Center align right links */
-    margin-top: 0.5rem; /* Space above right link */
+    margin-right: 0; 
+    text-align: center; 
+    margin-top: 0.5rem; 
   }
 
   .horizontal-nav-container a {
-    font-size: 0.875rem; /* Slightly smaller font size for mobile */
-    margin: 0 0.3125rem; /* Adjusted margin for mobile */
+    font-size: 0.875rem; 
+    margin: 0 0.3125rem; 
   }
 }
