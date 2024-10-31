@@ -88,7 +88,7 @@ const Investment = () => {
   <div class="insights-box">
     <div class="insights-content">
       <div class="icon corporate-icon"></div>
-      <div class="text-content">
+      <div class="insights-text-content">
         <h3>Meet the BII team</h3>
         <p>The BlackRock Investment Institute connects BlackRock’s experts on the global<br/>
          economy, markets, portfolio construction and geopolitics.</p>
