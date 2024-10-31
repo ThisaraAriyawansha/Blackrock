@@ -65,7 +65,12 @@ const HomePage = () => {
       </div>
     </td>
     <td>
-
+      <div className="grid-item grid-item-wide">
+        <h2>Weekly market commentary</h2>
+        <p>Stay tuned for insights on hot topics, the latest trends in the financial market and<br />
+          our broad asset class views via the Weekly commentary by the BlackRock<br />
+          Investment Institute. Read the latest market commentary.</p>
+      </div>
     </td>
   </tr>
 </table>
