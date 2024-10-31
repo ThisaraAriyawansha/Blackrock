@@ -30,7 +30,6 @@
   margin-top: 4px; 
 }
 
-/* Button styling */
 .leadership-button { 
   font-weight: bold;
   background-color: transparent; 
@@ -52,7 +51,6 @@
   margin-right: 10px; 
 }
 
-/* Underline effect */
 .leadership-button::after {
   content: ''; 
   position: absolute;
@@ -359,3 +357,7 @@
     height: auto; 
   }
 }
+
+
+
+
