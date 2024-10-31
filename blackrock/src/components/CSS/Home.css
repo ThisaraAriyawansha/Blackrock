@@ -451,19 +451,35 @@ p {
 }
 
 
+.responsive-table {
+  width: 90%; 
+  border-collapse: collapse; 
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.responsive-table td {
+  padding: 1rem; 
+}
+
+.grid-item {
+  border-radius: 5px; 
+  padding: 1rem; 
+}
+
 @media (max-width: 768px) {
   .responsive-table {
-    display: block; /* Change the display for mobile */
+    display: block; 
   }
 
   .responsive-table tr {
-    display: flex; /* Flexbox to stack items */
-    flex-direction: column; /* Stack items vertically */
-    margin-bottom: 1rem; /* Space between rows */
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 1rem; 
   }
 
   .responsive-table td {
-    width: 100%; /* Full width for each cell */
-    display: block; /* Make cells block elements */
+    width: 100%; 
+    display: block; 
   }
 }

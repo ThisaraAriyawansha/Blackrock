@@ -40,21 +40,21 @@ const HomePage = () => {
       <div className="grid-container">
         <div className="grid-item">
           <h2>Transforming <br /> BlackRock for our<br /> clients</h2>
-          <p>Read more about the changes we’re making to help our clients meet their investment, portfolio, and business needs.</p>
+          <p>Read more about the changes we’re making to help<br />  our clients meet their investment, portfolio, and <br /> business needs.</p>
         </div>
 
         <div className="grid-item">
           <h2>Investing in the<br /> transition to a low-<br />carbon economy</h2>
-          <p>Clients are asking for our perspectives on the long-term mega forces – including the transition to a low-carbon economy.</p>
+          <p>Clients are asking for our perspectives on the long-<br /> term mega forces – including the transition to a low-<br /> carbon economy.</p>
         </div>
 
         <div className="grid-item">
           <h2>Advancing shareholder<br /> democracy</h2>
-          <p>We are committed to a future where all investors can participate in proxy voting if they choose. 
-            Find out how we are delivering on this through BlackRock Voting Choice.</p>
+          <p>We are committed to a future where all investors<br />  can participate in proxy voting if they choose. 
+            Find<br />  out how we are delivering on this through<br />  BlackRock Voting Choice.</p>
         </div>
         </div>
-        <table>
+        <table className='responsive-table'>
   <tr>
     <td>
       <div className="grid-item grid-item-wide">
