@@ -1,190 +1,361 @@
 .leadership-title {
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    padding: 90px;
-    box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 90px;
+  box-sizing: border-box;
 }
 
 .leadership-title h1 {
-    color: rgb(255, 255, 255);
-    font-size: 48px;
-    font-weight: bolder;
-    text-align: left;
-    margin: 0;
-    font-family: 'Arial Black', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: bolder;
+  text-align: left;
+  margin: 0;
+  font-family: 'Arial Black', sans-serif;
 }
 
 .leadership-title h6 {
-    color: rgb(255, 255, 255);
-    font-family: 'Arial Black', sans-serif;
-    font-size: 12px;
-    position: relative; 
+  color: rgb(255, 255, 255);
+  font-family: 'Arial Black', sans-serif;
+  font-size: 12px;
+  position: relative; 
 }
 
 .leadership-title h6::after {
-    content: ""; 
-    display: block; 
-    height: 2px; 
-    background-color: red; 
-    width: 30px; 
-    margin-top: 4px; 
-    position: absolute; 
-    left: 0; 
+  content: ""; 
+  display: block; 
+  height: 2px; 
+  background-color: red; 
+  width: 30px; 
+  margin-top: 4px; 
 }
-
-
 
 /* Button styling */
 .leadership-button { 
-    font-weight: bold;
-    background-color: transparent; 
-    color: rgb(0, 0, 0); 
-    padding: 12px 24px; 
-    border: none; 
-    border-radius: 5px; 
-    font-size: 16px; 
-    cursor: pointer; 
-    display: inline-flex; 
-    align-items: center;
-    position: relative; 
-    transition: color 0.3s; 
-    margin-left: -24px;
-  }
-  
-  .leadership-button .red-arrow {
-    color: red; 
-    margin-right: 10px; 
-  }
-  
-  /* Underline effect */
-  .leadership-button::after {
-    content: ''; 
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px; 
-    width: 0%; 
-    background-color: red; 
-    transition: width 0.4s ease-in-out; 
-  }
-  
-  .leadership-button:hover::after {
-    width: 100%; 
-  }
-  
-  
+  font-weight: bold;
+  background-color: transparent; 
+  color: rgb(0, 0, 0); 
+  padding: 12px 24px; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  display: inline-flex; 
+  align-items: center;
+  position: relative; 
+  transition: color 0.3s; 
+  margin-left: -24px;
+}
 
+.leadership-button .red-arrow {
+  color: red; 
+  margin-right: 10px; 
+}
 
+/* Underline effect */
+.leadership-button::after {
+  content: ''; 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px; 
+  width: 0%; 
+  background-color: red; 
+  transition: width 0.4s ease-in-out; 
+}
 
-
+.leadership-button:hover::after {
+  width: 100%; 
+}
 
 .team-section {
-    background-color: #e9e7e3; 
-    width: 100%;               
-    padding: 20px;            
+  background-color: #e9e7e3; 
+  width: 100%;               
+  padding: 20px;            
 }
 
 .team-table {
-    margin-top: 50px;
-    margin-left: 70px;
-    width: 100%;               
-    border-collapse: collapse; 
+  margin-top: 50px;
+  margin-left: 70px;
+  width: 100%;               
+  border-collapse: collapse; 
 }
 
 .team-member {
-    width: 50%;                
-    text-align: left;          
-    padding: 10px;            
-    vertical-align: top;       
+  width: 50%;                
+  text-align: left;          
+  padding: 10px;            
+  vertical-align: top;       
 }
 
 .member-icon {
-    width: 200px;              
-    height: auto;             
-    margin-bottom: 10px;      
+  width: 200px;              
+  height: auto;             
+  margin-bottom: 10px;      
 }
 
 .team-member h3 {
-    margin: 5px 0;           
-    font-size: 1.5rem;       
+  margin: 5px 0;           
+  font-size: 1.5rem;       
 }
 
 .team-member p {
-    margin: 0;               
-    font-size: 1rem;         
-    font-style: italic;     
+  margin: 0;               
+  font-size: 1rem;         
+  font-style: italic;     
 }
 
-.sub-member p{
-    font-style: italic;     
-
+.sub-member p {
+  font-style: italic;     
 }
-
 
 .team-section-sub {
-    padding: 40px 20px;
-    background-color: #f8f9fa; 
-    text-align: left;
+  padding: 40px 20px;
+  background-color: #f8f9fa; 
+  text-align: left;
 }
-
 
 .sub-member-icon {
-    width: 130px; 
-    height: auto; 
-    margin-bottom: 15px; 
+  width: 130px; 
+  height: auto; 
+  margin-bottom: 15px; 
 }
 
-
 .team-table tr {
-    margin-bottom: 100px; 
-  }
-  
-  .explore-more-leadership {
-    background-color: rgb(238, 185, 26);
-    color: white;
-    text-align: center;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+  margin-bottom: 100px; 
+}
 
-  /* Button styling */
+.explore-more-leadership {
+  background-color: rgb(238, 185, 26);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Button styling */
 .leadership-button-2 {
-    font-weight: bold;
-    background-color: transparent; 
-    color: rgb(0, 0, 0); 
-    padding: 12px 24px; 
-    border: none; 
+  font-weight: bold;
+  background-color: transparent; 
+  color: rgb(0, 0, 0); 
+  padding: 12px 24px; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  display: inline-flex; 
+  align-items: center; 
+  position: relative; 
+  transition: color 0.3s; 
+  margin-left: 20px;
+}
+
+.leadership-button-2 .black-arrow {
+  color: rgb(0, 0, 0); 
+  margin-right: 10px; 
+}
+
+/* Underline effect */
+.leadership-button-2::after {
+  content: ''; 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px; 
+  width: 0%; 
+  background-color: rgb(0, 0, 0); 
+  transition: width 0.4s ease-in-out; 
+}
+
+.leadership-button-2:hover::after {
+  width: 100%; 
+}
+@media (max-width: 1200px) {
+  .leadership-title {
+      padding: 80px 30px; 
+  }
+
+  .leadership-title h1 {
+      font-size: 42px; 
+      text-align: center; 
+  }
+
+  .leadership-title h6 {
+      font-size: 10px; 
+  }
+
+  .team-section {
+      padding: 20px 10px; 
+  }
+
+  .team-table {
+      margin-left: 20px; 
+  }
+
+  .team-member {
+      width: 100%; 
+      text-align: center; 
+  }
+
+  .member-icon {
+      width: 180px; 
+  }
+
+  .team-member h3 {
+      font-size: 1.4rem; 
+  }
+
+  .team-member p {
+      font-size: 0.95rem; 
+  }
+
+  .sub-member-icon {
+      width: 110px; 
+  }
+
+  .leadership-button,
+  .leadership-button-2 {
+      font-size: 15px; 
+      padding: 10px 20px; 
+  }
+}
+
+@media (max-width: 992px) {
+  .leadership-title {
+      padding: 60px 20px; 
+  }
+
+  .leadership-title h1 {
+      font-size: 36px; 
+  }
+
+  .team-section {
+      padding: 15px; 
+  }
+
+  .team-table {
+      margin-left: 10px; 
+  }
+
+  .team-member {
+      padding: 8px; 
+  }
+
+  .member-icon {
+      width: 150px; 
+  }
+
+  .team-member h3 {
+      font-size: 1.2rem; 
+  }
+
+  .team-member p {
+      font-size: 0.9rem; 
+  }
+
+  .leadership-button,
+  .leadership-button-2 {
+      font-size: 14px; 
+      padding: 8px 16px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .leadership-title {
+      padding: 50px 10px; 
+  }
+
+  .leadership-title h1 {
+      font-size: 32px; 
+      text-align: center; 
+  }
+
+  .leadership-title h6 {
+      font-size: 9px; 
+  }
+
+  .team-section {
+      padding: 10px; 
+  }
+
+  .team-member {
+      width: 100%; 
+      text-align: center; 
+  }
+
+  .member-icon {
+      width: 120px; 
+  }
+
+  .team-member h3 {
+      font-size: 1rem; 
+  }
+
+  .team-member p {
+      font-size: 0.8rem; 
+  }
+
+  .leadership-button,
+  .leadership-button-2 {
+      font-size: 14px; 
+      padding: 8px 16px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .leadership-title {
+      padding: 30px 10px; 
+  }
+
+  .leadership-title h1 {
+      font-size: 28px; 
+  }
+
+  .leadership-title h6 {
+      font-size: 8px; 
+  }
+
+  .team-member h3 {
+      font-size: 0.9rem; 
+  }
+
+  .team-member p {
+      font-size: 0.7rem; 
+  }
+
+  .leadership-button,
+  .leadership-button-2 {
+      font-size: 12px; 
+      padding: 6px 12px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .team-table {
+    display: block; 
+    margin-left: 0; 
+  }
+
+  .team-table tr {
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
     border-radius: 5px; 
-    font-size: 16px; 
-    cursor: pointer; 
-    display: inline-flex; 
-    align-items: center; 
-    position: relative; 
-    transition: color 0.3s; 
-    margin-left: 20px;
+    padding: 10px; 
+    background-color: #fff; 
   }
-  
-  .leadership-button-2 .black-arrow {
-    color: rgb(0, 0, 0); 
-    margin-right: 10px; 
-  }
-  
-  /* Underline effect */
-  .leadership-button-2::after {
-    content: ''; 
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px; 
-    width: 0%; 
-    background-color: rgb(0, 0, 0); 
-    transition: width 0.4s ease-in-out; 
-  }
-  
-  .leadership-button-2:hover::after {
+
+  .team-member {
     width: 100%; 
+    text-align: left; 
   }
-  
+
+  .member-icon {
+    width: 100%; 
+    max-width: 130px; 
+    height: auto; 
+  }
+}
