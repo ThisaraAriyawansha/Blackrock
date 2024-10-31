@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react';
-import './CSS/Home.css'; // Importing the CSS file
+import './CSS/Home.css'; 
 import Navbar from './Navbar';
-import blackrockLogo from '../image/blackrock-gip-logo-860x800.webp'; // Importing the image
+import blackrockLogo from '../image/blackrock-gip-logo-860x800.webp'; 
 import SmallNavBar  from './SmallNavBar';
 import Footer from './Footer';
 import Content from './FooterContents'
@@ -9,16 +9,15 @@ import Content from './FooterContents'
 const HomePage = () => {
   
   useEffect(() => {
-    document.title = "BlackRock Coparate Website"; // Set the page title
+    document.title = "BlackRock Coparate Website"; 
   }, []);
   
   return (
     <div>
       <SmallNavBar/>
-      <div className="navbar-gap"></div> {/* Add a gap between navbars */}
+      <div className="navbar-gap"></div>
       <Navbar/>
 
-      {/* Main Content */}
       <div className="main-content">
         <div>
           <h4 className='small-content'>Private Markets</h4><br/>
@@ -33,7 +32,6 @@ const HomePage = () => {
           </button>
         </div>
 
-        {/* Image Section */}
         <div className="image-section">
           <img src={blackrockLogo} alt="Global Infrastructure Partners" />
         </div>
@@ -90,7 +88,6 @@ const HomePage = () => {
             <span className="black-arrow">{'>'}</span> Learn more
           </button>
         </div>
-  {/* Right Part: Video Section */}
   <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
     <video
         controls
@@ -108,7 +105,9 @@ const HomePage = () => {
     <div class="info-section">
   <div class="info-box">
     <div class="info-content">
-      <div class="icon corporate-icon"></div>
+      <div class="icon corporate-icon">
+        <img src="https://www.blackrock.com/blk-corp-assets/cache-1580293686000/images/media-bin/web/global/svg/icons/BLK_icn_people.svg" alt="Corporate Sustainability Icon" />
+      </div>
       <div class="text-content">
         <h3>Corporate sustainability</h3>
         <p>We focus on the long-term sustainability of BlackRock so <br/>
@@ -117,13 +116,15 @@ const HomePage = () => {
         <button className="info-button">
             <span className="red-arrow">{'>'}</span> Learn more
           </button>
-                </div>
+      </div>
     </div>
   </div>
   
   <div class="info-box">
     <div class="info-content">
-      <div class="icon stewardship-icon"></div>
+      <div class="icon stewardship-icon">
+        <img src="https://www.blackrock.com/blk-corp-assets/cache-1665499269000/images/media-bin/web/global/svg/icons/BLK_icn_ideas_bulb.svg" alt="Investment Stewardship Icon" />
+      </div>
       <div class="text-content">
         <h3>Investment stewardship</h3>
         <p>We engage with companies to inform our voting and promote sound<br/>
@@ -131,10 +132,11 @@ const HomePage = () => {
         <button className="info-button">
             <span className="red-arrow">{'>'}</span> Learn more
           </button>    
-            </div>
+      </div>
     </div>
   </div>
 </div>
+
 
 <Footer/>
 
