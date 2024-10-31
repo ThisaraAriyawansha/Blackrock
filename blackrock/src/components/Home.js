@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react';
 import './CSS/Home.css'; 
 import Navbar from './Navbar';
-import blackrockLogo from '../image/blackrock-gip-logo-860x800.webp'; 
+import blackrockLogo from '../image/1000115095.jpg'; 
 import SmallNavBar  from './SmallNavBar';
 import Footer from './Footer';
 import Content from './FooterContents'

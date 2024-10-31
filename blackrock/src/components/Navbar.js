@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="logo" style={{ textDecoration: 'none' }}>
-        BlackRock
+      WebNest
       </Link>
       {/* Hamburger Icon for Mobile */}
       <div className="hamburger" onClick={toggleMenu}>
