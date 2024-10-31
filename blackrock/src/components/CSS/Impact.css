@@ -1,63 +1,155 @@
 .impact {
-    margin-top: 40px;
-    margin-left: 100px;
+  margin-top: 40px;
+  margin-left: 100px;
 }
 
 .impact h1 {
-    font-family: 'Arial Black', sans-serif;
-    font-size: 37px;
-    font-weight: bold;
-    margin-bottom: 35px;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 37px;
+  font-weight: bold;
+  margin-bottom: 35px;
 }
 
 .impact p {
-    font-family: 'Arial Black', sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    margin-bottom: 35px;
-    color: black;
-    text-align: center; 
-    margin-right: 50%;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 35px;
+  color: black;
+  text-align: center; 
+  margin-right: 50%;
 }
 
 .impact hr {
-    height: 3px;
-    background-color: black;
-    width: 50%;
-    margin-bottom: 35px;
+  height: 3px;
+  background-color: black;
+  width: 50%;
+  margin-bottom: 35px;
 }
 
+.partners {
+  margin-top: 40px;
+  margin-left: 100px;
+}
 
-.partners{
-    margin-top: 40px;
-    margin-left: 100px;
+.partners h1 {
+  font-family: 'Arial', sans-serif; 
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.partners p {
+  font-family: 'Arial', sans-serif; 
+  font-size: 17px;
+  font-weight: 100;
+  margin-bottom: 35px;
+  color: black;
+}
+
+.partners hr {
+  height: 3px;
+  background-color: black;
+  width: 50%;
+  margin-bottom: 35px;
+}
+
+.small {
+  font-size: 10px;
+  margin-left: 100px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  .impact {
+      margin-left: 50px;
   }
 
-  .partners h1{
-    font-family: 'Arial ', sans-serif; 
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom: 35px;
+  .partners {
+      margin-left: 50px;
   }
 
-  .partners p{
-    font-family: 'Arial ', sans-serif; 
-    font-size: 17px;
-    font-weight: 100;
-    margin-bottom: 35px;
-    color: black;
+  .impact h1, .partners h1 {
+      font-size: 30px;
   }
 
-  .partners hr{
-    height: 3px;
-    background-color: black;
-    width: 50%;
-    margin-bottom: 35px;
-
+  .impact p, .partners p {
+      font-size: 15px;
   }
 
-  .small{
-    font-size: 10px;
-    margin-left: 100px;
-    margin-bottom: 40px;
+  .impact hr, .partners hr {
+      width: 70%;
   }
+
+  .small {
+      margin-left: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .impact {
+      margin-left: 20px;
+  }
+
+  .partners {
+      margin-left: 20px;
+  }
+
+  .impact h1, .partners h1 {
+      font-size: 26px;
+  }
+
+  .impact p, .partners p {
+      font-size: 14px;
+  }
+
+  .impact hr, .partners hr {
+      width: 80%;
+  }
+
+  .small {
+      margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .impact {
+      margin-left: 10px;
+  }
+
+  .partners {
+      margin-left: 10px;
+  }
+
+  .impact h1, .partners h1 {
+      font-size: 24px;
+  }
+
+  .impact p, .partners p {
+      font-size: 13px;
+  }
+
+  .impact hr, .partners hr {
+      width: 90%;
+      margin: 20px auto;
+  }
+
+  .small {
+      margin-left: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .impact h1, .partners h1 {
+      font-size: 20px;
+  }
+
+  .impact p, .partners p {
+      font-size: 12px;
+  }
+
+  .small {
+      font-size: 8px;
+      margin-left: 10px;
+  }
+}
