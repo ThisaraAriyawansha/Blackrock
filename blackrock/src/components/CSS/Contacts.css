@@ -127,9 +127,10 @@
     width: 120px;
   }
 
-  .location-table td {
-    padding: 10px 15px; 
-}
+  .locationn {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
 }
 
@@ -158,8 +159,10 @@
   .location-table td {
     padding: 10px 15px; 
 }
+
 .locationn {
-  margin: 0 15px; 
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 
@@ -203,7 +206,8 @@
 
 
 .locationn {
-  margin: 0 15px; 
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 
@@ -243,7 +247,8 @@
 
 
 .locationn {
-  margin: 0 15px; 
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 
