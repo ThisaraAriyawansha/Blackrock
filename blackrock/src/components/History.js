@@ -177,7 +177,7 @@ const History = () => {
   <h2>Learn more about BlackRock</h2>
   <div className="button-container">
   <Link to="/about-us" className="explore-button">
-        <span className="red-arrow">{'>'}</span> About us
+        <span className="red-arrow">{'>'}</span>About us
       </Link>
       <Link to="/leadership" className="explore-button">
         <span className="red-arrow">{'>'}</span>Leadership
