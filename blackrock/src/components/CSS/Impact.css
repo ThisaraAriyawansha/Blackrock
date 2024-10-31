@@ -153,3 +153,18 @@
       margin-left: 10px;
   }
 }
+
+
+
+@media (max-width: 768px) {
+  .impact-image {
+      width: 90%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .impact-image {
+      width: 100%; 
+      padding: 0 10px; 
+  }
+}

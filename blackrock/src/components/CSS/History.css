@@ -159,14 +159,14 @@
 
 @media (max-width: 768px) {
   .explore-button {
-      font-size: 14px; /* Reduced font size on smaller screens */
-      padding: 8px 16px; /* Adjusted padding for mobile */
+      font-size: 14px; 
+      padding: 8px 16px; 
   }
 }
 
 @media (max-width: 480px) {
   .explore-button {
-      font-size: 12px; /* Further reduce font size on extra small screens */
-      padding: 6px 12px; /* Reduced padding for extra small screens */
+      font-size: 12px; 
+      padding: 6px 12px; 
   }
 }
