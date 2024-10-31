@@ -62,97 +62,95 @@
   font-size: 10px;
   color: #000; 
 }
-
-/* Mobile Styles */
 @media (max-width: 1200px) {
   .banner-text {
-      font-size: 60px; /* Slightly smaller for larger tablets */
+      font-size: 60px; 
   }
 
   .innovations {
-      margin: 40px 5%; /* Reduce margin for large tablets */
+      margin: 40px 5%; 
   }
 
   .innovations h1 {
-      font-size: 30px; /* Smaller heading size for tablets */
+      font-size: 30px; 
   }
 
   .innovations p {
-      font-size: 15px; /* Smaller paragraph size for tablets */
+      font-size: 15px; 
   }
 
   .innovations hr {
-      width: 70%; /* Adjust hr for tablets */
+      width: 70%; 
   }
 }
 
 @media (max-width: 992px) {
   .banner-text {
-      font-size: 50px; /* Further reduce for smaller tablets */
+      font-size: 50px; 
   }
 
   .innovations h1 {
-      font-size: 26px; /* Further reduce heading size for smaller tablets */
+      font-size: 26px; 
   }
 
   .innovations p {
-      font-size: 14px; /* Further reduce paragraph size for smaller tablets */
+      font-size: 14px; 
   }
 
   .innovations hr {
-      width: 80%; /* Wider hr for smaller tablets */
+      width: 80%; 
   }
 
   .history-normal p {
-      font-size: 15px; /* Smaller font size for mobile */
+      font-size: 15px; 
   }
 }
 
 @media (max-width: 768px) {
   .banner-text {
-      font-size: 40px; /* Smaller font size for mobile */
+      font-size: 40px; 
   }
 
   .innovations {
-      margin: 30px 5%; /* Minimal margin for small screens */
+      margin: 30px 5%; 
   }
 
   .innovations h1 {
-      font-size: 24px; /* Smaller heading size for mobile */
+      font-size: 24px; 
   }
 
   .innovations p {
-      font-size: 13px; /* Smaller paragraph size for mobile */
+      font-size: 13px; 
   }
 
   .innovations hr {
-      width: 90%; /* Wider hr for mobile */
-      margin: 20px auto; /* Center hr */
+      width: 90%; 
+      margin: 20px auto; 
   }
 }
 
 @media (max-width: 576px) {
   .banner-text {
-      font-size: 30px; /* Further reduce font size for very small screens */
+      font-size: 30px; 
   }
 
   .innovations {
-      margin: 20px 5%; /* Further reduce margin for very small screens */
+      margin: 20px 5%; 
   }
 
   .innovations h1 {
-      font-size: 20px; /* Further reduce heading size */
+      font-size: 20px; 
   }
 
   .innovations p {
-      font-size: 12px; /* Further reduce paragraph size */
+      font-size: 12px; 
   }
 
   .history-normal p {
-      font-size: 14px; /* Smaller font size for mobile */
+      font-size: 14px; 
   }
 
   .History-bold {
-      font-size: 8px; /* Smaller font size for History-bold on mobile */
+      font-size: 8px; 
   }
 }
