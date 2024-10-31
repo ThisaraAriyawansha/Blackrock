@@ -119,7 +119,6 @@ const HomePage = () => {
       </div>
     </div>
   </div>
-  
   <div class="info-box">
     <div class="info-content">
       <div class="icon stewardship-icon">
@@ -135,6 +134,7 @@ const HomePage = () => {
       </div>
     </div>
   </div>
+
 </div>
 
 
