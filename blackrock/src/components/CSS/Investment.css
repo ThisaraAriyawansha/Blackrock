@@ -560,48 +560,25 @@ form {
 
 
 
-
 @media (max-width: 768px) {
   .insights-table {
-    display: block; /* Change to block for stacking */
-    width: 100%; /* Ensure the table takes full width */
-    text-align: left;
-    margin-left: -200px; /* Align text to the left */
-  }
-
-  .insights-table tr {
-    display: flex; /* Use flex for rows */
-    flex-direction: column; /* Stack contents vertically */
-    margin-bottom: 20px; /* Space between rows */
-  }
-
-  .insights-table td {
-    width: 100%; /* Full width for each cell */
-    display: flex; /* Use Flexbox for cell contents */
-    align-items: flex-start; /* Align items to the top */
-    padding: 10px; /* Add padding for spacing */
-    box-sizing: border-box; /* Include padding in the width */
-  }
-
-  /* Remove icon styles since the icon is no longer present */
-  .icon {
-    margin-right: 10px; /* Space between icon and text */
+    display: none; 
   }
 }
 
 @media (max-width: 480px) {
   h3 {
-    font-size: 1.2rem; /* Smaller heading for small screens */
-    margin: 0; /* Remove margin for tighter layout */
+    font-size: 1.2rem; 
+    margin: 0; 
   }
 
   p {
-    font-size: 12px; /* Smaller paragraph for small screens */
-    margin: 5px 0; /* Add margin for spacing */
+    font-size: 12px; 
+    margin: 5px 0; 
   }
 
   .info-button {
-    font-size: 12px; /* Smaller button font size */
-    padding: 8px 10px; /* Smaller button padding */
+    font-size: 12px; 
+    padding: 8px 10px; 
   }
 }
