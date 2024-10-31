@@ -87,23 +87,35 @@ const Investment = () => {
     <div class="insights-section">
   <div class="insights-box">
     <div class="insights-content">
-      <div class="icon corporate-icon"></div>
-      <div class="insights-text-content">
-        <h3>Meet the BII team</h3>
-        <p>The BlackRock Investment Institute connects BlackRock’s experts on the global<br/>
-         economy, markets, portfolio construction and geopolitics.</p>
-        <button className="info-button">
-            <span className="red-arrow">{'>'}</span> Learn more
-          </button>
-                </div>
+      <table className='insights-table'>
+        <tbody>
+          <tr>
+            <td>
+              <div class="icon corporate-icon"></div>
+            </td>
+            <td>
+              <div class="insights-text-content">
+                <h3>Meet the BII team</h3>
+                <p>
+                  The BlackRock Investment Institute connects BlackRock’s experts on the global<br />
+                  economy, markets, portfolio construction and geopolitics.
+                </p>
+                <button className="info-button">
+                  <span className="red-arrow">{'>'}</span> Learn more
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  
 </div>
 
 
-<div class="Black-container">
 
+
+<div class="Black-container">
 
 <div className="image-section" style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                   <img
@@ -127,29 +139,40 @@ const Investment = () => {
   </div>
 
 
-<div class="yellow-container">
-        <div class="yellow-left">
-            <h2 className='yelloh2'><strong>Grabbing the wheel:<br/> putting money to work</strong></h2>
-            <p className='yellowp'>
-            The new regime of greater volatility is full of opportunities. Seizing them<br/>
-             requires a dynamic and selective approach that blends the economic<br/>
-              outlook with mega forces and more. Learn more from Wei Li, Global Chief<br/> Investment Strategist.
-            </p>
-            <button className="business-button">
+  <div className="investment-container">
+  <table className='investment-table'>
+    <tbody>
+      <tr>
+        <td className="investment-left">
+          <h2 className='investmenth2'><strong>Grabbing the wheel:<br /> putting money to work</strong></h2>
+          <p className='investmentp'>
+            The new regime of greater volatility is full of opportunities. Seizing them<br />
+            requires a dynamic and selective approach that blends the economic<br />
+            outlook with mega forces and more. Learn more from Wei Li, Global Chief<br /> Investment Strategist.
+          </p>
+          <button className="investment-button">
             <span className="black-arrow">{'>'}</span> View our video library
           </button>
-        </div>
-  <div className="image-section" style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-  <video
-        controls
-        style={{ maxWidth: '100%', height: 'auto',width: '500px', border: 'none' }}
-    >
-          <source src="https://dwu7l6as21h3p.cloudfront.net/BBL_2024Outlook-94.720p.wide.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-    </video>
-  </div>
+        </td>
+        <td className="image-section-investment">
+          <div className="video-container">
+            <video
+              controls
+              className="investment-video"
+            >
+              <source src="https://dwu7l6as21h3p.cloudfront.net/BBL_2024Outlook-94.720p.wide.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-    </div><br/><br/>
+
+
+<br/><br/>
 
 
     <div className="who-we-are" id='whoweare'>

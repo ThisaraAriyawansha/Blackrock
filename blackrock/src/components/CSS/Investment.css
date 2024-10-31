@@ -351,7 +351,7 @@ form {
 
 @media (max-width: 768px) {
 .corporate-icon{
-  width: 0%;
+  width: 100%;
 }
 
   .investment-section {
@@ -432,11 +432,176 @@ form {
       flex-direction: column; 
   }
 
-.insights-text-content {
-  
-text-align: left;
-margin-left: -200px;
-  
+
+
 }
 
+
+
+.investment-container {
+  background-color: rgb(242, 181, 38);
+  display: flex;
+  width: 100%;
+  height: auto; 
+  padding: 20px; 
+}
+
+.investment-video{
+  max-width: 500px;
+  height: auto;
+}
+
+
+.investment-table {
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+.investment-left, 
+.image-section-investment {
+  padding: 20px; 
+}
+
+
+
+.investment-button { 
+  font-weight: bold;
+  background-color: transparent; 
+  color: rgb(0, 0, 0); 
+  padding: 12px 24px; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  display: inline-flex; 
+  align-items: center;
+  position: relative; 
+  transition: color 0.3s; 
+  margin-left: -24px;
+}
+
+.investment-button::after {
+  content: ''; 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px; 
+  width: 0%; 
+  background-color: rgb(0, 0, 0); 
+  transition: width 0.4s ease-in-out; 
+}
+
+.investment-button:hover::after {
+  width: 100%; 
+}
+
+@media (max-width: 768px) {
+  .investment-container {
+    flex-direction: column; 
+    height: auto; 
+  }
+
+  .investment-left, 
+  .image-section-investment {
+    width: 100%; 
+    display: block; 
+    margin-bottom: 20px; 
+  }
+
+  .video-container {
+    display: flex; 
+    justify-content: center; 
+  }
+
+  .investment-video {
+    width: 100%; 
+    height: auto; 
+    max-width: 500px; 
+    border-radius: 8px; 
+  }
+
+  .investmenth2 {
+    font-size: 1.5rem; 
+  }
+
+  .investmentp {
+    font-size: 14px; 
+  }
+
+  .business-button {
+    padding: 10px 15px; 
+    background-color: #000; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+  }
+
+  .business-button:hover {
+    background-color: #444; 
+  }
+}
+
+@media (max-width: 480px) {
+  .investmenth2 {
+    font-size: 1.2rem; 
+  }
+
+  .investmentp {
+    font-size: 12px; 
+  }
+
+  .business-button {
+    font-size: 12px; 
+    padding: 8px 10px; 
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .insights-table {
+    display: block; /* Change to block for stacking */
+    width: 100%; /* Ensure the table takes full width */
+    text-align: left;
+    margin-left: -200px; /* Align text to the left */
+  }
+
+  .insights-table tr {
+    display: flex; /* Use flex for rows */
+    flex-direction: column; /* Stack contents vertically */
+    margin-bottom: 20px; /* Space between rows */
+  }
+
+  .insights-table td {
+    width: 100%; /* Full width for each cell */
+    display: flex; /* Use Flexbox for cell contents */
+    align-items: flex-start; /* Align items to the top */
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width */
+  }
+
+  /* Remove icon styles since the icon is no longer present */
+  .icon {
+    margin-right: 10px; /* Space between icon and text */
+  }
+}
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 1.2rem; /* Smaller heading for small screens */
+    margin: 0; /* Remove margin for tighter layout */
+  }
+
+  p {
+    font-size: 12px; /* Smaller paragraph for small screens */
+    margin: 5px 0; /* Add margin for spacing */
+  }
+
+  .info-button {
+    font-size: 12px; /* Smaller button font size */
+    padding: 8px 10px; /* Smaller button padding */
+  }
 }
