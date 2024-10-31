@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './CSS/Navbar.css'; // Import the CSS file
-import aboutUsImage from '../image/mega-forces-banner.jpg'; // Import the image
+import './CSS/Navbar.css'; 
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -11,26 +10,21 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      {/* Logo */}
       <Link to="/" className="logo" style={{ textDecoration: 'none' }}>
-      BlackRock
-    </Link>
-      {/* Navigation Links */}
+        BlackRock
+      </Link>
       <ul className="nav-links">
-        {/* About Us Dropdown */}
         <li
           className="nav-item"
           onMouseEnter={() => handleMouseEnter('aboutUs')}
           onMouseLeave={handleMouseLeave}
         >
           <a href="#top">About Us</a>
-
           {hoveredItem === 'aboutUs' && (
-            
             <div className="dropdown-menu">
               <ul className="dropdown-links">
-              <li><a href="/about-us" >About BlackRock</a></li>
-              <li><a href="/principles">Principles</a></li>
+                <li><a href="/about-us">About BlackRock</a></li>
+                <li><a href="/principles">Principles</a></li>
                 <li><a href="/leadership">Leadership</a></li>
                 <li><a href="/history">History</a></li>
                 <li><a href="/impact">Global Impact</a></li>
@@ -38,25 +32,6 @@ const Navbar = () => {
                 <li><a href="/business">Doing Business with BlackRock</a></li>
                 <li>Diversity, Equity, and Inclusion</li>
               </ul>
-              {/* Image and Additional Content */}
-              <div className="image-section">
-                <img
-                  src={aboutUsImage}
-                  alt="About Us"
-                  className="dropdown-image"
-                  style={{ width: '400px', height: '150px' }}
-                />
-                <div className="dropdown-content">
-                  <h5>BLACKROCK INVESTMENT INSTITUTE</h5>
-                  <p className='dropdown-paragraph'>Mega forces: An investment opportunity</p>
-                  <p>
-                  Explore the structural changes shaping investing now – and<br/> far in the future. Uncover the risks and seize the opportunities.
-                  </p>
-                  <a href="#top" className="insights-link">
-                    <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
-                  </a>
-                </div>
-              </div>
             </div>
           )}
         </li>
@@ -68,7 +43,6 @@ const Navbar = () => {
           onMouseLeave={handleMouseLeave}
         >
           <a href="#top">Newsroom</a>
-
           {hoveredItem === 'newsroom' && (
             <div className="dropdown-menu">
               <ul className="dropdown-links">
@@ -76,34 +50,13 @@ const Navbar = () => {
                 <li><a href="/media">Media Contacts</a></li>
               </ul>
               <div className="image-section">
-                <img
-                  src={aboutUsImage}
-                  alt="Newsroom"
-                  className="dropdown-image"
-                  style={{ width: '400px', height: '150px' }}
-                />
-                <div className="dropdown-content">
-                  <h5>BLACKROCK INVESTMENT INSTITUTE</h5>
-                  <p className='dropdown-paragraph'>Mega forces: An investment opportunity</p>
-                  <p>
-                    Explore the structural changes shaping investing now –<br/> and far in the future.
-                    Uncover the risks and seize the opportunities.
-                  </p>
-                  <a href="#top" className="insights-link">
-                    <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
-                  </a>
-                </div>
-                <div class="vertical-line"></div> 
                 <div className="dropdown-content2">
-                <h6 className='content2'>PRESS RELEASE</h6><br/>
-                  <a href="#top" >
-                     <p className='content2-link'>Read more about Global Infrastructure Partners, a <br/>part of BlackRock</p>
+                  <h6 className='content2'>PRESS RELEASE</h6><br />
+                  <a href="#top">
+                    <p className='content2-link'>Read more about Global Infrastructure Partners, a <br />part of BlackRock</p>
                   </a>
                 </div>
-                
               </div>
-              
-
             </div>
           )}
         </li>
@@ -114,55 +67,43 @@ const Navbar = () => {
           onMouseLeave={handleMouseLeave}
         >
           <a href="#top">Insights</a>
-
           {hoveredItem === 'Insights' && (
-            
             <div className="dropdown-menu">
               <ul className="dropdown-links">
-              <li>
-                <a href="#top" className='link-bold' style={{ fontWeight: 'bold' }}>
-                  INSIGHTS & VIEWS
-                </a>
-              </li>
-                <li><a href="/investment">BlackRock Investment<br/> Institute</a></li>
+                <li>
+                  <a href="#top" className='link-bold' style={{ fontWeight: 'bold' }}>
+                    INSIGHTS & VIEWS
+                  </a>
+                </li>
+                <li><a href="/investment">BlackRock Investment<br /> Institute</a></li>
                 <li><a href="#top">Investment Stewardship</a></li>
-                <li><a href="#top">Our approach to<br/> sustainability</a></li>
+                <li><a href="#top">Our approach to<br /> sustainability</a></li>
                 <li><a href="#top">Public Policy</a></li>
                 <li><a href="#top">Long-term capitalism</a></li>
                 <li><a href="#top">Investor Perspectives</a></li>
               </ul>
-              {/* Image and Additional Content */}
               <div className="image-section">
-                <img
-                  src={aboutUsImage}
-                  alt="About Us"
-                  className="dropdown-image"
-                  style={{ width: '400px', height: '150px' }}
-                />
-                <div className="dropdown-content">
-                  <h5>BLACKROCK INVESTMENT INSTITUTE</h5>
-                  <p className='dropdown-paragraph'>Mega forces: An investment opportunity</p>
-                  <p>
-                  Explore the structural changes shaping investing now – and<br/> far in the future. Uncover the risks and seize the opportunities.
-                  </p>
-                  <a href="#top" className="insights-link">
-                    <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
+                <div className="dropdown-content2">
+                  <h6 className='content2'>BLACKROCK INVESTMENT INSTITUTE</h6><br />
+                  <a href="#top">
+                    <p className='content2-link'><strong>Mega forces: An investment opportunity</strong> <br />
+                      Mega forces are big, structural changes that affect investing
+                      now - and far in the future. This creates major opportunities - 
+                      and risks - for investors.</p>
                   </a>
                 </div>
               </div>
             </div>
           )}
         </li>
-        
+
         <li
           className="nav-item"
           onMouseEnter={() => handleMouseEnter('Investor')}
           onMouseLeave={handleMouseLeave}
         >
           <a href="#top">Investor Relations</a>
-
           {hoveredItem === 'Investor' && (
-            
             <div className="dropdown-menu">
               <ul className="dropdown-links">
                 <li><a href="#top">Overview</a></li>
@@ -174,78 +115,35 @@ const Navbar = () => {
                 <li><a href="#top">Corporate Governance</a></li>
                 <li><a href="#top">2022 Annual report</a></li>
               </ul>
-              {/* Image and Additional Content */}
-              <div className="image-section">
-                <img
-                  src={aboutUsImage}
-                  alt="About Us"
-                  className="dropdown-image"
-                  style={{ width: '400px', height: '150px' }}
-                />
-                <div className="dropdown-content">
-                  <h5>BLACKROCK INVESTMENT INSTITUTE</h5>
-                  <p className='dropdown-paragraph'>Mega forces: An investment opportunity</p>
-                  <p>
-                  Explore the structural changes shaping investing now – and<br/> far in the future. Uncover the risks and seize the opportunities.
-                  </p>
-                  <a href="#top" className="insights-link">
-                    <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
-                  </a>
-                </div>
-              </div>
             </div>
           )}
         </li>
-        
-        
+
         <li
           className="nav-item"
           onMouseEnter={() => handleMouseEnter('Corporate')}
           onMouseLeave={handleMouseLeave}
         >
           <a href="#top">Corporate sustainability</a>
-
           {hoveredItem === 'Corporate' && (
             <div className="dropdown-menu">
               <ul className="dropdown-links">
-              <li>
-                <a href="#top" className='link-bold' style={{ fontWeight: 'bold' }}>
-                BLACKROCK<br/> SUSTAINABILITY
-                </a>
-              </li>
-                <li><a href="#top">Corporate Sustainability  </a></li>
-                <li><a href="#top">Human capital </a></li>
+                <li>
+                  <a href="#top" className='link-bold' style={{ fontWeight: 'bold' }}>
+                    BLACKROCK<br /> SUSTAINABILITY
+                  </a>
+                </li>
+                <li><a href="#top">Corporate Sustainability</a></li>
+                <li><a href="#top">Human capital</a></li>
                 <li><a href="#top">Environmental Sustainability</a></li>
                 <li><a href="#top">Ethics & Integrity</a></li>
                 <li><a href="#top">Health & Safety</a></li>
                 <li><a href="#top">Social Impact</a></li>
               </ul>
-              {/* Image and Additional Content */}
-              <div className="image-section">
-                <img
-                  src={aboutUsImage}
-                  alt="About Us"
-                  className="dropdown-image"
-                  style={{ width: '400px', height: '150px' }}
-                />
-                <div className="dropdown-content">
-                  <h5>BLACKROCK INVESTMENT INSTITUTE</h5>
-                  <p className='dropdown-paragraph'>Mega forces: An investment opportunity</p>
-                  <p>
-                  Explore the structural changes shaping investing now – and<br/> far in the future. Uncover the risks and seize the opportunities.
-                  </p>
-
-                  <a href="#top" className="insights-link">
-                    <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
-                  </a>
-
-                </div>
-              </div>
             </div>
           )}
-        </li>       
-        
-        
+        </li>
+
         <li
           className="nav-item"
           onMouseEnter={() => handleMouseEnter('Careers')}
@@ -253,52 +151,30 @@ const Navbar = () => {
         >
           <a href="#top">Careers</a>
           {hoveredItem === 'Careers' && (
-            
             <div className="dropdown-menu">
               <ul className="dropdown-links">
-              <li>
-                <a href="#top" className='link-bold' style={{ fontWeight: 'bold' }}>
-                Careers at BlackRock
-                </a>
-              </li>
+                <li>
+                  <a href="#top" className='link-bold' style={{ fontWeight: 'bold' }}>
+                    Careers at BlackRock
+                  </a>
+                </li>
                 <li><a href="#top">Search Jobs</a></li>
-                <li><a href="#top">Life at BlackRock </a></li>
+                <li><a href="#top">Life at BlackRock</a></li>
                 <li><a href="#top">Benefits</a></li>
                 <li><a href="#top">Diversity, Equity and Inclusion</a></li>
                 <li><a href="#top">Career Development</a></li>
                 <li><a href="#top">Students & Graduates</a></li>
                 <li><a href="#top">Supporting Veterans</a></li>
                 <li><a href="#top">BlackRock Alumni Network</a></li>
-
               </ul>
-              {/* Image and Additional Content */}
-              <div className="image-section">
-                <img
-                  src={aboutUsImage}
-                  alt="About Us"
-                  className="dropdown-image"
-                  style={{ width: '400px', height: '150px' }}
-                />
-                <div className="dropdown-content">
-                  <h5>BLACKROCK INVESTMENT INSTITUTE</h5>
-                  <p className='dropdown-paragraph'>Mega forces: An investment opportunity</p>
-                  <p>
-                  Explore the structural changes shaping investing now – and<br/> far in the future. Uncover the risks and seize the opportunities.
-                  </p>
-                  <a href="#top" className="insights-link">
-                    <p className='links'><span className="red-arrow">{'>'}</span> Click to read our Insights</p>
-                  </a>
-                </div>
-              </div>
             </div>
           )}
-        </li>     
-        
-         </ul>
+        </li>
+      </ul>
 
-      {/* Basic Search Icon */}
+      {/* Search Icon */}
       <div className="search-icon">
-        <i className="fas fa-search"></i> {/* Font Awesome search icon */}
+        <i className="fas fa-search"></i> 
       </div>
     </nav>
   );

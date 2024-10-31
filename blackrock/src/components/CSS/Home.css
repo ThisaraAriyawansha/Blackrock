@@ -5,41 +5,42 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif; 
-  background-color: white; 
-  color: black; 
-  line-height: 1.6; 
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.6;
 }
 
 .main-content {
-  display: flex; 
-  flex-direction: row; 
-  justify-content: space-between; 
-  padding: 60px 40px; 
-  align-items: center; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6vh 4vw;
+  align-items: center;
+  flex-wrap: wrap; 
 }
 
 .main-content h1 {
-  font-size: 48px; 
-  font-weight: bold; 
-  margin-bottom: 20px; 
-  line-height: 1.2; 
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
 }
 
 .main-content p {
-  font-size: 16px;
-  color: rgb(0, 0, 0); 
-  margin-bottom: 40px;
-  max-width: 500px;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 2.5rem;
+  max-width: 30rem;
 }
 
 .custom-button {
   background-color: black;
   color: white;
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -49,7 +50,7 @@ body {
 
 .custom-button .red-arrow {
   color: red;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .custom-button::after {
@@ -57,7 +58,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px;
+  height: 0.125rem;
   width: 0%;
   background-color: red;
   transition: width 0.4s ease-in-out;
@@ -70,11 +71,12 @@ body {
 .image-section {
   flex: 1;
   text-align: center;
+  max-width: 37.5rem; 
+  width: 100%; 
 }
 
 .image-section img {
   max-width: 100%;
-  width: 600px;
   height: auto;
   margin: 0 auto;
 }
@@ -117,10 +119,11 @@ body {
   margin-top: 1.5rem;
 }
 
-@media (max-width: 768px) {
+/* Media Queries */
+@media (max-width: 48rem) {
   .main-content {
     flex-direction: column;
-    padding: 20px;
+    padding: 2rem;
   }
 
   .grid-container {
@@ -129,7 +132,7 @@ body {
   }
 
   .main-content h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   .image-section img {
@@ -137,12 +140,12 @@ body {
   }
 
   .footer {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 
 .navbar-gap {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .small-content {
@@ -152,11 +155,11 @@ body {
 table {
   width: 100%;
   border-collapse: separate;
-  border-spacing: 20px;
+  border-spacing: 1.25rem;
 }
 
 td {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .grid-item {
@@ -170,7 +173,7 @@ td {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px;
+  height: 0.125rem;
   width: 100%;
   background-color: black;
 }
@@ -180,7 +183,7 @@ td {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 4px;
+  height: 0.25rem;
   width: 100%;
   background-color: red;
   transform: translateX(-100%);
@@ -204,16 +207,17 @@ td {
   background-color: rgb(242, 181, 38);
   display: flex;
   width: 100%;
-  height: 400px;
+  height: 50vh;
 }
 
-.yellow-left, .yellow-right {
+.yellow-left,
+.yellow-right {
   flex: 1;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .yellow-left {
-  margin-left: 50px;
+  margin-left: 3.125rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,13 +232,13 @@ td {
 
 .yelloh2 {
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   font-size: 2rem;
 }
 
 .yellowp {
-  margin-bottom: 20px;
-  font-size: 15px;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
   text-align: left;
 }
 
@@ -248,22 +252,21 @@ iframe {
   font-weight: bold;
   background-color: transparent;
   color: rgb(0, 0, 0);
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   position: relative;
   transition: color 0.3s;
-  margin-left: -24px;
-
+  margin-left: -1.5rem;
 }
 
 .yellow-button .black-arrow {
   color: rgb(0, 0, 0);
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .yellow-button::after {
@@ -271,22 +274,22 @@ iframe {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 4px;
+  height: 0.25rem;
   width: 0%;
   background-color: rgb(0, 0, 0);
   transition: width 0.4s ease-in-out;
 }
 
 .yellow-button:hover::after {
-  width: 130px;
+  width: 8.125rem;
 }
 
 .info-section {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  padding: 70px;
-  border-top: 3px solid #ffcc00;
+  padding: 5vh;
+  border-top: 0.1875rem solid #ffcc00;
 }
 
 .info-box {
@@ -300,20 +303,12 @@ iframe {
 }
 
 .icon {
-  width: 120px;
-  height: 120px;
-  margin-right: 50px;
+  width: 7.5rem;
+  height: 7.5rem;
+  margin-right: 3.125rem;
   background-size: contain;
   background-repeat: no-repeat;
   flex-shrink: 0;
-}
-
-.corporate-icon {
-  background-image: url('../../image/BLK_icn_people.svg');
-}
-
-.stewardship-icon {
-  background-image: url('../../image/BLK_icn_ideas_bulb.svg');
 }
 
 .text-content {
@@ -321,38 +316,37 @@ iframe {
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: bold;
-  margin: 0 0 10px;
+  margin: 0 0 0.625rem;
   color: #333;
 }
 
 p {
-  font-size: 0.95em;
+  font-size: 0.95rem;
   color: #333;
-  margin: 0 0 10px;
+  margin: 0 0 0.625rem;
 }
 
 .info-button {
   font-weight: bold;
-  background-color: invisisble;
+  background-color: transparent; 
   color: rgb(0, 0, 0);
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   position: relative;
   transition: color 0.3s;
-  margin-left: -24px;
-
+  margin-left: -1.5rem;
 }
 
 .info-button .red-arrow {
   color: red;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .info-button::after {
@@ -360,7 +354,7 @@ p {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 3px;
+  height: 0.1875rem;
   width: 0%;
   background-color: red;
   transition: width 0.4s ease-in-out;
@@ -368,4 +362,81 @@ p {
 
 .info-button:hover::after {
   width: 86%;
+}
+
+@media (max-width: 768px) {
+  .yellow-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .info-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box {
+    width: 100%;
+    margin-bottom: 2rem; 
+  }
+
+  .info-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    margin-bottom: 1rem; 
+  }
+
+  .text-content {
+    width: 100%; 
+    text-align: center; 
+  }
+
+  .main-content {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .main-content h1 {
+    font-size: 2.25rem; 
+    text-align: center; 
+  }
+
+  .main-content p {
+    max-width: 100%; 
+    text-align: center; 
+  }
+
+  .image-section img {
+    align-items: center;
+    width: 0%; 
+  }
+
+
+}
+
+
+@media (min-width: 48rem) and (max-width: 768px) {
+  .main-content h1 {
+    font-size: 2.5rem; 
+  }
+
+  .custom-button {
+    padding: 0.6rem 1.2rem; 
+    font-size: 0.95rem; 
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); 
+  }
 }
