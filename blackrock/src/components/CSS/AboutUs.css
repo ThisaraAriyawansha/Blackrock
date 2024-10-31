@@ -542,7 +542,7 @@
   }
   
   .image-container-left, .image-container-right, .text-section-about {
-    padding: 1rem; /
+    padding: 1rem; 
   }
   
   @media (max-width: 768px) {
