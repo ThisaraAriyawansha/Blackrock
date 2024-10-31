@@ -449,3 +449,21 @@ p {
     grid-template-columns: repeat(3, 1fr); 
   }
 }
+
+
+@media (max-width: 768px) {
+  .responsive-table {
+    display: block; /* Change the display for mobile */
+  }
+
+  .responsive-table tr {
+    display: flex; /* Flexbox to stack items */
+    flex-direction: column; /* Stack items vertically */
+    margin-bottom: 1rem; /* Space between rows */
+  }
+
+  .responsive-table td {
+    width: 100%; /* Full width for each cell */
+    display: block; /* Make cells block elements */
+  }
+}
