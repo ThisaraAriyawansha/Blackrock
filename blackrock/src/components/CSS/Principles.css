@@ -1,41 +1,38 @@
 .orange {
-    background-color: rgb(255, 60, 0); 
-    width: 100%;              
-    padding: 90px;           
-    box-sizing: border-box;  
+    background-color: rgb(255, 60, 0);
+    width: 100%;
+    padding: 90px;
+    box-sizing: border-box;
 }
 
 .orange h1 {
-    font-size: 50px; 
-    font-weight: bolder;         
-    text-align: left;           
-    margin: 0;                 
-    font-family: 'Arial Black', sans-serif; 
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: left;
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
 }
-
 
 .blackRock-principles {
     margin-top: 40px;
-    text-align: left;            
-    margin-left: 90px;          
-    margin-right: 20px;         
+    text-align: left;
+    margin-left: 90px;
+    margin-right: 20px;
 }
 
 .blackRock-principles h2 {
-    font-family: 'Arial Black', sans-serif; 
-    font-weight: bolder;         
-    font-size: 37px; 
-    margin-bottom: 20px;        
+    font-family: 'Arial Black', sans-serif;
+    font-weight: bolder;
+    font-size: 37px;
+    margin-bottom: 20px;
 }
 
 .blackRock-principles p {
-    font-family: 'Arial ', sans-serif; 
-    font-size: 16px; 
-    margin-bottom: 15px;       
-    line-height: 1.8;           
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.8;
 }
-
-
 
 .principles {
     display: flex;
@@ -54,24 +51,24 @@
 }
 
 .number-image {
-    width: 130px; 
+    width: 130px;
     height: auto;
     margin-right: 20px;
 }
 
 .content h2 {
-    font-family: 'Arial', sans-serif; 
-    font-size: 25px;                
-    font-weight: 700;                 
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
     margin: 0;
-    color: #000000;                   
+    color: #000000;
 }
 
 .content p {
-    font-family: 'Arial ', sans-serif; 
-    font-size: 15px;                   
-    margin: 15px 0;                  
-    color: #000000;                   
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    margin: 15px 0;
+    color: #000000;
 }
 
 .content ul {
@@ -80,19 +77,110 @@
 }
 
 .content ul li {
-    font-family: 'Arial ', sans-serif; 
-    font-size: 15px;                   
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
     margin-bottom: 5px;
-    color: #000000;                    
+    color: #000000;
 }
 
 .custom-list {
-    list-style-type: disc; 
-    padding-left: 20px;   
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
-.principle-hr{
+.principle-hr {
     height: 1.5px;
     background-color: #000000;
     width: 76%;
+}
+
+@media (max-width: 768px) {
+    .orange {
+        padding: 50px 20px;
+    }
+
+    .orange h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .blackRock-principles {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .blackRock-principles h2 {
+        font-size: 28px;
+    }
+
+    .blackRock-principles p {
+        font-size: 14px;
+    }
+
+    .principles {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .principle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .number-image {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .content ul {
+        margin-left: 0;
+    }
+
+    .principle-hr {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .orange {
+        padding: 30px 15px;
+    }
+
+    .orange h1 {
+        font-size: 28px;
+    }
+
+    .blackRock-principles h2 {
+        font-size: 24px;
+    }
+
+    .blackRock-principles p {
+        font-size: 12px;
+    }
+
+    .principles {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    .number-image {
+        width: 80px;
+    }
 }
