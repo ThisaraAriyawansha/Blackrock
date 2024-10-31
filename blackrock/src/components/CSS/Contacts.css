@@ -121,6 +121,11 @@
   .locations div {
     width: 120px;
   }
+
+  .location-table td {
+    padding: 10px 15px; 
+}
+
 }
 
 @media (max-width: 992px) {
@@ -144,6 +149,12 @@
   .locations div {
     width: 100px;
   }
+
+  .location-table td {
+    padding: 10px 15px; 
+}
+
+
 }
 
 @media (max-width: 768px) {
@@ -177,6 +188,11 @@
   .location-table {
     font-size: 12px;
   }
+
+  .location-table td {
+    padding: 10px 15px; 
+}
+
 }
 
 @media (max-width: 576px) {
@@ -206,4 +222,9 @@
   .location-table {
     font-size: 12px;
   }
+
+  .location-table td {
+    padding: 10px 15px; 
+}
+
 }
