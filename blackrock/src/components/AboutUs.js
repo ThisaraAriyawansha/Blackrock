@@ -52,7 +52,7 @@ function AboutUs() {
 
 
 <div className='What-we-do' id="whatwedo"> 
-<table >
+<table className='What-we-do-table'>
     <tr>
         <td class="intro-section">
 
@@ -163,7 +163,7 @@ function AboutUs() {
     </div>
     
 
-<table>
+<table className='responsive-table'>
   <tr>
   <td>       
   <video controls class="responsive-video">

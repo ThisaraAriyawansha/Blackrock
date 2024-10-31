@@ -531,3 +531,34 @@
     }
   }
   
+
+  .What-we-do-table {
+    width: 100%; 
+    border-collapse: collapse; 
+  }
+  
+  .intro-section {
+    padding: 1rem; 
+  }
+  
+  .image-container-left, .image-container-right, .text-section-about {
+    padding: 1rem; /
+  }
+  
+  @media (max-width: 768px) {
+    .What-we-do-table {
+      display: block; 
+    }
+  
+    .What-we-do-table tr {
+      display: flex; 
+      flex-direction: column; 
+      margin-bottom: 1rem; 
+    }
+  
+    .What-we-do-table td, .What-we-do-table th {
+      width: 100%; 
+      display: block; 
+    }
+  }
+  
