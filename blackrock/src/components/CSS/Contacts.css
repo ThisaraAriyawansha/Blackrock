@@ -99,102 +99,111 @@
   font-weight: bold; 
 }
 
+/* Responsive Styles */
 @media (max-width: 1200px) {
   .contactus-title {
-      padding: 70px;
+    padding: 70px;
   }
 
   .contactus-title h1,
   .Worldwide h1 {
-      font-size: 35px;
+    font-size: 35px;
   }
 
   .Worldwide p {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .tab {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .locations div {
-      width: 120px;
+    width: 120px;
   }
 }
 
 @media (max-width: 992px) {
   .contactus-title {
-      padding: 50px;
+    padding: 50px;
   }
 
   .contactus-title h1,
   .Worldwide h1 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .Worldwide p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .tab {
-      font-size: 13px;
+    font-size: 13px;
   }
 
   .locations div {
-      width: 100px;
+    width: 100px;
   }
 }
 
 @media (max-width: 768px) {
   .contactus-title {
-      padding: 30px;
+    padding: 30px;
   }
 
   .contactus-title h1,
   .Worldwide h1 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .Worldwide p {
-      font-size: 13px;
+    font-size: 13px;
   }
 
   .tab {
-      font-size: 12px;
+    font-size: 12px;
+  }
+
+  .locations {
+    flex-direction: column;
+    align-items: center;
   }
 
   .locations div {
-      width: 80px;
+    width: 100%;
+    padding: 10px;
   }
 
   .location-table {
-      font-size: 12px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 576px) {
   .contactus-title {
-      padding: 20px;
+    padding: 20px;
   }
 
   .contactus-title h1,
   .Worldwide h1 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .Worldwide p {
-      font-size: 12px;
+    font-size: 12px;
+    padding: 20px;
   }
 
   .tab {
-      font-size: 11px;
+    font-size: 11px;
   }
 
   .locations div {
-      width: 100%;
+    width: 100%;
+    padding: 10px;
   }
 
   .location-table {
-      font-size: 12px;
+    font-size: 12px;
   }
 }
