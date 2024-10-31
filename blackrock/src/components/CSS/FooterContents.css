@@ -1,30 +1,30 @@
 .legal-disclaimer-container {
-    max-width: auto;
-    margin: 0 auto;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 10px;
-    background-color: #fff;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    font-size: 14px;
-    line-height: 1.8;
-  }
-  
-  .legal-disclaimer-container p {
-    margin-bottom: 20px;
-    text-align: justify;
-  }
-  
-  .legal-disclaimer-container strong {
-    font-weight: bold;
-  }
-  
-  .legal-disclaimer-container a {
-    color: #0056b3;
-    text-decoration: none;
-  }
-  
-  .legal-disclaimer-container a:hover {
-    text-decoration: underline;
-  }
+  max-width: 100vw; 
+  margin: 0 auto;
+  margin-left: 6.25rem;
+  margin-right: 6.25rem; 
+  margin-top: 0.625rem; 
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  font-size: 0.875rem; 
+  line-height: 1.8;
+}
+
+.legal-disclaimer-container p {
+  margin-bottom: 1.25rem; 
+  text-align: justify;
+}
+
+.legal-disclaimer-container strong {
+  font-weight: bold;
+}
+
+.legal-disclaimer-container a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.legal-disclaimer-container a:hover {
+  text-decoration: underline;
+}
