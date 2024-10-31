@@ -1,11 +1,12 @@
 .about-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    color: white;
-    height: 800px;
-    padding: 0 5%;
-  }
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height: auto; 
+  padding: 0 5%; 
+  flex-direction: row; 
+}
   
   .about-text {
     width: 50%;
@@ -137,138 +138,129 @@
     text-decoration: underline;
   }
 
+  .intro-section-p {
+    align-content: left;
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 33px;
+    padding-right: 0px;
+}
 
-  .intro-section-p{
-align-content: left;  
-font-size: 19px;
-font-weight: bold;
-margin-left: 33px;
-padding-right: 0px;}
-
-.intro-section-hr
-{
+.intro-section-hr {
     margin-left: 33px;
     background-color: #000;
     height: 3px;
 }
 
-.intro-section-h1{
+.intro-section-h1 {
     color: #000;
     font-weight: bold;
     font-size: 35px;
     margin-left: 33px;
-
 }
 
-  .resized-image-left {
-    width: 800px;        
-    height: auto;         
-    margin-left: -15px;   
-  }
-  
-  .image-container-left {
-    margin-left: 0;      
-    display: flex;        
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    padding: 0;           
-  }
-  
-  .resized-image-right {
-    width: 800px;           
-    height: auto;           
-    margin-right: -15px;    
-  }
-  
-  .image-container-right {
-    display: flex;         
-    justify-content: flex-end; 
-    align-items: flex-start; 
-    padding: 0;           
-  }
-  
-  
+.resized-image-left {
+    width: 800px;
+    height: auto;
+    margin-left: -15px;
+}
 
-  .text-section-about{
+.image-container-left {
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.resized-image-right {
+    width: 800px;
+    height: auto;
+    margin-right: -15px;
+}
+
+.image-container-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.text-section-about {
     margin-left: 100px;
     flex-direction: column;
     padding: 20px;
-    justify-content: center;      
-    align-items: center; 
-  }
-  
-  .text-section-about h3 {
-    margin-left: 70px;
+    justify-content: center;
+    align-items: center;
+}
 
+.text-section-about h3 {
+    margin-left: 70px;
     font-size: 35px;
     color: #000000;
     margin-bottom: 15px;
-  }
-  
-  .text-section-about p {
-    margin-left: 70px;
+}
 
+.text-section-about p {
+    margin-left: 70px;
     font-size: 1.1rem;
     color: #000000;
     line-height: 1.6;
-  }
+}
 
-  .text-section-btn{
+.text-section-btn {
     margin-left: 50px;
-
-  }
-
+}
 
 
 
-  .who-we-are {
-    text-align: left;
-    font-family: Arial, sans-serif;
-  }
-  
-  .who-we-are h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: left;
-    margin-left: 75px;
-  }
-  
-  .info-table {
-    margin-left: 70px;
-    width: 100%; 
-    border-collapse: collapse;
-  }
-  
-  .info-card {
-    text-align: left;
-    padding: 20px;
-  }
-  
-  .info-card h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  .info-card p {
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .icon {
-    width: 100px; 
-    height:auto; 
-  }
-  
+.who-we-are {
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
 
-  .responsive-video {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-  }
-  
-.responsive-video-hr{
+.who-we-are h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 75px;
+}
+
+.info-table {
+  margin-left: 70px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-card {
+  text-align: left;
+  padding: 20px;
+}
+
+.info-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.icon {
+  width: 100px;
+  height: auto;
+}
+
+.responsive-video {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+.responsive-video-hr {
   height: 1.5px;
   background-color: #000;
 }
@@ -372,3 +364,177 @@ padding-right: 0px;}
     width: 95%;
   }
   
+
+
+  /* Mobile Styles */
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .about-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center items for better alignment */
+      padding: 2rem; /* Adjust padding for smaller screens */
+  }
+
+  .about-text, .about-video {
+      width: 100%; /* Full width for text and video sections */
+      margin-bottom: 2rem; /* Add margin for spacing */
+  }
+
+  .about-h1 {
+      font-size: 1.5rem; /* Smaller font size for headings on mobile */
+      margin-top: 2rem; /* Adjust margins */
+  }
+
+  .about-para {
+      font-size: 1rem; /* Adjust font size for paragraphs */
+      margin-top: 1rem; /* Adjust margin for paragraphs */
+  }
+
+  .about-video video {
+      max-width: 100%; /* Make the video responsive */
+  }
+  
+  .footer-links {
+      flex-direction: column; /* Stack footer links vertically */
+      align-items: center; /* Center footer links */
+  }
+
+  .footer-links a {
+      margin-bottom: 1rem; /* Space between footer links */
+  }
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .intro-section-p,
+  .intro-section-h1 {
+      margin-left: 0; /* Center content on mobile */
+      text-align: center; /* Center align text */
+      font-size: 18px; /* Adjust font size for mobile */
+  }
+
+  .intro-section-hr {
+      margin-left: 0; /* Remove margin for mobile */
+      width: 100%; /* Full width */
+  }
+
+  .resized-image-left,
+  .resized-image-right {
+      width: 100%; /* Make images responsive */
+      margin-left: 0; /* Remove negative margin */
+      margin-right: 0; /* Remove negative margin */
+  }
+
+  .image-container-left,
+  .image-container-right {
+      flex-direction: column; /* Stack images vertically */
+      align-items: center; /* Center align images */
+  }
+
+  .text-section-about {
+      margin-left: 0; /* Remove left margin */
+      padding: 10px; /* Reduce padding for mobile */
+      text-align: center; /* Center align text */
+  }
+
+  .text-section-about h3 {
+      margin-left: 0; /* Remove left margin */
+      font-size: 28px; /* Adjust font size for mobile */
+  }
+
+  .text-section-about p {
+      margin-left: 0; /* Remove left margin */
+      font-size: 1rem; /* Adjust font size for paragraphs */
+  }
+
+  .text-section-btn {
+      margin-left: 0; /* Remove left margin */
+      text-align: center; /* Center align button section */
+  }
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .who-we-are {
+      padding: 10px; /* Reduce padding on mobile */
+  }
+
+  .who-we-are h2 {
+      margin-left: 20px; /* Reduce margin for mobile */
+      font-size: 24px; /* Adjust font size for mobile */
+      text-align: center; /* Center align on mobile */
+  }
+
+  .info-table {
+      margin-left: 0; /* Remove margin for mobile */
+      width: 100%; /* Full width */
+  }
+
+  .info-card {
+      padding: 15px; /* Reduce padding for mobile */
+      text-align: center; /* Center align text on mobile */
+      border: 1px solid #ddd; /* Add border for clarity */
+      margin: 10px 0; /* Add margin between cards */
+  }
+
+  .info-card h3 {
+      font-size: 18px; /* Adjust font size for mobile */
+  }
+
+  .info-card p {
+      font-size: 14px; /* Adjust font size for paragraphs */
+      line-height: 1.4; /* Improve line spacing */
+  }
+
+  .icon {
+      width: 80px; /* Adjust icon size for mobile */
+  }
+
+  .responsive-video {
+      max-width: 100%; /* Make video fully responsive */
+  }
+
+  .responsive-video-hr {
+      height: 1px; /* Adjust horizontal rule height for mobile */
+  }
+
+  /* Additional styling for better mobile experience */
+  .info-card {
+      display: flex; /* Enable flexbox for card content */
+      flex-direction: column; /* Stack content vertically */
+      align-items: center; /* Center align items */
+  }
+
+  .who-we-are h2 {
+      margin-bottom: 10px; /* Adjust spacing below heading */
+  }
+}
+
+/* Extra Mobile Styles for smaller devices */
+@media (max-width: 480px) {
+  .who-we-are h2 {
+      font-size: 20px; /* Further reduce font size */
+  }
+
+  .info-card h3 {
+      font-size: 16px; /* Adjust heading size for mobile */
+  }
+
+  .info-card p {
+      font-size: 12px; /* Adjust paragraph size for mobile */
+  }
+
+  .icon {
+      width: 60px; /* Further adjust icon size */
+  }
+
+  .info-card {
+      margin: 5px 0; /* Reduce margin between cards */
+  }
+
+  .info-table {
+      margin-left: 0; /* Ensure full width without margin */
+  }
+}
