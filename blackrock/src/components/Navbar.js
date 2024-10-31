@@ -4,16 +4,28 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false); // State to manage the hamburger menu
 
   const handleMouseEnter = (item) => setHoveredItem(item);
   const handleMouseLeave = () => setHoveredItem(null);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen); // Toggle menu open/close
+  };
 
   return (
     <nav className="navbar">
       <Link to="/" className="logo" style={{ textDecoration: 'none' }}>
         BlackRock
       </Link>
-      <ul className="nav-links">
+      {/* Hamburger Icon for Mobile */}
+      <div className="hamburger" onClick={toggleMenu}>
+        <i className="fas fa-bars"></i>
+      </div>
+
+      {/* Nav Links */}
+      <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
+        
         <li
           className="nav-item"
           onMouseEnter={() => handleMouseEnter('aboutUs')}
@@ -36,7 +48,6 @@ const Navbar = () => {
           )}
         </li>
 
-        {/* Newsroom Dropdown */}
         <li
           className="nav-item"
           onMouseEnter={() => handleMouseEnter('newsroom')}
@@ -171,6 +182,7 @@ const Navbar = () => {
           )}
         </li>
       </ul>
+
 
       {/* Search Icon */}
       <div className="search-icon">
