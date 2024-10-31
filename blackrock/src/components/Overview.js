@@ -33,10 +33,10 @@ const NewsOverview = () => {
           <div className="news-explore">
             <h3 className="explore-title">Explore Newsroom</h3>
             <ul className="explore-list">
-              <li className="/explore-item">Media contacts<span className="white1-arrow">{'>'}</span></li>
-              <li className="/explore-item">Leadership<span className="white2-arrow">{'>'}</span></li>
-              <li className="/explore-item">Investor relations<span className="white1-arrow">{'>'}</span></li>
-              <li className="/explore-item">Public policy<span className="white2-arrow">{'>'}</span></li>
+              <li className="/explore-item">Media contacts</li>
+              <li className="/explore-item">Leadership</li>
+              <li className="/explore-item">Investor relations</li>
+              <li className="/explore-item">Public policy</li>
             </ul>
           </div>
         </div>
