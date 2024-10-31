@@ -3,40 +3,53 @@
   justify-content: space-between; 
   align-items: center;
   background-color: #dadada; 
-  padding: 5px 15px; 
+  padding: 0.3125rem 0.9375rem;
   width: 100%; 
   top: 0;
   z-index: 1000; 
 }
 
 .left-links {
-  margin-left: 20px;
+  margin-left: 1.25rem; 
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 2.5rem; /* Consistent gap for PC */
 }
 
 .right-link {
-  margin-right: 100px; 
+  margin-right: 2rem; /* Consistent margin for PC */
 }
 
 .horizontal-nav-container a {
   color: #000000; 
   text-decoration: none;
-  margin: 0 10px;
-  font-size: 12px; 
+  margin: 0 0.625rem; 
+  font-size: 0.75rem; 
   transition: color 0.3s ease; 
 }
 
 
 
-@media (max-width: 768px) {
-  .horizontal-nav-container a {
-    font-size: 10px; 
-    margin: 0 5px;
+@media (max-width: 48rem) { /* For mobile devices */
+  .horizontal-nav-container {
+    flex-direction: column; /* Stack items vertically */
+    padding: 0.5rem; /* Reduced padding for mobile */
   }
 
-  .horizontal-nav-container {
-    padding: 3px 10px; 
+  .left-links {
+    margin-left: 0; /* Remove left margin */
+    justify-content: center; /* Center items */
+    gap: 1.5rem; /* Adjusted gap for smaller screens */
+  }
+
+  .right-link {
+    margin-right: 0; /* Remove right margin */
+    text-align: center; /* Center align right links */
+    margin-top: 0.5rem; /* Space above right link */
+  }
+
+  .horizontal-nav-container a {
+    font-size: 0.875rem; /* Slightly smaller font size for mobile */
+    margin: 0 0.3125rem; /* Adjusted margin for mobile */
   }
 }

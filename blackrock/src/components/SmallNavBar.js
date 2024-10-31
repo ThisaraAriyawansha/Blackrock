@@ -1,5 +1,5 @@
 import React from 'react';
-import './CSS/SmallNavBar.css'; // Updated CSS file for styling
+import './CSS/SmallNavBar.css'; 
 
 const HorizontalNavBar = () => {
   return (
