@@ -1,137 +1,170 @@
 .footer {
-    color: #fff;
-  }
-  
-  /* Top section of footer (with columns) */
-  .footer-top {
-    background-color: #111; 
-    padding: 90px 20px;
-  }
-  
-  .footer-sections {
-    margin-left: 60px;
-    margin-right: 60px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #4a4949;
-  }
-  
-  .footer-column {
-    flex: 1;
-    margin: 10px;
-    min-width: 150px;
-  }
-  
-  .footer-column h3 {
-    font-size: 16px;
-    color: #f2f2f2;
-    margin-bottom: 10px;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-column ul li {
-    font-size: 12px;
-    margin-bottom: 8px;
-    color: #ffffff;
-  }
-  
-  .footer-column ul li:hover {
-    color: #fff;
-  }
-  
-  /* Bottom section of footer */
-  .footer-bottom {
-    width: 100%;
-    background-color: #000000; 
-    display: flex;
-    padding: 90px 20px;
-    position: relative; 
-  }
-  
-  /* Left 40% and right 60% layout for footer-bottom */
-  .footer-bottom-left {
-    flex: 0 0 40%;
-    max-width: 40%;
-    padding-right: 20px;
-    margin-top: 60px;
-  }
-  
-  .footer-bottom-right {
-    flex: 0 0 60%;
-    max-width: 60%;
-    padding-left: 100px;
-  }
-  
-  .footer-bottom-left p {
-    margin-left: 60px;
-    font-size: 16px;
-    color: #ffffff;
-    max-width: 800px;
-  }
-  
-  .vertical-line-Footer {
-    width: 1px; 
-    background-color: #7e7a7a; 
-    height: 80%; 
-    position: absolute; 
-    left: 45%; 
-    top: 50PX; 
+  color: #fff;
+}
 
+/* Top section of footer (with columns) */
+.footer-top {
+  background-color: #111; 
+  padding: 5.625rem 1.25rem; /* Converted 90px to rem */
+}
+
+.footer-sections {
+  margin: 3.75rem 3.75rem; /* Converted 60px to rem */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 1.875rem; /* Converted 30px to rem */
+  border-bottom: 1px solid #4a4949;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0.625rem; /* Converted 10px to rem */
+  min-width: 9.375rem; /* Converted 150px to rem */
+}
+
+.footer-column h3 {
+  font-size: 1rem; /* Converted 16px to rem */
+  color: #f2f2f2;
+  margin-bottom: 0.625rem; /* Converted 10px to rem */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  font-size: 0.75rem; /* Converted 12px to rem */
+  margin-bottom: 0.5rem; /* Converted 8px to rem */
+  color: #ffffff;
+}
+
+.footer-column ul li:hover {
+  color: #fff;
+}
+
+/* Bottom section of footer */
+.footer-bottom {
+  width: 100%;
+  background-color: #000000; 
+  display: flex;
+  padding: 5.625rem 1.25rem; /* Converted 90px to rem */
+  position: relative; 
+}
+
+/* Left 40% and right 60% layout for footer-bottom */
+.footer-bottom-left {
+  flex: 0 0 40%;
+  max-width: 40%;
+  padding-right: 1.25rem; /* Converted 20px to rem */
+  margin-top: 3.75rem; /* Converted 60px to rem */
+}
+
+.footer-bottom-right {
+  flex: 0 0 60%;
+  max-width: 60%;
+  padding-left: 6.25rem; /* Converted 100px to rem */
+}
+
+.footer-bottom-left p {
+  margin-left: 3.75rem; /* Converted 60px to rem */
+  font-size: 1rem; /* Converted 16px to rem */
+  color: #ffffff;
+  max-width: 50rem; /* Converted 800px to rem */
+}
+
+.vertical-line-Footer {
+  width: 0.0625rem; /* Converted 1px to rem */
+  background-color: #7e7a7a; 
+  height: 80%; 
+  position: absolute; 
+  left: 45%; 
+  top: 50%; 
+}
+
+.legal-links {
+  display: flex;
+  justify-content: center;
+}
+
+.legal-links h3 {
+  color: #ff0000;
+  margin-bottom: 0.625rem; /* Converted 10px to rem */
+  font-size: 0.875rem; /* Converted 14px to rem */
+}
+
+.legal-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.legal-links ul li {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1rem; /* Converted 16px to rem */
+  margin-bottom: 0.5rem; /* Converted 8px to rem */
+}
+
+.legal-links ul li:hover {
+  color: #fff;
+}
+
+/* Title for the footer */
+.Footer-h1 {
+  font-size: 1.875rem; /* Converted 30px to rem */
+  font-weight: bold;
+  margin-bottom: 0.625rem; /* Converted 10px to rem */
+  margin-left: 4.375rem; /* Converted 70px to rem */
+}
+
+/* Horizontal rule style */
+.Footer-hr {
+  height: 0.03125rem; /* Converted 0.5px to rem */
+  background-color: #7e7a7a; 
+  border: none;
+  margin: 0.625rem 0; /* Converted 10px to rem */
+}
+
+.Footer-Linkk {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 60px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .footer-sections {
+    flex-direction: column; /* Stack columns vertically */
+    margin: 1.875rem; /* Adjust margin for smaller screens */
   }
-  
-  .legal-links {
-    display: flex;
-    justify-content: center;
+
+  .footer-column {
+    margin: 0.625rem 0; /* Adjust margin for smaller screens */
+    min-width: auto; /* Allow full width on smaller screens */
   }
-  
-  .legal-links h3 {
-    color: #ff0000;
-    margin-bottom: 10px;
-    font-size: 14px;
+
+  .footer-bottom {
+    flex-direction: column; /* Stack sections vertically */
+    padding: 2rem 1.25rem; /* Adjust padding for smaller screens */
   }
-  
-  .legal-links ul {
-    list-style: none;
-    padding: 0;
+
+  .footer-bottom-left,
+  .footer-bottom-right {
+    max-width: 100%; /* Allow full width on smaller screens */
+    padding: 0; /* Remove padding for smaller screens */
   }
-  
-  .legal-links ul li {
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 16px;
-    margin-bottom: 8px;
+
+  .footer-bottom-left p {
+    margin-left: 0; /* Center text on smaller screens */
+    max-width: 100%; /* Allow full width for paragraph */
   }
-  
-  .legal-links ul li:hover {
-    color: #fff;
-  }
-  
-  /* Title for the footer */
-  .Footer-h1 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-left: 70px;
-  }
-  
-  /* Horizontal rule style */
-  .Footer-hr {
-    height: 0.5px;
-    background-color: #7e7a7a;
-    border: none;
-  }
-  
+
   .Footer-Linkk {
-    text-decoration: none;
-    color: #fff;
-    margin-left: 60px;
-    font-size: 45px;
-    font-weight: bold;
+    font-size: 24px; /* Adjust font size for smaller screens */
+    margin-left: 0; /* Center link on smaller screens */
+    text-align: center; /* Center align text */
   }
-  
+}
