@@ -105,7 +105,7 @@ const HomePage = () => {
     <div class="info-section">
   <div class="info-box">
     <div class="info-content">
-      <div class="icon corporate-icon">
+      <div class="icon-corporate-iconn">
         <img src="https://www.blackrock.com/blk-corp-assets/cache-1580293686000/images/media-bin/web/global/svg/icons/BLK_icn_people.svg" alt="Corporate Sustainability Icon" />
       </div>
       <div class="text-content">
@@ -121,7 +121,7 @@ const HomePage = () => {
   </div>
   <div class="info-box">
     <div class="info-content">
-      <div class="icon stewardship-icon">
+      <div class="icon-stewardship-iconn">
         <img src="https://www.blackrock.com/blk-corp-assets/cache-1665499269000/images/media-bin/web/global/svg/icons/BLK_icn_ideas_bulb.svg" alt="Investment Stewardship Icon" />
       </div>
       <div class="text-content">

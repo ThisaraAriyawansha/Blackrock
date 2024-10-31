@@ -27,6 +27,8 @@ body {
   line-height: 1.2;
 }
 
+
+
 .main-content p {
   font-size: 1rem;
   color: rgb(0, 0, 0);
@@ -118,6 +120,23 @@ body {
   border-top: 1px solid #000;
   margin-top: 1.5rem;
 }
+
+
+
+.icon-corporate-iconn,
+.icon-stewardship-iconn {
+  margin-right: 3rem; 
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .icon-corporate-iconn,
+  .icon-stewardship-iconn {
+    margin-right: 1rem; 
+  }
+}
+
+
 
 /* Media Queries */
 @media (max-width: 48rem) {
@@ -287,6 +306,7 @@ iframe {
 }
 
 .info-section {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
@@ -390,6 +410,7 @@ p {
   }
 
   .icon {
+    align-items: center;
     margin-bottom: 1rem; 
   }
 
@@ -439,6 +460,12 @@ p {
     font-size: 0.95rem; 
   }
 
+  .info-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
   .grid-container {
     grid-template-columns: repeat(2, 1fr); 
   }
@@ -449,6 +476,8 @@ p {
     grid-template-columns: repeat(3, 1fr); 
   }
 }
+
+
 
 
 .responsive-table {
